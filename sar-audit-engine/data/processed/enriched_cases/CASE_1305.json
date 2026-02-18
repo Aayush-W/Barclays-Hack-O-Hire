@@ -1,0 +1,57 @@
+{
+  "case_id": "CASE_1305",
+  "typology": "CYCLE",
+  "transactions": [
+    {
+      "timestamp": "2022/09/08 14:11",
+      "from_bank": "0212683",
+      "from_account": "809F508C0",
+      "to_bank": "0192419",
+      "to_account": "82261EC50",
+      "amount_received": 3804.26,
+      "receiving_currency": "UK Pound",
+      "amount_paid": 3804.26,
+      "payment_currency": "UK Pound",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/12 10:19",
+      "from_bank": "0192419",
+      "from_account": "82261EC50",
+      "to_bank": "0212683",
+      "to_account": "809F508C0",
+      "amount_received": 4004.13,
+      "receiving_currency": "Euro",
+      "amount_paid": 4004.13,
+      "payment_currency": "Euro",
+      "payment_format": "ACH"
+    }
+  ],
+  "enriched_transactions": [
+    {
+      "timestamp": "2022/09/08 14:11",
+      "from_bank": "0212683",
+      "from_account": "809F508C0",
+      "to_bank": "0192419",
+      "to_account": "82261EC50",
+      "amount_received": 3804.26,
+      "receiving_currency": "UK Pound",
+      "amount_paid": 3804.26,
+      "payment_currency": "UK Pound",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/12 10:19",
+      "from_bank": "0192419",
+      "from_account": "82261EC50",
+      "to_bank": "0212683",
+      "to_account": "809F508C0",
+      "amount_received": 4004.13,
+      "receiving_currency": "Euro",
+      "amount_paid": 4004.13,
+      "payment_currency": "Euro",
+      "payment_format": "ACH"
+    }
+  ],
+  "transaction_count": 2
+}

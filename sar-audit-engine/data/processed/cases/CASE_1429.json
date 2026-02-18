@@ -1,0 +1,18 @@
+{
+    "case_id": "CASE_1429",
+    "typology": "RANDOM",
+    "transactions": [
+        {
+            "timestamp": "2022/09/09 09:17",
+            "from_bank": "0230636",
+            "from_account": "80E9C2370",
+            "to_bank": "015123",
+            "to_account": "805463410",
+            "amount_received": 19326.0,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 19326.0,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+Funnel-account typology centers on accounts that receive many inbound transfers and rapidly forward funds onward.
+
+Common funnel-account indicators:
+- One account receives funds from many origins and disburses to fewer exits.
+- Minimal retention of value (near-zero net flow over short periods).
+- Rapid pass-through with dwell time measured in hours.
+- Multi-bank routing to reduce direct source-to-destination linkage.
+
+Reasoning cues for SAR:
+- Quantify inbound-outbound imbalance and dwell-time metrics.
+- Trace linked transactions that form the funnel path.
+- Explain why account profile does not match expected customer behavior.

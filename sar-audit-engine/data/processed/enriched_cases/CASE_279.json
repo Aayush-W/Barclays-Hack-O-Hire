@@ -1,0 +1,81 @@
+{
+  "case_id": "CASE_279",
+  "typology": "In",
+  "transactions": [
+    {
+      "timestamp": "2022/09/02 15:43",
+      "from_bank": "02464",
+      "from_account": "800297E40",
+      "to_bank": "01924",
+      "to_account": "80079F820",
+      "amount_received": 1916.29,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 1916.29,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/06 10:08",
+      "from_bank": "02470",
+      "from_account": "800C61780",
+      "to_bank": "01924",
+      "to_account": "80079F820",
+      "amount_received": 2064.47,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 2064.47,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/06 18:26",
+      "from_bank": "01601",
+      "from_account": "80061BF10",
+      "to_bank": "01924",
+      "to_account": "80079F820",
+      "amount_received": 6348.23,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 6348.23,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    }
+  ],
+  "enriched_transactions": [
+    {
+      "timestamp": "2022/09/02 15:43",
+      "from_bank": "02464",
+      "from_account": "800297E40",
+      "to_bank": "01924",
+      "to_account": "80079F820",
+      "amount_received": 1916.29,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 1916.29,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/06 10:08",
+      "from_bank": "02470",
+      "from_account": "800C61780",
+      "to_bank": "01924",
+      "to_account": "80079F820",
+      "amount_received": 2064.47,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 2064.47,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/06 18:26",
+      "from_bank": "01601",
+      "from_account": "80061BF10",
+      "to_bank": "01924",
+      "to_account": "80079F820",
+      "amount_received": 6348.23,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 6348.23,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    }
+  ],
+  "transaction_count": 3
+}

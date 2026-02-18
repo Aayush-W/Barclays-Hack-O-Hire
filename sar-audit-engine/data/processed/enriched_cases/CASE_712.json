@@ -1,0 +1,57 @@
+{
+  "case_id": "CASE_712",
+  "typology": "CYCLE",
+  "transactions": [
+    {
+      "timestamp": "2022/09/05 03:07",
+      "from_bank": "00113154",
+      "from_account": "82AD58260",
+      "to_bank": "01115965",
+      "to_account": "82B75BF30",
+      "amount_received": 2742.46,
+      "receiving_currency": "Canadian Dollar",
+      "amount_paid": 2742.46,
+      "payment_currency": "Canadian Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/06 12:58",
+      "from_bank": "01115965",
+      "from_account": "82B75BF30",
+      "to_bank": "00113154",
+      "to_account": "82AD58260",
+      "amount_received": 2678.18,
+      "receiving_currency": "Canadian Dollar",
+      "amount_paid": 2678.18,
+      "payment_currency": "Canadian Dollar",
+      "payment_format": "ACH"
+    }
+  ],
+  "enriched_transactions": [
+    {
+      "timestamp": "2022/09/05 03:07",
+      "from_bank": "00113154",
+      "from_account": "82AD58260",
+      "to_bank": "01115965",
+      "to_account": "82B75BF30",
+      "amount_received": 2742.46,
+      "receiving_currency": "Canadian Dollar",
+      "amount_paid": 2742.46,
+      "payment_currency": "Canadian Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/06 12:58",
+      "from_bank": "01115965",
+      "from_account": "82B75BF30",
+      "to_bank": "00113154",
+      "to_account": "82AD58260",
+      "amount_received": 2678.18,
+      "receiving_currency": "Canadian Dollar",
+      "amount_paid": 2678.18,
+      "payment_currency": "Canadian Dollar",
+      "payment_format": "ACH"
+    }
+  ],
+  "transaction_count": 2
+}

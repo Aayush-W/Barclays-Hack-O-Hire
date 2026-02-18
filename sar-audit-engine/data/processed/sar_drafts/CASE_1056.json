@@ -1,0 +1,17 @@
+{
+  "case_id": "CASE_1056",
+  "style": "standard",
+  "generated_at": "2026-02-17T18:18:37.900408+00:00",
+  "prompt_payload": {
+    "system": "You are an AML investigator assistant.\nWrite a factual, audit-ready SAR narrative.\nUse only provided evidence and retrieved knowledge context.\nDo not invent transactions, regulations, or account entities.",
+    "user": "Style instructions: Write in full paragraphs with clear timeline, suspicious pattern rationale, and a final recommendation section.\n\nCase ID: CASE_1056\nTypology: GATHER\nRisk score: 72\nRisk band: medium\n\nReasons:\n- R01: Case typology labeled as GATHER based on pattern parser classification. (category=typology_classification, tx_count=28)\n- R02: Aggregate transaction value exceeds high-value threshold. (category=high_value_activity, tx_count=28)\n- R03: Net flow is near zero relative to total inflow, indicating potential pass-through. (category=rapid_pass_through, tx_count=28)\n- R04: Majority of transfers are cross-bank. (category=cross_bank_movement, tx_count=27)\n- R05: Multiple originators or beneficiaries are involved. (category=multi_party_network, tx_count=28)\n- R06: Multiple currencies appear within the transaction set. (category=multi_currency_activity, tx_count=28)\n- R07: Transaction velocity exceeds monitoring thresholds. (category=high_velocity, tx_count=28)\n\nGenerate a SAR narrative with sections:\n1) Activity Summary\n2) Key Suspicious Indicators\n3) Evidence and Rationale\n4) Recommended Action"
+  },
+  "narrative": "Activity Summary:\nCase CASE_1056 was reviewed under typology GATHER. The case is currently assessed as medium risk with score 72.\n\nKey Suspicious Indicators:\n- Case typology labeled as GATHER based on pattern parser classification. (category: typology_classification, linked_tx: 28)\n- Aggregate transaction value exceeds high-value threshold. (category: high_value_activity, linked_tx: 28)\n- Net flow is near zero relative to total inflow, indicating potential pass-through. (category: rapid_pass_through, linked_tx: 28)\n- Majority of transfers are cross-bank. (category: cross_bank_movement, linked_tx: 27)\n- Multiple originators or beneficiaries are involved. (category: multi_party_network, linked_tx: 28)\n- Multiple currencies appear within the transaction set. (category: multi_currency_activity, linked_tx: 28)\n- Transaction velocity exceeds monitoring thresholds. (category: high_velocity, linked_tx: 28)\n\nEvidence and Rationale:\nThe risk assessment combines transactional signals with explicit reasoning steps. Each reason is linked to transaction identifiers and supporting knowledge chunks retrieved from SAR typology/regulatory reference material.\n\nRecommended Action:\nEscalate for SAR filing review, preserve an audit trail of supporting evidence, and request analyst sign-off for final narrative submission.",
+  "citations": [
+    "typologies/layering.txt",
+    "typologies/smurfing.txt",
+    "typologies/funnel_accounts.txt",
+    "templates/sar_standard.txt",
+    "regulations/narrative_guidelines.txt"
+  ]
+}

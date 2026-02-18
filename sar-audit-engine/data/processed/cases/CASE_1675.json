@@ -1,0 +1,114 @@
+{
+    "case_id": "CASE_1675",
+    "typology": "CYCLE",
+    "transactions": [
+        {
+            "timestamp": "2022/09/10 19:58",
+            "from_bank": "02127249",
+            "from_account": "82E921690",
+            "to_bank": "029",
+            "to_account": "82DCAA2B0",
+            "amount_received": 3643.12,
+            "receiving_currency": "Australian Dollar",
+            "amount_paid": 3643.12,
+            "payment_currency": "Australian Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/12 14:58",
+            "from_bank": "029",
+            "from_account": "82DCAA2B0",
+            "to_bank": "00125319",
+            "to_account": "82E6C0C30",
+            "amount_received": 3315.56,
+            "receiving_currency": "Australian Dollar",
+            "amount_paid": 3315.56,
+            "payment_currency": "Australian Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/13 10:18",
+            "from_bank": "00125319",
+            "from_account": "82E6C0C30",
+            "to_bank": "02125369",
+            "to_account": "82DD5AA30",
+            "amount_received": 3000.15,
+            "receiving_currency": "Australian Dollar",
+            "amount_paid": 3000.15,
+            "payment_currency": "Australian Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/11 16:00",
+            "from_bank": "02125369",
+            "from_account": "82DD5AA30",
+            "to_bank": "0239197",
+            "to_account": "83000D0D0",
+            "amount_received": 13523.54,
+            "receiving_currency": "Yuan",
+            "amount_paid": 13523.54,
+            "payment_currency": "Yuan",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/12 17:07",
+            "from_bank": "0239197",
+            "from_account": "83000D0D0",
+            "to_bank": "02127147",
+            "to_account": "82F31CAE0",
+            "amount_received": 3029.46,
+            "receiving_currency": "Australian Dollar",
+            "amount_paid": 3029.46,
+            "payment_currency": "Australian Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/14 10:36",
+            "from_bank": "02127147",
+            "from_account": "82F31CAE0",
+            "to_bank": "02127147",
+            "to_account": "83000CAC0",
+            "amount_received": 2783.5,
+            "receiving_currency": "Australian Dollar",
+            "amount_paid": 2783.5,
+            "payment_currency": "Australian Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/13 14:09",
+            "from_bank": "02127147",
+            "from_account": "83000CAC0",
+            "to_bank": "02129461",
+            "to_account": "83000DC90",
+            "amount_received": 2849.98,
+            "receiving_currency": "Australian Dollar",
+            "amount_paid": 2849.98,
+            "payment_currency": "Australian Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/11 15:07",
+            "from_bank": "02129461",
+            "from_account": "83000DC90",
+            "to_bank": "02129145",
+            "to_account": "83000CEE0",
+            "amount_received": 3080.58,
+            "receiving_currency": "Australian Dollar",
+            "amount_paid": 3080.58,
+            "payment_currency": "Australian Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/15 18:28",
+            "from_bank": "02129145",
+            "from_account": "83000CEE0",
+            "to_bank": "02127249",
+            "to_account": "82E921690",
+            "amount_received": 3302.52,
+            "receiving_currency": "Australian Dollar",
+            "amount_paid": 3302.52,
+            "payment_currency": "Australian Dollar",
+            "payment_format": "ACH"
+        }
+    ]
+}

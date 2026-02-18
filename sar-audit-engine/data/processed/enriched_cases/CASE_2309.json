@@ -1,0 +1,81 @@
+{
+  "case_id": "CASE_2309",
+  "typology": "Out",
+  "transactions": [
+    {
+      "timestamp": "2022/09/14 07:25",
+      "from_bank": "0144106",
+      "from_account": "8110DC6F0",
+      "to_bank": "025580",
+      "to_account": "816A02B80",
+      "amount_received": 161.54,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 161.54,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/14 09:03",
+      "from_bank": "0144106",
+      "from_account": "8110DC6F0",
+      "to_bank": "0132031",
+      "to_account": "811A1A220",
+      "amount_received": 3559.4,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 3559.4,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/15 14:27",
+      "from_bank": "0144106",
+      "from_account": "8110DC6F0",
+      "to_bank": "027907",
+      "to_account": "805A8F5D0",
+      "amount_received": 14662.38,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 14662.38,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    }
+  ],
+  "enriched_transactions": [
+    {
+      "timestamp": "2022/09/14 07:25",
+      "from_bank": "0144106",
+      "from_account": "8110DC6F0",
+      "to_bank": "025580",
+      "to_account": "816A02B80",
+      "amount_received": 161.54,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 161.54,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/14 09:03",
+      "from_bank": "0144106",
+      "from_account": "8110DC6F0",
+      "to_bank": "0132031",
+      "to_account": "811A1A220",
+      "amount_received": 3559.4,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 3559.4,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/15 14:27",
+      "from_bank": "0144106",
+      "from_account": "8110DC6F0",
+      "to_bank": "027907",
+      "to_account": "805A8F5D0",
+      "amount_received": 14662.38,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 14662.38,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    }
+  ],
+  "transaction_count": 3
+}

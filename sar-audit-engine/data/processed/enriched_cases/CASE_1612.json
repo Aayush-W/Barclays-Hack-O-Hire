@@ -1,0 +1,81 @@
+{
+  "case_id": "CASE_1612",
+  "typology": "Out",
+  "transactions": [
+    {
+      "timestamp": "2022/09/10 11:10",
+      "from_bank": "020",
+      "from_account": "800385590",
+      "to_bank": "02310",
+      "to_account": "801424C30",
+      "amount_received": 15904.23,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 15904.23,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/12 22:02",
+      "from_bank": "020",
+      "from_account": "800385590",
+      "to_bank": "00741",
+      "to_account": "800ED3FB0",
+      "amount_received": 7606.74,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 7606.74,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/15 04:48",
+      "from_bank": "020",
+      "from_account": "800385590",
+      "to_bank": "01208",
+      "to_account": "800B68420",
+      "amount_received": 4743.76,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 4743.76,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    }
+  ],
+  "enriched_transactions": [
+    {
+      "timestamp": "2022/09/10 11:10",
+      "from_bank": "020",
+      "from_account": "800385590",
+      "to_bank": "02310",
+      "to_account": "801424C30",
+      "amount_received": 15904.23,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 15904.23,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/12 22:02",
+      "from_bank": "020",
+      "from_account": "800385590",
+      "to_bank": "00741",
+      "to_account": "800ED3FB0",
+      "amount_received": 7606.74,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 7606.74,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/15 04:48",
+      "from_bank": "020",
+      "from_account": "800385590",
+      "to_bank": "01208",
+      "to_account": "800B68420",
+      "amount_received": 4743.76,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 4743.76,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    }
+  ],
+  "transaction_count": 3
+}

@@ -1,0 +1,54 @@
+{
+    "case_id": "CASE_1420",
+    "typology": "In",
+    "transactions": [
+        {
+            "timestamp": "2022/09/09 07:37",
+            "from_bank": "0112934",
+            "from_account": "80FD1C370",
+            "to_bank": "0123424",
+            "to_account": "80D12B500",
+            "amount_received": 15029.66,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 15029.66,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/12 06:42",
+            "from_bank": "005655",
+            "from_account": "8041AACD0",
+            "to_bank": "0123424",
+            "to_account": "80D12B500",
+            "amount_received": 14031.93,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 14031.93,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/12 09:31",
+            "from_bank": "0123424",
+            "from_account": "80D12B500",
+            "to_bank": "0072043",
+            "to_account": "81CFA3E80",
+            "amount_received": 264902.26,
+            "receiving_currency": "Ruble",
+            "amount_paid": 264902.26,
+            "payment_currency": "Ruble",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/13 07:32",
+            "from_bank": "0123424",
+            "from_account": "80D12B500",
+            "to_bank": "0010315",
+            "to_account": "80B1ED090",
+            "amount_received": 876.65,
+            "receiving_currency": "Euro",
+            "amount_paid": 876.65,
+            "payment_currency": "Euro",
+            "payment_format": "ACH"
+        }
+    ]
+}

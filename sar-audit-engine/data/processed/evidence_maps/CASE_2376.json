@@ -1,0 +1,464 @@
+{
+  "case_id": "CASE_2376",
+  "typology": "BIPARTITE",
+  "risk_assessment": {
+    "score": 56,
+    "band": "medium",
+    "retrieval_confidence": 0.119294
+  },
+  "signals": {
+    "total_inflow": 7266.15,
+    "total_outflow": 7266.15,
+    "net_flow": 0.0,
+    "unique_senders": 3,
+    "unique_receivers": 3,
+    "hop_count": 1,
+    "cross_bank_ratio": 1.0,
+    "multi_currency_flag": true,
+    "rapid_pass_through_flag": false,
+    "rapid_pass_through_min_hours": null,
+    "transaction_velocity_metrics": {
+      "tx_count": 3,
+      "start_time": "2022-09-15 01:36:00",
+      "end_time": "2022-09-16 13:06:00",
+      "duration_hours": 35.5,
+      "tx_per_day": 2.0282,
+      "avg_interarrival_minutes": 1065.0,
+      "median_interarrival_minutes": 1065.0,
+      "max_tx_in_1h": 1
+    }
+  },
+  "reasons": [
+    {
+      "reason_id": "R01",
+      "category": "typology_classification",
+      "claim": "Case typology labeled as BIPARTITE based on pattern parser classification.",
+      "retrieval_query": "SAR BIPARTITE category typology_classification Case typology labeled as BIPARTITE based on pattern parser classification. typology BIPARTITE source pattern_parser cross_bank_ratio 1.0 hop_count 1 multi_currency True rapid_pass_through False max_tx_1h 1 tx_per_day 2.028",
+      "evidence_metrics": {
+        "typology": "BIPARTITE",
+        "source": "pattern_parser"
+      },
+      "transaction_ids": [
+        "TX_001",
+        "TX_002",
+        "TX_003"
+      ],
+      "transaction_examples": [
+        {
+          "tx_id": "TX_001",
+          "timestamp": "2022-09-16 09:56:00",
+          "from_bank": "001315",
+          "from_account": "800EA0300",
+          "to_bank": "005991",
+          "to_account": "814EAE380",
+          "amount_received": 1037.49,
+          "amount_paid": 1037.49,
+          "receiving_currency": "US Dollar",
+          "payment_currency": "US Dollar",
+          "payment_format": "ACH"
+        },
+        {
+          "tx_id": "TX_002",
+          "timestamp": "2022-09-16 13:06:00",
+          "from_bank": "0126794",
+          "from_account": "811E2C7B0",
+          "to_bank": "0130596",
+          "to_account": "81514BD60",
+          "amount_received": 3642.71,
+          "amount_paid": 3642.71,
+          "receiving_currency": "Euro",
+          "payment_currency": "Euro",
+          "payment_format": "ACH"
+        },
+        {
+          "tx_id": "TX_003",
+          "timestamp": "2022-09-15 01:36:00",
+          "from_bank": "0250249",
+          "from_account": "814FC4650",
+          "to_bank": "012696",
+          "to_account": "81FD35BD0",
+          "amount_received": 2585.95,
+          "amount_paid": 2585.95,
+          "receiving_currency": "US Dollar",
+          "payment_currency": "US Dollar",
+          "payment_format": "ACH"
+        }
+      ],
+      "knowledge_support": [
+        {
+          "chunk_id": "d6ab6251233bb58c",
+          "score": 0.112886,
+          "base_score": 0.062421,
+          "source_model_probability": 0.992817,
+          "source_file": "typologies/layering.txt",
+          "source_type": "typologies",
+          "excerpt": "Layering typology focuses on separating illicit proceeds from the original source through multiple account hops. Common layering indicators: - Sequential transfers across unrelated accounts and banks. - Rapid movement of funds after incoming credits. - Repeated near-offsetting in-flow and out-flow values. - Use of multiple payment corridors to break traceability. Reasoning cues for SAR: - Highlight hop depth and timeline compression between linked transactions. - Explain why account behavior is inconsistent with normal customer purpose. - Document cross-bank movement ratio and intermediate account concentration."
+        },
+        {
+          "chunk_id": "c7c59c982b48a1ae",
+          "score": 0.108172,
+          "base_score": 0.187798,
+          "source_model_probability": 0.0,
+          "source_file": "templates/sar_standard.txt",
+          "source_type": "templates",
+          "excerpt": "SAR Standard Template 1) Activity Summary - Subject/account overview - Date range of suspicious activity 2) Key Suspicious Indicators - High-value flow, pass-through, multi-hop, velocity, cross-bank, multi-currency 3) Evidence and Rationale - Reason-by-reason mapping with transaction IDs - Typology and guideline alignment 4) Recommended Action - Escalation recommendation - Internal review and filing workflow notes"
+        },
+        {
+          "chunk_id": "58012ce6979d7119",
+          "score": 0.098411,
+          "base_score": 0.054417,
+          "source_model_probability": 0.992817,
+          "source_file": "typologies/smurfing.txt",
+          "source_type": "typologies",
+          "excerpt": "Smurfing typology describes structuring funds into many smaller transfers to avoid control thresholds. Common smurfing indicators: - Burst of low-to-mid value deposits from multiple senders. - Repeated transaction amounts that remain below expected escalation limits. - Consolidation of many small credits into one beneficiary account. - Frequent ACH or card-like channels with short intervals. Reasoning cues for SAR: - Show transaction velocity and clustering in short time windows. - Map repeated amount bands and sender diversity. - Explain how volume pattern indicates deliberate threshold avoidance."
+        }
+      ]
+    },
+    {
+      "reason_id": "R02",
+      "category": "rapid_pass_through",
+      "claim": "Net flow is near zero relative to total inflow, indicating potential pass-through.",
+      "retrieval_query": "SAR BIPARTITE category rapid_pass_through Net flow is near zero relative to total inflow, indicating potential pass-through. net_flow 0.0 total_inflow 7266.15 ratio 0.0 threshold 0.1 cross_bank_ratio 1.0 hop_count 1 multi_currency True rapid_pass_through False max_tx_1h 1 tx_per_day 2.028",
+      "evidence_metrics": {
+        "net_flow": 0.0,
+        "total_inflow": 7266.15,
+        "ratio": 0.0,
+        "threshold": 0.1
+      },
+      "transaction_ids": [
+        "TX_001",
+        "TX_002",
+        "TX_003"
+      ],
+      "transaction_examples": [
+        {
+          "tx_id": "TX_001",
+          "timestamp": "2022-09-16 09:56:00",
+          "from_bank": "001315",
+          "from_account": "800EA0300",
+          "to_bank": "005991",
+          "to_account": "814EAE380",
+          "amount_received": 1037.49,
+          "amount_paid": 1037.49,
+          "receiving_currency": "US Dollar",
+          "payment_currency": "US Dollar",
+          "payment_format": "ACH"
+        },
+        {
+          "tx_id": "TX_002",
+          "timestamp": "2022-09-16 13:06:00",
+          "from_bank": "0126794",
+          "from_account": "811E2C7B0",
+          "to_bank": "0130596",
+          "to_account": "81514BD60",
+          "amount_received": 3642.71,
+          "amount_paid": 3642.71,
+          "receiving_currency": "Euro",
+          "payment_currency": "Euro",
+          "payment_format": "ACH"
+        },
+        {
+          "tx_id": "TX_003",
+          "timestamp": "2022-09-15 01:36:00",
+          "from_bank": "0250249",
+          "from_account": "814FC4650",
+          "to_bank": "012696",
+          "to_account": "81FD35BD0",
+          "amount_received": 2585.95,
+          "amount_paid": 2585.95,
+          "receiving_currency": "US Dollar",
+          "payment_currency": "US Dollar",
+          "payment_format": "ACH"
+        }
+      ],
+      "knowledge_support": [
+        {
+          "chunk_id": "c2ee309aabe92482",
+          "score": 0.209225,
+          "base_score": 0.120455,
+          "source_model_probability": 0.994371,
+          "source_file": "typologies/funnel_accounts.txt",
+          "source_type": "typologies",
+          "excerpt": "Funnel-account typology centers on accounts that receive many inbound transfers and rapidly forward funds onward. Common funnel-account indicators: - One account receives funds from many origins and disburses to fewer exits. - Minimal retention of value (near-zero net flow over short periods). - Rapid pass-through with dwell time measured in hours. - Multi-bank routing to reduce direct source-to-destination linkage. Reasoning cues for SAR: - Quantify inbound-outbound imbalance and dwell-time metrics. - Trace linked transactions that form the funnel path. - Explain why account profile does not match expected customer behavior."
+        },
+        {
+          "chunk_id": "d6ab6251233bb58c",
+          "score": 0.18576,
+          "base_score": 0.106945,
+          "source_model_probability": 0.994371,
+          "source_file": "typologies/layering.txt",
+          "source_type": "typologies",
+          "excerpt": "Layering typology focuses on separating illicit proceeds from the original source through multiple account hops. Common layering indicators: - Sequential transfers across unrelated accounts and banks. - Rapid movement of funds after incoming credits. - Repeated near-offsetting in-flow and out-flow values. - Use of multiple payment corridors to break traceability. Reasoning cues for SAR: - Highlight hop depth and timeline compression between linked transactions. - Explain why account behavior is inconsistent with normal customer purpose. - Document cross-bank movement ratio and intermediate account concentration."
+        },
+        {
+          "chunk_id": "11894b7876c90015",
+          "score": 0.101036,
+          "base_score": 0.106098,
+          "source_model_probability": 0.005343,
+          "source_file": "regulations/narrative_guidelines.txt",
+          "source_type": "regulations",
+          "excerpt": "SAR narrative drafting guidelines: - Use objective, factual language and avoid speculative statements. - Present a clear chronology of events and transaction behavior. - Explain why activity is suspicious using measurable indicators. - Reference typology alignment and controls-impact rationale. - Include supporting evidence identifiers (transaction IDs, account links, and detection metrics). - Conclude with recommended action and whether escalation for filing is advised."
+        }
+      ]
+    },
+    {
+      "reason_id": "R03",
+      "category": "cross_bank_movement",
+      "claim": "Majority of transfers are cross-bank.",
+      "retrieval_query": "SAR BIPARTITE category cross_bank_movement Majority of transfers are cross-bank. cross_bank_ratio 1.0 threshold 0.6 cross_bank_ratio 1.0 hop_count 1 multi_currency True rapid_pass_through False max_tx_1h 1 tx_per_day 2.028",
+      "evidence_metrics": {
+        "cross_bank_ratio": 1.0,
+        "threshold": 0.6
+      },
+      "transaction_ids": [
+        "TX_001",
+        "TX_002",
+        "TX_003"
+      ],
+      "transaction_examples": [
+        {
+          "tx_id": "TX_001",
+          "timestamp": "2022-09-16 09:56:00",
+          "from_bank": "001315",
+          "from_account": "800EA0300",
+          "to_bank": "005991",
+          "to_account": "814EAE380",
+          "amount_received": 1037.49,
+          "amount_paid": 1037.49,
+          "receiving_currency": "US Dollar",
+          "payment_currency": "US Dollar",
+          "payment_format": "ACH"
+        },
+        {
+          "tx_id": "TX_002",
+          "timestamp": "2022-09-16 13:06:00",
+          "from_bank": "0126794",
+          "from_account": "811E2C7B0",
+          "to_bank": "0130596",
+          "to_account": "81514BD60",
+          "amount_received": 3642.71,
+          "amount_paid": 3642.71,
+          "receiving_currency": "Euro",
+          "payment_currency": "Euro",
+          "payment_format": "ACH"
+        },
+        {
+          "tx_id": "TX_003",
+          "timestamp": "2022-09-15 01:36:00",
+          "from_bank": "0250249",
+          "from_account": "814FC4650",
+          "to_bank": "012696",
+          "to_account": "81FD35BD0",
+          "amount_received": 2585.95,
+          "amount_paid": 2585.95,
+          "receiving_currency": "US Dollar",
+          "payment_currency": "US Dollar",
+          "payment_format": "ACH"
+        }
+      ],
+      "knowledge_support": [
+        {
+          "chunk_id": "c7c59c982b48a1ae",
+          "score": 0.128015,
+          "base_score": 0.222248,
+          "source_model_probability": 0.0,
+          "source_file": "templates/sar_standard.txt",
+          "source_type": "templates",
+          "excerpt": "SAR Standard Template 1) Activity Summary - Subject/account overview - Date range of suspicious activity 2) Key Suspicious Indicators - High-value flow, pass-through, multi-hop, velocity, cross-bank, multi-currency 3) Evidence and Rationale - Reason-by-reason mapping with transaction IDs - Typology and guideline alignment 4) Recommended Action - Escalation recommendation - Internal review and filing workflow notes"
+        },
+        {
+          "chunk_id": "d6ab6251233bb58c",
+          "score": 0.111093,
+          "base_score": 0.063981,
+          "source_model_probability": 0.993235,
+          "source_file": "typologies/layering.txt",
+          "source_type": "typologies",
+          "excerpt": "Layering typology focuses on separating illicit proceeds from the original source through multiple account hops. Common layering indicators: - Sequential transfers across unrelated accounts and banks. - Rapid movement of funds after incoming credits. - Repeated near-offsetting in-flow and out-flow values. - Use of multiple payment corridors to break traceability. Reasoning cues for SAR: - Highlight hop depth and timeline compression between linked transactions. - Explain why account behavior is inconsistent with normal customer purpose. - Document cross-bank movement ratio and intermediate account concentration."
+        },
+        {
+          "chunk_id": "efbbc00f03de92fd",
+          "score": 0.088839,
+          "base_score": 0.051165,
+          "source_model_probability": 0.993235,
+          "source_file": "typologies/structuring.txt",
+          "source_type": "typologies",
+          "excerpt": "Structuring involves splitting deposits or payments to reduce detectability against internal controls. Common structuring indicators: - Multiple transactions with deliberate fragmentation of a larger value. - Repeated activity around policy thresholds with similar counterparties. - Alternation between cash-like and electronic channels to obscure continuity. - Circular transfer behavior with limited economic purpose. Reasoning cues for SAR: - Include threshold context and explain why observed amounts are suspicious. - Tie repeated transaction cadence to potential evasion behavior. - Reference sender and beneficiary concentration where relevant."
+        }
+      ]
+    },
+    {
+      "reason_id": "R04",
+      "category": "multi_party_network",
+      "claim": "Multiple originators or beneficiaries are involved.",
+      "retrieval_query": "SAR BIPARTITE category multi_party_network Multiple originators or beneficiaries are involved. unique_senders 3 unique_receivers 3 threshold 3 cross_bank_ratio 1.0 hop_count 1 multi_currency True rapid_pass_through False max_tx_1h 1 tx_per_day 2.028",
+      "evidence_metrics": {
+        "unique_senders": 3,
+        "unique_receivers": 3,
+        "threshold": 3
+      },
+      "transaction_ids": [
+        "TX_001",
+        "TX_002",
+        "TX_003"
+      ],
+      "transaction_examples": [
+        {
+          "tx_id": "TX_001",
+          "timestamp": "2022-09-16 09:56:00",
+          "from_bank": "001315",
+          "from_account": "800EA0300",
+          "to_bank": "005991",
+          "to_account": "814EAE380",
+          "amount_received": 1037.49,
+          "amount_paid": 1037.49,
+          "receiving_currency": "US Dollar",
+          "payment_currency": "US Dollar",
+          "payment_format": "ACH"
+        },
+        {
+          "tx_id": "TX_002",
+          "timestamp": "2022-09-16 13:06:00",
+          "from_bank": "0126794",
+          "from_account": "811E2C7B0",
+          "to_bank": "0130596",
+          "to_account": "81514BD60",
+          "amount_received": 3642.71,
+          "amount_paid": 3642.71,
+          "receiving_currency": "Euro",
+          "payment_currency": "Euro",
+          "payment_format": "ACH"
+        },
+        {
+          "tx_id": "TX_003",
+          "timestamp": "2022-09-15 01:36:00",
+          "from_bank": "0250249",
+          "from_account": "814FC4650",
+          "to_bank": "012696",
+          "to_account": "81FD35BD0",
+          "amount_received": 2585.95,
+          "amount_paid": 2585.95,
+          "receiving_currency": "US Dollar",
+          "payment_currency": "US Dollar",
+          "payment_format": "ACH"
+        }
+      ],
+      "knowledge_support": [
+        {
+          "chunk_id": "c7c59c982b48a1ae",
+          "score": 0.139399,
+          "base_score": 0.236109,
+          "source_model_probability": 0.0,
+          "source_file": "templates/sar_standard.txt",
+          "source_type": "templates",
+          "excerpt": "SAR Standard Template 1) Activity Summary - Subject/account overview - Date range of suspicious activity 2) Key Suspicious Indicators - High-value flow, pass-through, multi-hop, velocity, cross-bank, multi-currency 3) Evidence and Rationale - Reason-by-reason mapping with transaction IDs - Typology and guideline alignment 4) Recommended Action - Escalation recommendation - Internal review and filing workflow notes"
+        },
+        {
+          "chunk_id": "efbbc00f03de92fd",
+          "score": 0.120468,
+          "base_score": 0.070561,
+          "source_model_probability": 0.993005,
+          "source_file": "typologies/structuring.txt",
+          "source_type": "typologies",
+          "excerpt": "Structuring involves splitting deposits or payments to reduce detectability against internal controls. Common structuring indicators: - Multiple transactions with deliberate fragmentation of a larger value. - Repeated activity around policy thresholds with similar counterparties. - Alternation between cash-like and electronic channels to obscure continuity. - Circular transfer behavior with limited economic purpose. Reasoning cues for SAR: - Include threshold context and explain why observed amounts are suspicious. - Tie repeated transaction cadence to potential evasion behavior. - Reference sender and beneficiary concentration where relevant."
+        },
+        {
+          "chunk_id": "58012ce6979d7119",
+          "score": 0.081875,
+          "base_score": 0.047956,
+          "source_model_probability": 0.993005,
+          "source_file": "typologies/smurfing.txt",
+          "source_type": "typologies",
+          "excerpt": "Smurfing typology describes structuring funds into many smaller transfers to avoid control thresholds. Common smurfing indicators: - Burst of low-to-mid value deposits from multiple senders. - Repeated transaction amounts that remain below expected escalation limits. - Consolidation of many small credits into one beneficiary account. - Frequent ACH or card-like channels with short intervals. Reasoning cues for SAR: - Show transaction velocity and clustering in short time windows. - Map repeated amount bands and sender diversity. - Explain how volume pattern indicates deliberate threshold avoidance."
+        }
+      ]
+    },
+    {
+      "reason_id": "R05",
+      "category": "multi_currency_activity",
+      "claim": "Multiple currencies appear within the transaction set.",
+      "retrieval_query": "SAR BIPARTITE category multi_currency_activity Multiple currencies appear within the transaction set. multi_currency_flag True cross_bank_ratio 1.0 hop_count 1 multi_currency True rapid_pass_through False max_tx_1h 1 tx_per_day 2.028",
+      "evidence_metrics": {
+        "multi_currency_flag": true
+      },
+      "transaction_ids": [
+        "TX_001",
+        "TX_002",
+        "TX_003"
+      ],
+      "transaction_examples": [
+        {
+          "tx_id": "TX_001",
+          "timestamp": "2022-09-16 09:56:00",
+          "from_bank": "001315",
+          "from_account": "800EA0300",
+          "to_bank": "005991",
+          "to_account": "814EAE380",
+          "amount_received": 1037.49,
+          "amount_paid": 1037.49,
+          "receiving_currency": "US Dollar",
+          "payment_currency": "US Dollar",
+          "payment_format": "ACH"
+        },
+        {
+          "tx_id": "TX_002",
+          "timestamp": "2022-09-16 13:06:00",
+          "from_bank": "0126794",
+          "from_account": "811E2C7B0",
+          "to_bank": "0130596",
+          "to_account": "81514BD60",
+          "amount_received": 3642.71,
+          "amount_paid": 3642.71,
+          "receiving_currency": "Euro",
+          "payment_currency": "Euro",
+          "payment_format": "ACH"
+        },
+        {
+          "tx_id": "TX_003",
+          "timestamp": "2022-09-15 01:36:00",
+          "from_bank": "0250249",
+          "from_account": "814FC4650",
+          "to_bank": "012696",
+          "to_account": "81FD35BD0",
+          "amount_received": 2585.95,
+          "amount_paid": 2585.95,
+          "receiving_currency": "US Dollar",
+          "payment_currency": "US Dollar",
+          "payment_format": "ACH"
+        }
+      ],
+      "knowledge_support": [
+        {
+          "chunk_id": "c7c59c982b48a1ae",
+          "score": 0.117584,
+          "base_score": 0.199159,
+          "source_model_probability": 0.0,
+          "source_file": "templates/sar_standard.txt",
+          "source_type": "templates",
+          "excerpt": "SAR Standard Template 1) Activity Summary - Subject/account overview - Date range of suspicious activity 2) Key Suspicious Indicators - High-value flow, pass-through, multi-hop, velocity, cross-bank, multi-currency 3) Evidence and Rationale - Reason-by-reason mapping with transaction IDs - Typology and guideline alignment 4) Recommended Action - Escalation recommendation - Internal review and filing workflow notes"
+        },
+        {
+          "chunk_id": "d6ab6251233bb58c",
+          "score": 0.111292,
+          "base_score": 0.064163,
+          "source_model_probability": 0.989835,
+          "source_file": "typologies/layering.txt",
+          "source_type": "typologies",
+          "excerpt": "Layering typology focuses on separating illicit proceeds from the original source through multiple account hops. Common layering indicators: - Sequential transfers across unrelated accounts and banks. - Rapid movement of funds after incoming credits. - Repeated near-offsetting in-flow and out-flow values. - Use of multiple payment corridors to break traceability. Reasoning cues for SAR: - Highlight hop depth and timeline compression between linked transactions. - Explain why account behavior is inconsistent with normal customer purpose. - Document cross-bank movement ratio and intermediate account concentration."
+        },
+        {
+          "chunk_id": "58012ce6979d7119",
+          "score": 0.075355,
+          "base_score": 0.043444,
+          "source_model_probability": 0.989835,
+          "source_file": "typologies/smurfing.txt",
+          "source_type": "typologies",
+          "excerpt": "Smurfing typology describes structuring funds into many smaller transfers to avoid control thresholds. Common smurfing indicators: - Burst of low-to-mid value deposits from multiple senders. - Repeated transaction amounts that remain below expected escalation limits. - Consolidation of many small credits into one beneficiary account. - Frequent ACH or card-like channels with short intervals. Reasoning cues for SAR: - Show transaction velocity and clustering in short time windows. - Map repeated amount bands and sender diversity. - Explain how volume pattern indicates deliberate threshold avoidance."
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "transaction_count": 3,
+    "reason_count": 5
+  }
+}

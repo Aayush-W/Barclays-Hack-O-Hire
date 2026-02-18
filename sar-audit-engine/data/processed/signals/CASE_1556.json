@@ -1,0 +1,26 @@
+{
+  "case_id": "CASE_1556",
+  "typology": "RANDOM",
+  "signals": {
+    "total_inflow": 131066.19,
+    "total_outflow": 131066.19,
+    "net_flow": 0.0,
+    "unique_senders": 7,
+    "unique_receivers": 7,
+    "hop_count": 7,
+    "cross_bank_ratio": 1.0,
+    "multi_currency_flag": false,
+    "rapid_pass_through_flag": true,
+    "rapid_pass_through_min_hours": 0.97,
+    "transaction_velocity_metrics": {
+      "tx_count": 7,
+      "start_time": "2022-09-10 03:13:00",
+      "end_time": "2022-09-15 11:48:00",
+      "duration_hours": 128.58,
+      "tx_per_day": 1.3065,
+      "avg_interarrival_minutes": 1285.83,
+      "median_interarrival_minutes": 981.0,
+      "max_tx_in_1h": 2
+    }
+  }
+}

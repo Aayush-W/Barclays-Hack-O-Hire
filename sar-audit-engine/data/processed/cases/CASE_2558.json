@@ -1,0 +1,30 @@
+{
+    "case_id": "CASE_2558",
+    "typology": "GATHER",
+    "transactions": [
+        {
+            "timestamp": "2022/09/15 21:03",
+            "from_bank": "00127022",
+            "from_account": "830462B80",
+            "to_bank": "02131507",
+            "to_account": "8301A0340",
+            "amount_received": 13999.09,
+            "receiving_currency": "Australian Dollar",
+            "amount_paid": 13999.09,
+            "payment_currency": "Australian Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/17 13:24",
+            "from_bank": "02131507",
+            "from_account": "8301A0340",
+            "to_bank": "00127022",
+            "to_account": "830462B80",
+            "amount_received": 17037.43,
+            "receiving_currency": "Australian Dollar",
+            "amount_paid": 17037.43,
+            "payment_currency": "Australian Dollar",
+            "payment_format": "ACH"
+        }
+    ]
+}

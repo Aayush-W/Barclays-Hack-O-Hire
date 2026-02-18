@@ -1,0 +1,66 @@
+{
+    "case_id": "CASE_950",
+    "typology": "RANDOM",
+    "transactions": [
+        {
+            "timestamp": "2022/09/06 13:07",
+            "from_bank": "0131458",
+            "from_account": "8186C5890",
+            "to_bank": "012696",
+            "to_account": "80566D260",
+            "amount_received": 12912.71,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 12912.71,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/07 10:13",
+            "from_bank": "012696",
+            "from_account": "80566D260",
+            "to_bank": "0239559",
+            "to_account": "8145F78D0",
+            "amount_received": 1360999.58,
+            "receiving_currency": "Yen",
+            "amount_paid": 1360999.58,
+            "payment_currency": "Yen",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/08 14:16",
+            "from_bank": "0239559",
+            "from_account": "8145F78D0",
+            "to_bank": "0029652",
+            "to_account": "80E043BC0",
+            "amount_received": 86484.16,
+            "receiving_currency": "Yuan",
+            "amount_paid": 86484.16,
+            "payment_currency": "Yuan",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/10 11:33",
+            "from_bank": "0029652",
+            "from_account": "80E043BC0",
+            "to_bank": "0032439",
+            "to_account": "8166EF4C0",
+            "amount_received": 12912.71,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 12912.71,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/11 13:40",
+            "from_bank": "0032439",
+            "from_account": "8166EF4C0",
+            "to_bank": "0229484",
+            "to_account": "80F4F4420",
+            "amount_received": 86484.16,
+            "receiving_currency": "Yuan",
+            "amount_paid": 86484.16,
+            "payment_currency": "Yuan",
+            "payment_format": "ACH"
+        }
+    ]
+}

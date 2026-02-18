@@ -1,0 +1,33 @@
+{
+  "case_id": "CASE_1367",
+  "typology": "RANDOM",
+  "transactions": [
+    {
+      "timestamp": "2022/09/09 00:27",
+      "from_bank": "0216360",
+      "from_account": "811164570",
+      "to_bank": "0293268",
+      "to_account": "8227C19A0",
+      "amount_received": 10173.97,
+      "receiving_currency": "UK Pound",
+      "amount_paid": 10173.97,
+      "payment_currency": "UK Pound",
+      "payment_format": "ACH"
+    }
+  ],
+  "enriched_transactions": [
+    {
+      "timestamp": "2022/09/09 00:27",
+      "from_bank": "0216360",
+      "from_account": "811164570",
+      "to_bank": "0293268",
+      "to_account": "8227C19A0",
+      "amount_received": 10173.97,
+      "receiving_currency": "UK Pound",
+      "amount_paid": 10173.97,
+      "payment_currency": "UK Pound",
+      "payment_format": "ACH"
+    }
+  ],
+  "transaction_count": 1
+}

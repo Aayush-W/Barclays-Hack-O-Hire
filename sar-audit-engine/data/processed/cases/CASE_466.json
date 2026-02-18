@@ -1,0 +1,18 @@
+{
+    "case_id": "CASE_466",
+    "typology": "Out",
+    "transactions": [
+        {
+            "timestamp": "2022/09/03 17:55",
+            "from_bank": "0072043",
+            "from_account": "81A875B90",
+            "to_bank": "0272140",
+            "to_account": "81C38D180",
+            "amount_received": 323741.52,
+            "receiving_currency": "Ruble",
+            "amount_paid": 323741.52,
+            "payment_currency": "Ruble",
+            "payment_format": "ACH"
+        }
+    ]
+}

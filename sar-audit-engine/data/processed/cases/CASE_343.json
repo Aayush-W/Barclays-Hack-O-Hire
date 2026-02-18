@@ -1,0 +1,66 @@
+{
+    "case_id": "CASE_343",
+    "typology": "RANDOM",
+    "transactions": [
+        {
+            "timestamp": "2022/09/03 01:12",
+            "from_bank": "0224391",
+            "from_account": "80951AA90",
+            "to_bank": "0048885",
+            "to_account": "8241B9860",
+            "amount_received": 94612.78,
+            "receiving_currency": "Yuan",
+            "amount_paid": 94612.78,
+            "payment_currency": "Yuan",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/04 11:43",
+            "from_bank": "0048885",
+            "from_account": "8241B9860",
+            "to_bank": "0249492",
+            "to_account": "81886CB50",
+            "amount_received": 11321.81,
+            "receiving_currency": "Euro",
+            "amount_paid": 11321.81,
+            "payment_currency": "Euro",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/04 09:37",
+            "from_bank": "0249492",
+            "from_account": "81886CB50",
+            "to_bank": "0010094",
+            "to_account": "816DA0110",
+            "amount_received": 13266.71,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 13266.71,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/06 07:42",
+            "from_bank": "0010094",
+            "from_account": "816DA0110",
+            "to_bank": "0140205",
+            "to_account": "81E2A2830",
+            "amount_received": 15534.43,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 15534.43,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/03 19:15",
+            "from_bank": "0140205",
+            "from_account": "81E2A2830",
+            "to_bank": "025222",
+            "to_account": "80F6500E0",
+            "amount_received": 14515.2,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 14515.2,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        }
+    ]
+}

@@ -1,0 +1,201 @@
+{
+  "case_id": "CASE_2459",
+  "typology": "BIPARTITE",
+  "transactions": [
+    {
+      "timestamp": "2022/09/18 04:16",
+      "from_bank": "029",
+      "from_account": "82DD77190",
+      "to_bank": "0110",
+      "to_account": "82E6C08C0",
+      "amount_received": 5386.09,
+      "receiving_currency": "Australian Dollar",
+      "amount_paid": 5386.09,
+      "payment_currency": "Australian Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/17 07:32",
+      "from_bank": "00126614",
+      "from_account": "83000D8D0",
+      "to_bank": "00126614",
+      "to_account": "82E6C0F40",
+      "amount_received": 3817.52,
+      "receiving_currency": "Australian Dollar",
+      "amount_paid": 3817.52,
+      "payment_currency": "Australian Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/15 14:59",
+      "from_bank": "02126306",
+      "from_account": "83000CE40",
+      "to_bank": "02127147",
+      "to_account": "82F31CAE0",
+      "amount_received": 8692.25,
+      "receiving_currency": "Australian Dollar",
+      "amount_paid": 8692.25,
+      "payment_currency": "Australian Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/17 22:15",
+      "from_bank": "0239197",
+      "from_account": "83000D0D0",
+      "to_bank": "029",
+      "to_account": "82E2CB5B0",
+      "amount_received": 1833.79,
+      "receiving_currency": "Australian Dollar",
+      "amount_paid": 1833.79,
+      "payment_currency": "Australian Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/17 15:34",
+      "from_bank": "02129461",
+      "from_account": "83000DC90",
+      "to_bank": "029",
+      "to_account": "82DCAA2B0",
+      "amount_received": 5068.79,
+      "receiving_currency": "Australian Dollar",
+      "amount_paid": 5068.79,
+      "payment_currency": "Australian Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/16 15:41",
+      "from_bank": "02125369",
+      "from_account": "82DD5AA30",
+      "to_bank": "00125319",
+      "to_account": "82E6C0C30",
+      "amount_received": 4245.75,
+      "receiving_currency": "Australian Dollar",
+      "amount_paid": 4245.75,
+      "payment_currency": "Australian Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/17 13:15",
+      "from_bank": "01125491",
+      "from_account": "83000DC40",
+      "to_bank": "02129145",
+      "to_account": "83000CEE0",
+      "amount_received": 8363.02,
+      "receiving_currency": "Australian Dollar",
+      "amount_paid": 8363.02,
+      "payment_currency": "Australian Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/16 14:14",
+      "from_bank": "0111",
+      "from_account": "82E921920",
+      "to_bank": "02127249",
+      "to_account": "82E921690",
+      "amount_received": 11354.31,
+      "receiving_currency": "Australian Dollar",
+      "amount_paid": 11354.31,
+      "payment_currency": "Australian Dollar",
+      "payment_format": "ACH"
+    }
+  ],
+  "enriched_transactions": [
+    {
+      "timestamp": "2022/09/18 04:16",
+      "from_bank": "029",
+      "from_account": "82DD77190",
+      "to_bank": "0110",
+      "to_account": "82E6C08C0",
+      "amount_received": 5386.09,
+      "receiving_currency": "Australian Dollar",
+      "amount_paid": 5386.09,
+      "payment_currency": "Australian Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/17 07:32",
+      "from_bank": "00126614",
+      "from_account": "83000D8D0",
+      "to_bank": "00126614",
+      "to_account": "82E6C0F40",
+      "amount_received": 3817.52,
+      "receiving_currency": "Australian Dollar",
+      "amount_paid": 3817.52,
+      "payment_currency": "Australian Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/15 14:59",
+      "from_bank": "02126306",
+      "from_account": "83000CE40",
+      "to_bank": "02127147",
+      "to_account": "82F31CAE0",
+      "amount_received": 8692.25,
+      "receiving_currency": "Australian Dollar",
+      "amount_paid": 8692.25,
+      "payment_currency": "Australian Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/17 22:15",
+      "from_bank": "0239197",
+      "from_account": "83000D0D0",
+      "to_bank": "029",
+      "to_account": "82E2CB5B0",
+      "amount_received": 1833.79,
+      "receiving_currency": "Australian Dollar",
+      "amount_paid": 1833.79,
+      "payment_currency": "Australian Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/17 15:34",
+      "from_bank": "02129461",
+      "from_account": "83000DC90",
+      "to_bank": "029",
+      "to_account": "82DCAA2B0",
+      "amount_received": 5068.79,
+      "receiving_currency": "Australian Dollar",
+      "amount_paid": 5068.79,
+      "payment_currency": "Australian Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/16 15:41",
+      "from_bank": "02125369",
+      "from_account": "82DD5AA30",
+      "to_bank": "00125319",
+      "to_account": "82E6C0C30",
+      "amount_received": 4245.75,
+      "receiving_currency": "Australian Dollar",
+      "amount_paid": 4245.75,
+      "payment_currency": "Australian Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/17 13:15",
+      "from_bank": "01125491",
+      "from_account": "83000DC40",
+      "to_bank": "02129145",
+      "to_account": "83000CEE0",
+      "amount_received": 8363.02,
+      "receiving_currency": "Australian Dollar",
+      "amount_paid": 8363.02,
+      "payment_currency": "Australian Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/16 14:14",
+      "from_bank": "0111",
+      "from_account": "82E921920",
+      "to_bank": "02127249",
+      "to_account": "82E921690",
+      "amount_received": 11354.31,
+      "receiving_currency": "Australian Dollar",
+      "amount_paid": 11354.31,
+      "payment_currency": "Australian Dollar",
+      "payment_format": "ACH"
+    }
+  ],
+  "transaction_count": 8
+}

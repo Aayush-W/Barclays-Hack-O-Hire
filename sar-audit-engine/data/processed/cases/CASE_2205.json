@@ -1,0 +1,30 @@
+{
+    "case_id": "CASE_2205",
+    "typology": "GATHER",
+    "transactions": [
+        {
+            "timestamp": "2022/09/13 17:13",
+            "from_bank": "0131185",
+            "from_account": "823D33310",
+            "to_bank": "0239258",
+            "to_account": "820D462D0",
+            "amount_received": 18506.17,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 18506.17,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/14 05:42",
+            "from_bank": "0239258",
+            "from_account": "820D462D0",
+            "to_bank": "0131185",
+            "to_account": "823D33310",
+            "amount_received": 15266.56,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 15266.56,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        }
+    ]
+}

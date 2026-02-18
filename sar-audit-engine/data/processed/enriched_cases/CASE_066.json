@@ -1,0 +1,81 @@
+{
+  "case_id": "CASE_066",
+  "typology": "Out",
+  "transactions": [
+    {
+      "timestamp": "2022/09/01 08:11",
+      "from_bank": "024689",
+      "from_account": "80892AB60",
+      "to_bank": "0161795",
+      "to_account": "817ABD440",
+      "amount_received": 1298299.17,
+      "receiving_currency": "Rupee",
+      "amount_paid": 1298299.17,
+      "payment_currency": "Rupee",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/03 11:15",
+      "from_bank": "024689",
+      "from_account": "80892AB60",
+      "to_bank": "0219853",
+      "to_account": "80EFB8330",
+      "amount_received": 90060.28,
+      "receiving_currency": "Yuan",
+      "amount_paid": 90060.28,
+      "payment_currency": "Yuan",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/04 13:35",
+      "from_bank": "024689",
+      "from_account": "80892AB60",
+      "to_bank": "0051244",
+      "to_account": "813DACEC0",
+      "amount_received": 1311113.09,
+      "receiving_currency": "Yen",
+      "amount_paid": 1311113.09,
+      "payment_currency": "Yen",
+      "payment_format": "ACH"
+    }
+  ],
+  "enriched_transactions": [
+    {
+      "timestamp": "2022/09/01 08:11",
+      "from_bank": "024689",
+      "from_account": "80892AB60",
+      "to_bank": "0161795",
+      "to_account": "817ABD440",
+      "amount_received": 1298299.17,
+      "receiving_currency": "Rupee",
+      "amount_paid": 1298299.17,
+      "payment_currency": "Rupee",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/03 11:15",
+      "from_bank": "024689",
+      "from_account": "80892AB60",
+      "to_bank": "0219853",
+      "to_account": "80EFB8330",
+      "amount_received": 90060.28,
+      "receiving_currency": "Yuan",
+      "amount_paid": 90060.28,
+      "payment_currency": "Yuan",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/04 13:35",
+      "from_bank": "024689",
+      "from_account": "80892AB60",
+      "to_bank": "0051244",
+      "to_account": "813DACEC0",
+      "amount_received": 1311113.09,
+      "receiving_currency": "Yen",
+      "amount_paid": 1311113.09,
+      "payment_currency": "Yen",
+      "payment_format": "ACH"
+    }
+  ],
+  "transaction_count": 3
+}

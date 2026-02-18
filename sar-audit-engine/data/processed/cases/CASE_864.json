@@ -1,0 +1,30 @@
+{
+    "case_id": "CASE_864",
+    "typology": "CYCLE",
+    "transactions": [
+        {
+            "timestamp": "2022/09/06 01:02",
+            "from_bank": "00113154",
+            "from_account": "82AD58260",
+            "to_bank": "01115965",
+            "to_account": "82B75BF30",
+            "amount_received": 13649.09,
+            "receiving_currency": "Canadian Dollar",
+            "amount_paid": 13649.09,
+            "payment_currency": "Canadian Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/08 10:43",
+            "from_bank": "01115965",
+            "from_account": "82B75BF30",
+            "to_bank": "00113154",
+            "to_account": "82AD58260",
+            "amount_received": 14160.17,
+            "receiving_currency": "Canadian Dollar",
+            "amount_paid": 14160.17,
+            "payment_currency": "Canadian Dollar",
+            "payment_format": "ACH"
+        }
+    ]
+}

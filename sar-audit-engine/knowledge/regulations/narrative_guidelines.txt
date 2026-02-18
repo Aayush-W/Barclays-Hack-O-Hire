@@ -1,0 +1,8 @@
+SAR narrative drafting guidelines:
+
+- Use objective, factual language and avoid speculative statements.
+- Present a clear chronology of events and transaction behavior.
+- Explain why activity is suspicious using measurable indicators.
+- Reference typology alignment and controls-impact rationale.
+- Include supporting evidence identifiers (transaction IDs, account links, and detection metrics).
+- Conclude with recommended action and whether escalation for filing is advised.

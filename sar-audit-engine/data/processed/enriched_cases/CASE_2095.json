@@ -1,0 +1,129 @@
+{
+  "case_id": "CASE_2095",
+  "typology": "Out",
+  "transactions": [
+    {
+      "timestamp": "2022/09/13 03:50",
+      "from_bank": "0119",
+      "from_account": "8000EA190",
+      "to_bank": "0015",
+      "to_account": "83F4DF2A0",
+      "amount_received": 33813.83,
+      "receiving_currency": "Shekel",
+      "amount_paid": 33813.83,
+      "payment_currency": "Shekel",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/13 15:05",
+      "from_bank": "0119",
+      "from_account": "8000EA190",
+      "to_bank": "00159578",
+      "to_account": "83B22B5D0",
+      "amount_received": 32337.82,
+      "receiving_currency": "Brazil Real",
+      "amount_paid": 32337.82,
+      "payment_currency": "Brazil Real",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/14 16:44",
+      "from_bank": "0119",
+      "from_account": "8000EA190",
+      "to_bank": "0015",
+      "to_account": "83D4B2390",
+      "amount_received": 10654.59,
+      "receiving_currency": "Shekel",
+      "amount_paid": 10654.59,
+      "payment_currency": "Shekel",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/17 10:24",
+      "from_bank": "0119",
+      "from_account": "8000EA190",
+      "to_bank": "02181233",
+      "to_account": "8422258E0",
+      "amount_received": 23647.86,
+      "receiving_currency": "Shekel",
+      "amount_paid": 23647.86,
+      "payment_currency": "Shekel",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/18 04:53",
+      "from_bank": "0119",
+      "from_account": "8000EA190",
+      "to_bank": "0015",
+      "to_account": "83F4E09A0",
+      "amount_received": 13491.25,
+      "receiving_currency": "Shekel",
+      "amount_paid": 13491.25,
+      "payment_currency": "Shekel",
+      "payment_format": "ACH"
+    }
+  ],
+  "enriched_transactions": [
+    {
+      "timestamp": "2022/09/13 03:50",
+      "from_bank": "0119",
+      "from_account": "8000EA190",
+      "to_bank": "0015",
+      "to_account": "83F4DF2A0",
+      "amount_received": 33813.83,
+      "receiving_currency": "Shekel",
+      "amount_paid": 33813.83,
+      "payment_currency": "Shekel",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/13 15:05",
+      "from_bank": "0119",
+      "from_account": "8000EA190",
+      "to_bank": "00159578",
+      "to_account": "83B22B5D0",
+      "amount_received": 32337.82,
+      "receiving_currency": "Brazil Real",
+      "amount_paid": 32337.82,
+      "payment_currency": "Brazil Real",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/14 16:44",
+      "from_bank": "0119",
+      "from_account": "8000EA190",
+      "to_bank": "0015",
+      "to_account": "83D4B2390",
+      "amount_received": 10654.59,
+      "receiving_currency": "Shekel",
+      "amount_paid": 10654.59,
+      "payment_currency": "Shekel",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/17 10:24",
+      "from_bank": "0119",
+      "from_account": "8000EA190",
+      "to_bank": "02181233",
+      "to_account": "8422258E0",
+      "amount_received": 23647.86,
+      "receiving_currency": "Shekel",
+      "amount_paid": 23647.86,
+      "payment_currency": "Shekel",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/18 04:53",
+      "from_bank": "0119",
+      "from_account": "8000EA190",
+      "to_bank": "0015",
+      "to_account": "83F4E09A0",
+      "amount_received": 13491.25,
+      "receiving_currency": "Shekel",
+      "amount_paid": 13491.25,
+      "payment_currency": "Shekel",
+      "payment_format": "ACH"
+    }
+  ],
+  "transaction_count": 5
+}

@@ -1,0 +1,30 @@
+{
+    "case_id": "CASE_1532",
+    "typology": "CYCLE",
+    "transactions": [
+        {
+            "timestamp": "2022/09/09 23:50",
+            "from_bank": "0119",
+            "from_account": "8000EA190",
+            "to_bank": "0220",
+            "to_account": "842227010",
+            "amount_received": 47896.91,
+            "receiving_currency": "Shekel",
+            "amount_paid": 47896.91,
+            "payment_currency": "Shekel",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/14 11:22",
+            "from_bank": "0220",
+            "from_account": "842227010",
+            "to_bank": "0119",
+            "to_account": "8000EA190",
+            "amount_received": 45832.45,
+            "receiving_currency": "Shekel",
+            "amount_paid": 45832.45,
+            "payment_currency": "Shekel",
+            "payment_format": "ACH"
+        }
+    ]
+}

@@ -1,0 +1,57 @@
+{
+  "case_id": "CASE_639",
+  "typology": "CYCLE",
+  "transactions": [
+    {
+      "timestamp": "2022/09/04 18:01",
+      "from_bank": "0276002",
+      "from_account": "81C3680B0",
+      "to_bank": "0266946",
+      "to_account": "81A790790",
+      "amount_received": 746360.73,
+      "receiving_currency": "Ruble",
+      "amount_paid": 746360.73,
+      "payment_currency": "Ruble",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/10 08:46",
+      "from_bank": "0266946",
+      "from_account": "81A790790",
+      "to_bank": "0276002",
+      "to_account": "81C3680B0",
+      "amount_received": 796227.11,
+      "receiving_currency": "Ruble",
+      "amount_paid": 796227.11,
+      "payment_currency": "Ruble",
+      "payment_format": "ACH"
+    }
+  ],
+  "enriched_transactions": [
+    {
+      "timestamp": "2022/09/04 18:01",
+      "from_bank": "0276002",
+      "from_account": "81C3680B0",
+      "to_bank": "0266946",
+      "to_account": "81A790790",
+      "amount_received": 746360.73,
+      "receiving_currency": "Ruble",
+      "amount_paid": 746360.73,
+      "payment_currency": "Ruble",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/10 08:46",
+      "from_bank": "0266946",
+      "from_account": "81A790790",
+      "to_bank": "0276002",
+      "to_account": "81C3680B0",
+      "amount_received": 796227.11,
+      "receiving_currency": "Ruble",
+      "amount_paid": 796227.11,
+      "payment_currency": "Ruble",
+      "payment_format": "ACH"
+    }
+  ],
+  "transaction_count": 2
+}

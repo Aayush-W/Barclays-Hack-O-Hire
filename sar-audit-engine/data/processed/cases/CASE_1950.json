@@ -1,0 +1,18 @@
+{
+    "case_id": "CASE_1950",
+    "typology": "Out",
+    "transactions": [
+        {
+            "timestamp": "2022/09/12 09:35",
+            "from_bank": "000",
+            "from_account": "8002494C0",
+            "to_bank": "0176523",
+            "to_account": "823DCB250",
+            "amount_received": 4118.48,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 4118.48,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        }
+    ]
+}

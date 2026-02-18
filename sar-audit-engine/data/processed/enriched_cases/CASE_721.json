@@ -1,0 +1,57 @@
+{
+  "case_id": "CASE_721",
+  "typology": "BIPARTITE",
+  "transactions": [
+    {
+      "timestamp": "2022/09/07 09:14",
+      "from_bank": "0245043",
+      "from_account": "81109E580",
+      "to_bank": "008903",
+      "to_account": "80F5ADB80",
+      "amount_received": 13723.36,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 13723.36,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/05 15:47",
+      "from_bank": "0037350",
+      "from_account": "812332E70",
+      "to_bank": "0115036",
+      "to_account": "80BE29B50",
+      "amount_received": 8581.13,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 8581.13,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    }
+  ],
+  "enriched_transactions": [
+    {
+      "timestamp": "2022/09/07 09:14",
+      "from_bank": "0245043",
+      "from_account": "81109E580",
+      "to_bank": "008903",
+      "to_account": "80F5ADB80",
+      "amount_received": 13723.36,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 13723.36,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/05 15:47",
+      "from_bank": "0037350",
+      "from_account": "812332E70",
+      "to_bank": "0115036",
+      "to_account": "80BE29B50",
+      "amount_received": 8581.13,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 8581.13,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    }
+  ],
+  "transaction_count": 2
+}

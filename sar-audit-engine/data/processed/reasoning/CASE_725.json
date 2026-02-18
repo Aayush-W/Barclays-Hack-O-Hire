@@ -1,0 +1,53 @@
+{
+  "case_id": "CASE_725",
+  "typology": "Out",
+  "reasoning": [
+    {
+      "step_id": "R01",
+      "step": "Case typology labeled as Out based on pattern parser classification.",
+      "evidence": {
+        "typology": "Out",
+        "source": "pattern_parser"
+      },
+      "transaction_ids": [
+        "TX_001"
+      ]
+    },
+    {
+      "step_id": "R02",
+      "step": "Aggregate transaction value exceeds high-value threshold.",
+      "evidence": {
+        "total_inflow": 15860.39,
+        "total_outflow": 15860.39,
+        "threshold": 10000.0
+      },
+      "transaction_ids": [
+        "TX_001"
+      ]
+    },
+    {
+      "step_id": "R03",
+      "step": "Net flow is near zero relative to total inflow, indicating potential pass-through.",
+      "evidence": {
+        "net_flow": 0.0,
+        "total_inflow": 15860.39,
+        "ratio": 0.0,
+        "threshold": 0.1
+      },
+      "transaction_ids": [
+        "TX_001"
+      ]
+    },
+    {
+      "step_id": "R04",
+      "step": "Majority of transfers are cross-bank.",
+      "evidence": {
+        "cross_bank_ratio": 1.0,
+        "threshold": 0.6
+      },
+      "transaction_ids": [
+        "TX_001"
+      ]
+    }
+  ]
+}

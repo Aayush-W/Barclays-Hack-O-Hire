@@ -1,0 +1,57 @@
+{
+  "case_id": "CASE_2194",
+  "typology": "CYCLE",
+  "transactions": [
+    {
+      "timestamp": "2022/09/13 15:19",
+      "from_bank": "0097570",
+      "from_account": "824CAF320",
+      "to_bank": "0196902",
+      "to_account": "824D406A0",
+      "amount_received": 8227.96,
+      "receiving_currency": "UK Pound",
+      "amount_paid": 8227.96,
+      "payment_currency": "UK Pound",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/16 12:27",
+      "from_bank": "0196902",
+      "from_account": "824D406A0",
+      "to_bank": "0097570",
+      "to_account": "824CAF320",
+      "amount_received": 8527.58,
+      "receiving_currency": "UK Pound",
+      "amount_paid": 8527.58,
+      "payment_currency": "UK Pound",
+      "payment_format": "ACH"
+    }
+  ],
+  "enriched_transactions": [
+    {
+      "timestamp": "2022/09/13 15:19",
+      "from_bank": "0097570",
+      "from_account": "824CAF320",
+      "to_bank": "0196902",
+      "to_account": "824D406A0",
+      "amount_received": 8227.96,
+      "receiving_currency": "UK Pound",
+      "amount_paid": 8227.96,
+      "payment_currency": "UK Pound",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/16 12:27",
+      "from_bank": "0196902",
+      "from_account": "824D406A0",
+      "to_bank": "0097570",
+      "to_account": "824CAF320",
+      "amount_received": 8527.58,
+      "receiving_currency": "UK Pound",
+      "amount_paid": 8527.58,
+      "payment_currency": "UK Pound",
+      "payment_format": "ACH"
+    }
+  ],
+  "transaction_count": 2
+}

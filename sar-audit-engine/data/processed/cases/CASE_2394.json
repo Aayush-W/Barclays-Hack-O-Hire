@@ -1,0 +1,30 @@
+{
+    "case_id": "CASE_2394",
+    "typology": "CYCLE",
+    "transactions": [
+        {
+            "timestamp": "2022/09/14 21:13",
+            "from_bank": "02597",
+            "from_account": "803798450",
+            "to_bank": "011081",
+            "to_account": "8009CC6F0",
+            "amount_received": 13816.88,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 13816.88,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/15 15:21",
+            "from_bank": "011081",
+            "from_account": "8009CC6F0",
+            "to_bank": "02597",
+            "to_account": "803798450",
+            "amount_received": 13398.08,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 13398.08,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        }
+    ]
+}

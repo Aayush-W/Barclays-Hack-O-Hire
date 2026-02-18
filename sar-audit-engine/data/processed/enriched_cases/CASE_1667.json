@@ -1,0 +1,81 @@
+{
+  "case_id": "CASE_1667",
+  "typology": "In",
+  "transactions": [
+    {
+      "timestamp": "2022/09/10 18:59",
+      "from_bank": "0083840",
+      "from_account": "824D3A370",
+      "to_bank": "017364",
+      "to_account": "8038DA860",
+      "amount_received": 11282.8,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 11282.8,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/10 19:13",
+      "from_bank": "0256086",
+      "from_account": "81E25E8A0",
+      "to_bank": "017364",
+      "to_account": "8038DA860",
+      "amount_received": 12939.22,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 12939.22,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/12 16:38",
+      "from_bank": "0020937",
+      "from_account": "816F35E10",
+      "to_bank": "017364",
+      "to_account": "8038DA860",
+      "amount_received": 3249.74,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 3249.74,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    }
+  ],
+  "enriched_transactions": [
+    {
+      "timestamp": "2022/09/10 18:59",
+      "from_bank": "0083840",
+      "from_account": "824D3A370",
+      "to_bank": "017364",
+      "to_account": "8038DA860",
+      "amount_received": 11282.8,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 11282.8,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/10 19:13",
+      "from_bank": "0256086",
+      "from_account": "81E25E8A0",
+      "to_bank": "017364",
+      "to_account": "8038DA860",
+      "amount_received": 12939.22,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 12939.22,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/12 16:38",
+      "from_bank": "0020937",
+      "from_account": "816F35E10",
+      "to_bank": "017364",
+      "to_account": "8038DA860",
+      "amount_received": 3249.74,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 3249.74,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    }
+  ],
+  "transaction_count": 3
+}

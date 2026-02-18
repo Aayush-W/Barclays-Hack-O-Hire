@@ -1,0 +1,81 @@
+{
+  "case_id": "CASE_551",
+  "typology": "CYCLE",
+  "transactions": [
+    {
+      "timestamp": "2022/09/04 05:33",
+      "from_bank": "027512",
+      "from_account": "802ECC560",
+      "to_bank": "0021582",
+      "to_account": "80D075BA0",
+      "amount_received": 973986.67,
+      "receiving_currency": "Yuan",
+      "amount_paid": 973986.67,
+      "payment_currency": "Yuan",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/05 04:29",
+      "from_bank": "0021582",
+      "from_account": "80D075BA0",
+      "to_bank": "0028905",
+      "to_account": "80ACE29D0",
+      "amount_received": 907961.95,
+      "receiving_currency": "Yuan",
+      "amount_paid": 907961.95,
+      "payment_currency": "Yuan",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/08 16:18",
+      "from_bank": "0028905",
+      "from_account": "80ACE29D0",
+      "to_bank": "027512",
+      "to_account": "802ECC560",
+      "amount_received": 129283.69,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 129283.69,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    }
+  ],
+  "enriched_transactions": [
+    {
+      "timestamp": "2022/09/04 05:33",
+      "from_bank": "027512",
+      "from_account": "802ECC560",
+      "to_bank": "0021582",
+      "to_account": "80D075BA0",
+      "amount_received": 973986.67,
+      "receiving_currency": "Yuan",
+      "amount_paid": 973986.67,
+      "payment_currency": "Yuan",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/05 04:29",
+      "from_bank": "0021582",
+      "from_account": "80D075BA0",
+      "to_bank": "0028905",
+      "to_account": "80ACE29D0",
+      "amount_received": 907961.95,
+      "receiving_currency": "Yuan",
+      "amount_paid": 907961.95,
+      "payment_currency": "Yuan",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/08 16:18",
+      "from_bank": "0028905",
+      "from_account": "80ACE29D0",
+      "to_bank": "027512",
+      "to_account": "802ECC560",
+      "amount_received": 129283.69,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 129283.69,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    }
+  ],
+  "transaction_count": 3
+}

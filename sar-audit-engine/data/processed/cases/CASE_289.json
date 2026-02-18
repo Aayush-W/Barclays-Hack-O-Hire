@@ -1,0 +1,18 @@
+{
+    "case_id": "CASE_289",
+    "typology": "BIPARTITE",
+    "transactions": [
+        {
+            "timestamp": "2022/09/05 16:06",
+            "from_bank": "00127022",
+            "from_account": "830462B80",
+            "to_bank": "02131507",
+            "to_account": "8301A0340",
+            "amount_received": 9239.58,
+            "receiving_currency": "Australian Dollar",
+            "amount_paid": 9239.58,
+            "payment_currency": "Australian Dollar",
+            "payment_format": "ACH"
+        }
+    ]
+}

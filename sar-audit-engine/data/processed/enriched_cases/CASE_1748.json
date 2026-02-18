@@ -1,0 +1,57 @@
+{
+  "case_id": "CASE_1748",
+  "typology": "In",
+  "transactions": [
+    {
+      "timestamp": "2022/09/11 06:31",
+      "from_bank": "01139586",
+      "from_account": "83363BC60",
+      "to_bank": "01125022",
+      "to_account": "83363BCB0",
+      "amount_received": 19571.32,
+      "receiving_currency": "Australian Dollar",
+      "amount_paid": 19571.32,
+      "payment_currency": "Australian Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/11 06:45",
+      "from_bank": "01125022",
+      "from_account": "83363BCB0",
+      "to_bank": "01125022",
+      "to_account": "83363BCB0",
+      "amount_received": 20056.05,
+      "receiving_currency": "Australian Dollar",
+      "amount_paid": 20056.05,
+      "payment_currency": "Australian Dollar",
+      "payment_format": "ACH"
+    }
+  ],
+  "enriched_transactions": [
+    {
+      "timestamp": "2022/09/11 06:31",
+      "from_bank": "01139586",
+      "from_account": "83363BC60",
+      "to_bank": "01125022",
+      "to_account": "83363BCB0",
+      "amount_received": 19571.32,
+      "receiving_currency": "Australian Dollar",
+      "amount_paid": 19571.32,
+      "payment_currency": "Australian Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/11 06:45",
+      "from_bank": "01125022",
+      "from_account": "83363BCB0",
+      "to_bank": "01125022",
+      "to_account": "83363BCB0",
+      "amount_received": 20056.05,
+      "receiving_currency": "Australian Dollar",
+      "amount_paid": 20056.05,
+      "payment_currency": "Australian Dollar",
+      "payment_format": "ACH"
+    }
+  ],
+  "transaction_count": 2
+}

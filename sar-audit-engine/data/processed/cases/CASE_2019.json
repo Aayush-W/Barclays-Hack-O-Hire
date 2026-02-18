@@ -1,0 +1,30 @@
+{
+    "case_id": "CASE_2019",
+    "typology": "BIPARTITE",
+    "transactions": [
+        {
+            "timestamp": "2022/09/13 12:24",
+            "from_bank": "0015",
+            "from_account": "8000EC410",
+            "to_bank": "01203",
+            "to_account": "8000EFB50",
+            "amount_received": 46405.02,
+            "receiving_currency": "Shekel",
+            "amount_paid": 46405.02,
+            "payment_currency": "Shekel",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/15 06:10",
+            "from_bank": "0015",
+            "from_account": "83CEEC940",
+            "to_bank": "0114",
+            "to_account": "83480CAF0",
+            "amount_received": 3284.07,
+            "receiving_currency": "Brazil Real",
+            "amount_paid": 3284.07,
+            "payment_currency": "Brazil Real",
+            "payment_format": "ACH"
+        }
+    ]
+}

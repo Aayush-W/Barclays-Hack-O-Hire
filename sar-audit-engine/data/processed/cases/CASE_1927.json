@@ -1,0 +1,30 @@
+{
+    "case_id": "CASE_1927",
+    "typology": "CYCLE",
+    "transactions": [
+        {
+            "timestamp": "2022/09/12 07:30",
+            "from_bank": "0040999",
+            "from_account": "8217A0D90",
+            "to_bank": "029574",
+            "to_account": "81699F620",
+            "amount_received": 10594.99,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 10594.99,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/16 17:55",
+            "from_bank": "029574",
+            "from_account": "81699F620",
+            "to_bank": "0040999",
+            "to_account": "8217A0D90",
+            "amount_received": 66805.71,
+            "receiving_currency": "Yuan",
+            "amount_paid": 66805.71,
+            "payment_currency": "Yuan",
+            "payment_format": "ACH"
+        }
+    ]
+}

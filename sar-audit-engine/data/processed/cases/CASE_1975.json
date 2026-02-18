@@ -1,0 +1,30 @@
+{
+    "case_id": "CASE_1975",
+    "typology": "In",
+    "transactions": [
+        {
+            "timestamp": "2022/09/12 12:31",
+            "from_bank": "0295532",
+            "from_account": "8237E7AA0",
+            "to_bank": "0194968",
+            "to_account": "8237E7A50",
+            "amount_received": 14617.62,
+            "receiving_currency": "UK Pound",
+            "amount_paid": 14617.62,
+            "payment_currency": "UK Pound",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/12 11:47",
+            "from_bank": "0194968",
+            "from_account": "8237E7A50",
+            "to_bank": "0194968",
+            "to_account": "8237E7A50",
+            "amount_received": 14032.04,
+            "receiving_currency": "UK Pound",
+            "amount_paid": 14032.04,
+            "payment_currency": "UK Pound",
+            "payment_format": "ACH"
+        }
+    ]
+}

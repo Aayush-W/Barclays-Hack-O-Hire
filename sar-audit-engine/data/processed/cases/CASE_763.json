@@ -1,0 +1,42 @@
+{
+    "case_id": "CASE_763",
+    "typology": "CYCLE",
+    "transactions": [
+        {
+            "timestamp": "2022/09/05 10:06",
+            "from_bank": "003761",
+            "from_account": "802E5E760",
+            "to_bank": "0190755",
+            "to_account": "82229CEC0",
+            "amount_received": 1922.27,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 1922.27,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/07 12:18",
+            "from_bank": "0190755",
+            "from_account": "82229CEC0",
+            "to_bank": "0159640",
+            "to_account": "817119D10",
+            "amount_received": 141179.47,
+            "receiving_currency": "Rupee",
+            "amount_paid": 141179.47,
+            "payment_currency": "Rupee",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/11 04:54",
+            "from_bank": "0159640",
+            "from_account": "817119D10",
+            "to_bank": "003761",
+            "to_account": "802E5E760",
+            "amount_received": 2019.13,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 2019.13,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+Layering typology focuses on separating illicit proceeds from the original source through multiple account hops.
+
+Common layering indicators:
+- Sequential transfers across unrelated accounts and banks.
+- Rapid movement of funds after incoming credits.
+- Repeated near-offsetting in-flow and out-flow values.
+- Use of multiple payment corridors to break traceability.
+
+Reasoning cues for SAR:
+- Highlight hop depth and timeline compression between linked transactions.
+- Explain why account behavior is inconsistent with normal customer purpose.
+- Document cross-bank movement ratio and intermediate account concentration.

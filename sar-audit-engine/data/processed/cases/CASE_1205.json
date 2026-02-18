@@ -1,0 +1,42 @@
+{
+    "case_id": "CASE_1205",
+    "typology": "Out",
+    "transactions": [
+        {
+            "timestamp": "2022/09/08 00:54",
+            "from_bank": "0010601",
+            "from_account": "8042FB380",
+            "to_bank": "001148",
+            "to_account": "804ED1E80",
+            "amount_received": 3131.02,
+            "receiving_currency": "Euro",
+            "amount_paid": 3131.02,
+            "payment_currency": "Euro",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/12 15:57",
+            "from_bank": "0010601",
+            "from_account": "8042FB380",
+            "to_bank": "0110749",
+            "to_account": "8070E0B70",
+            "amount_received": 11119.21,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 11119.21,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/13 11:55",
+            "from_bank": "0010601",
+            "from_account": "8042FB380",
+            "to_bank": "0210658",
+            "to_account": "80B47FE40",
+            "amount_received": 1412.79,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 1412.79,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        }
+    ]
+}

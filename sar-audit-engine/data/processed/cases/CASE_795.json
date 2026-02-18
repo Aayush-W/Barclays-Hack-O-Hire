@@ -1,0 +1,150 @@
+{
+    "case_id": "CASE_795",
+    "typology": "GATHER",
+    "transactions": [
+        {
+            "timestamp": "2022/09/05 16:25",
+            "from_bank": "025604",
+            "from_account": "802111780",
+            "to_bank": "022483",
+            "to_account": "80DF292E0",
+            "amount_received": 3878.52,
+            "receiving_currency": "Euro",
+            "amount_paid": 3878.52,
+            "payment_currency": "Euro",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/08 08:05",
+            "from_bank": "022483",
+            "from_account": "80DF292E0",
+            "to_bank": "02112879",
+            "to_account": "82BF0C8C0",
+            "amount_received": 5600.58,
+            "receiving_currency": "Canadian Dollar",
+            "amount_paid": 5600.58,
+            "payment_currency": "Canadian Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/06 09:21",
+            "from_bank": "025604",
+            "from_account": "802111780",
+            "to_bank": "0250697",
+            "to_account": "816F2DCC0",
+            "amount_received": 2293.18,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 2293.18,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/09 11:14",
+            "from_bank": "0250697",
+            "from_account": "816F2DCC0",
+            "to_bank": "02112879",
+            "to_account": "82BF0C8C0",
+            "amount_received": 2841.57,
+            "receiving_currency": "Canadian Dollar",
+            "amount_paid": 2841.57,
+            "payment_currency": "Canadian Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/06 12:13",
+            "from_bank": "025604",
+            "from_account": "802111780",
+            "to_bank": "000",
+            "to_account": "804E83CA0",
+            "amount_received": 4983.65,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 4983.65,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/09 14:34",
+            "from_bank": "000",
+            "from_account": "804E83CA0",
+            "to_bank": "02112879",
+            "to_account": "82BF0C8C0",
+            "amount_received": 6173.9,
+            "receiving_currency": "Canadian Dollar",
+            "amount_paid": 6173.9,
+            "payment_currency": "Canadian Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/07 05:07",
+            "from_bank": "025604",
+            "from_account": "802111780",
+            "to_bank": "0031317",
+            "to_account": "817274BB0",
+            "amount_received": 7524.7,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 7524.7,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/09 15:47",
+            "from_bank": "0031317",
+            "from_account": "817274BB0",
+            "to_bank": "02112879",
+            "to_account": "82BF0C8C0",
+            "amount_received": 9346.99,
+            "receiving_currency": "Canadian Dollar",
+            "amount_paid": 9346.99,
+            "payment_currency": "Canadian Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/07 15:25",
+            "from_bank": "025604",
+            "from_account": "802111780",
+            "to_bank": "00110104",
+            "to_account": "8289C4E00",
+            "amount_received": 160.64,
+            "receiving_currency": "Canadian Dollar",
+            "amount_paid": 160.64,
+            "payment_currency": "Canadian Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/10 19:20",
+            "from_bank": "00110104",
+            "from_account": "8289C4E00",
+            "to_bank": "02112879",
+            "to_account": "82BF0C8C0",
+            "amount_received": 134.33,
+            "receiving_currency": "Canadian Dollar",
+            "amount_paid": 134.33,
+            "payment_currency": "Canadian Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/07 15:40",
+            "from_bank": "025604",
+            "from_account": "802111780",
+            "to_bank": "0110968",
+            "to_account": "804253F40",
+            "amount_received": 17668.28,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 17668.28,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/11 10:58",
+            "from_bank": "0110968",
+            "from_account": "804253F40",
+            "to_bank": "02112879",
+            "to_account": "82BF0C8C0",
+            "amount_received": 23309.77,
+            "receiving_currency": "Canadian Dollar",
+            "amount_paid": 23309.77,
+            "payment_currency": "Canadian Dollar",
+            "payment_format": "ACH"
+        }
+    ]
+}

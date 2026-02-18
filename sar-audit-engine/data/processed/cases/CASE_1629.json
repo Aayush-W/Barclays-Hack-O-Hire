@@ -1,0 +1,54 @@
+{
+    "case_id": "CASE_1629",
+    "typology": "CYCLE",
+    "transactions": [
+        {
+            "timestamp": "2022/09/10 12:55",
+            "from_bank": "011",
+            "from_account": "8002EA5C0",
+            "to_bank": "001",
+            "to_account": "8004D0F50",
+            "amount_received": 8358.05,
+            "receiving_currency": "Euro",
+            "amount_paid": 8358.05,
+            "payment_currency": "Euro",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/13 17:14",
+            "from_bank": "001",
+            "from_account": "8004D0F50",
+            "to_bank": "01213",
+            "to_account": "800359EC0",
+            "amount_received": 8358.05,
+            "receiving_currency": "Euro",
+            "amount_paid": 8358.05,
+            "payment_currency": "Euro",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/16 09:33",
+            "from_bank": "01213",
+            "from_account": "800359EC0",
+            "to_bank": "01922",
+            "to_account": "8005A1420",
+            "amount_received": 11354.46,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 11354.46,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/14 05:28",
+            "from_bank": "01922",
+            "from_account": "8005A1420",
+            "to_bank": "011",
+            "to_account": "8002EA5C0",
+            "amount_received": 9497.31,
+            "receiving_currency": "Euro",
+            "amount_paid": 9497.31,
+            "payment_currency": "Euro",
+            "payment_format": "ACH"
+        }
+    ]
+}

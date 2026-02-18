@@ -1,0 +1,30 @@
+{
+    "case_id": "CASE_564",
+    "typology": "Out",
+    "transactions": [
+        {
+            "timestamp": "2022/09/04 07:30",
+            "from_bank": "0299336",
+            "from_account": "824F0F100",
+            "to_bank": "0192597",
+            "to_account": "8228C79B0",
+            "amount_received": 5080.38,
+            "receiving_currency": "UK Pound",
+            "amount_paid": 5080.38,
+            "payment_currency": "UK Pound",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/09 13:16",
+            "from_bank": "0299336",
+            "from_account": "824F0F100",
+            "to_bank": "0295757",
+            "to_account": "824F0F060",
+            "amount_received": 1341.52,
+            "receiving_currency": "UK Pound",
+            "amount_paid": 1341.52,
+            "payment_currency": "UK Pound",
+            "payment_format": "ACH"
+        }
+    ]
+}

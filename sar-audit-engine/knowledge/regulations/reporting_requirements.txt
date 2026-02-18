@@ -1,0 +1,8 @@
+SAR reporting requirements (generic operational guidance):
+
+- A SAR should be prepared when there is reasonable suspicion that funds involve illicit activity,
+  are intended to hide source of funds, or lack clear lawful purpose.
+- Narratives should include the who, what, when, where, and how of suspicious behavior.
+- Analysts should document linked accounts, transaction paths, and quantitative indicators.
+- Evidence used in the narrative should be traceable to source transactions and system outputs.
+- Escalation decisions should be logged with timestamp, analyst identity, and review outcome.

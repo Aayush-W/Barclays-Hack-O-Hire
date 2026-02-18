@@ -1,0 +1,30 @@
+{
+    "case_id": "CASE_1214",
+    "typology": "CYCLE",
+    "transactions": [
+        {
+            "timestamp": "2022/09/08 01:35",
+            "from_bank": "0111904",
+            "from_account": "8075EB380",
+            "to_bank": "0274066",
+            "to_account": "81BCA7490",
+            "amount_received": 1148724.77,
+            "receiving_currency": "Ruble",
+            "amount_paid": 1148724.77,
+            "payment_currency": "Ruble",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/13 15:24",
+            "from_bank": "0274066",
+            "from_account": "81BCA7490",
+            "to_bank": "0111904",
+            "to_account": "8075EB380",
+            "amount_received": 12599.89,
+            "receiving_currency": "Euro",
+            "amount_paid": 12599.89,
+            "payment_currency": "Euro",
+            "payment_format": "ACH"
+        }
+    ]
+}

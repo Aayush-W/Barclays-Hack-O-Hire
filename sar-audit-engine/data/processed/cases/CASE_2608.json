@@ -1,0 +1,126 @@
+{
+    "case_id": "CASE_2608",
+    "typology": "In",
+    "transactions": [
+        {
+            "timestamp": "2022/09/16 04:14",
+            "from_bank": "005763",
+            "from_account": "803526EC0",
+            "to_bank": "025485",
+            "to_account": "808E20D50",
+            "amount_received": 10953.37,
+            "receiving_currency": "Euro",
+            "amount_paid": 10953.37,
+            "payment_currency": "Euro",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/16 08:48",
+            "from_bank": "005610",
+            "from_account": "807979180",
+            "to_bank": "025485",
+            "to_account": "808E20D50",
+            "amount_received": 8311.1,
+            "receiving_currency": "Euro",
+            "amount_paid": 8311.1,
+            "payment_currency": "Euro",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/16 09:56",
+            "from_bank": "0112166",
+            "from_account": "8068B95B0",
+            "to_bank": "025485",
+            "to_account": "808E20D50",
+            "amount_received": 141.35,
+            "receiving_currency": "Euro",
+            "amount_paid": 141.35,
+            "payment_currency": "Euro",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/16 14:13",
+            "from_bank": "0115230",
+            "from_account": "80A264CC0",
+            "to_bank": "025485",
+            "to_account": "808E20D50",
+            "amount_received": 2203.78,
+            "receiving_currency": "Euro",
+            "amount_paid": 2203.78,
+            "payment_currency": "Euro",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/16 20:54",
+            "from_bank": "0266660",
+            "from_account": "81A566A70",
+            "to_bank": "025485",
+            "to_account": "808E20D50",
+            "amount_received": 713.9,
+            "receiving_currency": "Euro",
+            "amount_paid": 713.9,
+            "payment_currency": "Euro",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/18 15:56",
+            "from_bank": "0216632",
+            "from_account": "80B7CB010",
+            "to_bank": "025485",
+            "to_account": "808E20D50",
+            "amount_received": 16547.31,
+            "receiving_currency": "Euro",
+            "amount_paid": 16547.31,
+            "payment_currency": "Euro",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/18 19:15",
+            "from_bank": "0122917",
+            "from_account": "81975DFF0",
+            "to_bank": "025485",
+            "to_account": "808E20D50",
+            "amount_received": 5581.48,
+            "receiving_currency": "Euro",
+            "amount_paid": 5581.48,
+            "payment_currency": "Euro",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/20 00:00",
+            "from_bank": "0067423",
+            "from_account": "81A1800A0",
+            "to_bank": "025485",
+            "to_account": "808E20D50",
+            "amount_received": 3859.25,
+            "receiving_currency": "Euro",
+            "amount_paid": 3859.25,
+            "payment_currency": "Euro",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/20 19:55",
+            "from_bank": "0173285",
+            "from_account": "821706A00",
+            "to_bank": "025485",
+            "to_account": "808E20D50",
+            "amount_received": 3529.71,
+            "receiving_currency": "Euro",
+            "amount_paid": 3529.71,
+            "payment_currency": "Euro",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/21 15:10",
+            "from_bank": "008483",
+            "from_account": "80605FAA0",
+            "to_bank": "025485",
+            "to_account": "808E20D50",
+            "amount_received": 12462.7,
+            "receiving_currency": "Euro",
+            "amount_paid": 12462.7,
+            "payment_currency": "Euro",
+            "payment_format": "ACH"
+        }
+    ]
+}

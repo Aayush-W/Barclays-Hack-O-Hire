@@ -1,0 +1,57 @@
+{
+  "case_id": "CASE_244",
+  "typology": "In",
+  "transactions": [
+    {
+      "timestamp": "2022/09/02 11:12",
+      "from_bank": "02126978",
+      "from_account": "8304659F0",
+      "to_bank": "00131127",
+      "to_account": "8304659A0",
+      "amount_received": 16185.8,
+      "receiving_currency": "Australian Dollar",
+      "amount_paid": 16185.8,
+      "payment_currency": "Australian Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/02 22:08",
+      "from_bank": "00131127",
+      "from_account": "8304659A0",
+      "to_bank": "02126978",
+      "to_account": "8304659F0",
+      "amount_received": 4025.28,
+      "receiving_currency": "Australian Dollar",
+      "amount_paid": 4025.28,
+      "payment_currency": "Australian Dollar",
+      "payment_format": "ACH"
+    }
+  ],
+  "enriched_transactions": [
+    {
+      "timestamp": "2022/09/02 11:12",
+      "from_bank": "02126978",
+      "from_account": "8304659F0",
+      "to_bank": "00131127",
+      "to_account": "8304659A0",
+      "amount_received": 16185.8,
+      "receiving_currency": "Australian Dollar",
+      "amount_paid": 16185.8,
+      "payment_currency": "Australian Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/02 22:08",
+      "from_bank": "00131127",
+      "from_account": "8304659A0",
+      "to_bank": "02126978",
+      "to_account": "8304659F0",
+      "amount_received": 4025.28,
+      "receiving_currency": "Australian Dollar",
+      "amount_paid": 4025.28,
+      "payment_currency": "Australian Dollar",
+      "payment_format": "ACH"
+    }
+  ],
+  "transaction_count": 2
+}

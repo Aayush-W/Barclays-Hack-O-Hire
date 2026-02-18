@@ -1,0 +1,153 @@
+{
+  "case_id": "CASE_2435",
+  "typology": "CYCLE",
+  "transactions": [
+    {
+      "timestamp": "2022/09/15 03:58",
+      "from_bank": "0113196",
+      "from_account": "81CAD2060",
+      "to_bank": "0243787",
+      "to_account": "823594DF0",
+      "amount_received": 15978.09,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 15978.09,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/16 11:48",
+      "from_bank": "0243787",
+      "from_account": "823594DF0",
+      "to_bank": "0214685",
+      "to_account": "809397C30",
+      "amount_received": 12400.64,
+      "receiving_currency": "Euro",
+      "amount_paid": 12400.64,
+      "payment_currency": "Euro",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/17 16:06",
+      "from_bank": "0214685",
+      "from_account": "809397C30",
+      "to_bank": "021710",
+      "to_account": "801577CD0",
+      "amount_received": 12326.27,
+      "receiving_currency": "Euro",
+      "amount_paid": 12326.27,
+      "payment_currency": "Euro",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/19 18:59",
+      "from_bank": "021710",
+      "from_account": "801577CD0",
+      "to_bank": "025604",
+      "to_account": "81912D660",
+      "amount_received": 14393.25,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 14393.25,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/20 12:28",
+      "from_bank": "025604",
+      "from_account": "81912D660",
+      "to_bank": "0277047",
+      "to_account": "81E6F6E30",
+      "amount_received": 1051703.17,
+      "receiving_currency": "Ruble",
+      "amount_paid": 1051703.17,
+      "payment_currency": "Ruble",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/20 17:36",
+      "from_bank": "0277047",
+      "from_account": "81E6F6E30",
+      "to_bank": "0113196",
+      "to_account": "81CAD2060",
+      "amount_received": 13964.75,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 13964.75,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    }
+  ],
+  "enriched_transactions": [
+    {
+      "timestamp": "2022/09/15 03:58",
+      "from_bank": "0113196",
+      "from_account": "81CAD2060",
+      "to_bank": "0243787",
+      "to_account": "823594DF0",
+      "amount_received": 15978.09,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 15978.09,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/16 11:48",
+      "from_bank": "0243787",
+      "from_account": "823594DF0",
+      "to_bank": "0214685",
+      "to_account": "809397C30",
+      "amount_received": 12400.64,
+      "receiving_currency": "Euro",
+      "amount_paid": 12400.64,
+      "payment_currency": "Euro",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/17 16:06",
+      "from_bank": "0214685",
+      "from_account": "809397C30",
+      "to_bank": "021710",
+      "to_account": "801577CD0",
+      "amount_received": 12326.27,
+      "receiving_currency": "Euro",
+      "amount_paid": 12326.27,
+      "payment_currency": "Euro",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/19 18:59",
+      "from_bank": "021710",
+      "from_account": "801577CD0",
+      "to_bank": "025604",
+      "to_account": "81912D660",
+      "amount_received": 14393.25,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 14393.25,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/20 12:28",
+      "from_bank": "025604",
+      "from_account": "81912D660",
+      "to_bank": "0277047",
+      "to_account": "81E6F6E30",
+      "amount_received": 1051703.17,
+      "receiving_currency": "Ruble",
+      "amount_paid": 1051703.17,
+      "payment_currency": "Ruble",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/20 17:36",
+      "from_bank": "0277047",
+      "from_account": "81E6F6E30",
+      "to_bank": "0113196",
+      "to_account": "81CAD2060",
+      "amount_received": 13964.75,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 13964.75,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    }
+  ],
+  "transaction_count": 6
+}

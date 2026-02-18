@@ -1,0 +1,57 @@
+{
+  "case_id": "CASE_1523",
+  "typology": "BIPARTITE",
+  "transactions": [
+    {
+      "timestamp": "2022/09/10 07:47",
+      "from_bank": "0113196",
+      "from_account": "805314D80",
+      "to_bank": "025",
+      "to_account": "817596040",
+      "amount_received": 95600200.76,
+      "receiving_currency": "Rupee",
+      "amount_paid": 95600200.76,
+      "payment_currency": "Rupee",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/12 10:22",
+      "from_bank": "0012285",
+      "from_account": "80FAD1510",
+      "to_bank": "012963",
+      "to_account": "8073E6FA0",
+      "amount_received": 11668.8,
+      "receiving_currency": "Euro",
+      "amount_paid": 11668.8,
+      "payment_currency": "Euro",
+      "payment_format": "ACH"
+    }
+  ],
+  "enriched_transactions": [
+    {
+      "timestamp": "2022/09/10 07:47",
+      "from_bank": "0113196",
+      "from_account": "805314D80",
+      "to_bank": "025",
+      "to_account": "817596040",
+      "amount_received": 95600200.76,
+      "receiving_currency": "Rupee",
+      "amount_paid": 95600200.76,
+      "payment_currency": "Rupee",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/12 10:22",
+      "from_bank": "0012285",
+      "from_account": "80FAD1510",
+      "to_bank": "012963",
+      "to_account": "8073E6FA0",
+      "amount_received": 11668.8,
+      "receiving_currency": "Euro",
+      "amount_paid": 11668.8,
+      "payment_currency": "Euro",
+      "payment_format": "ACH"
+    }
+  ],
+  "transaction_count": 2
+}

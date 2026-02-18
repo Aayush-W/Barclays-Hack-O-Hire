@@ -1,0 +1,54 @@
+{
+    "case_id": "CASE_2450",
+    "typology": "STACK",
+    "transactions": [
+        {
+            "timestamp": "2022/09/16 12:15",
+            "from_bank": "0193675",
+            "from_account": "8228B97D0",
+            "to_bank": "0295764",
+            "to_account": "8234B06D0",
+            "amount_received": 7170.06,
+            "receiving_currency": "UK Pound",
+            "amount_paid": 7170.06,
+            "payment_currency": "UK Pound",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/17 19:09",
+            "from_bank": "0295764",
+            "from_account": "8234B06D0",
+            "to_bank": "0293977",
+            "to_account": "822F69B70",
+            "amount_received": 6668.66,
+            "receiving_currency": "UK Pound",
+            "amount_paid": 6668.66,
+            "payment_currency": "UK Pound",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/17 05:17",
+            "from_bank": "0293977",
+            "from_account": "822F69B70",
+            "to_bank": "0295233",
+            "to_account": "824C0A830",
+            "amount_received": 2206.89,
+            "receiving_currency": "UK Pound",
+            "amount_paid": 2206.89,
+            "payment_currency": "UK Pound",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/20 16:15",
+            "from_bank": "0295233",
+            "from_account": "824C0A830",
+            "to_bank": "0193675",
+            "to_account": "8228B97D0",
+            "amount_received": 2263.77,
+            "receiving_currency": "UK Pound",
+            "amount_paid": 2263.77,
+            "payment_currency": "UK Pound",
+            "payment_format": "ACH"
+        }
+    ]
+}

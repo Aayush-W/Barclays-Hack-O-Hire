@@ -1,0 +1,81 @@
+{
+  "case_id": "CASE_1616",
+  "typology": "Out",
+  "transactions": [
+    {
+      "timestamp": "2022/09/10 11:40",
+      "from_bank": "0282",
+      "from_account": "81C394920",
+      "to_bank": "0262657",
+      "to_account": "81A536E10",
+      "amount_received": 625631.24,
+      "receiving_currency": "Ruble",
+      "amount_paid": 625631.24,
+      "payment_currency": "Ruble",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/10 16:34",
+      "from_bank": "0282",
+      "from_account": "81C394920",
+      "to_bank": "0172156",
+      "to_account": "81BF8B070",
+      "amount_received": 568839.81,
+      "receiving_currency": "Ruble",
+      "amount_paid": 568839.81,
+      "payment_currency": "Ruble",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/12 12:09",
+      "from_bank": "0282",
+      "from_account": "81C394920",
+      "to_bank": "0282",
+      "to_account": "81B272210",
+      "amount_received": 1284917.93,
+      "receiving_currency": "Ruble",
+      "amount_paid": 1284917.93,
+      "payment_currency": "Ruble",
+      "payment_format": "ACH"
+    }
+  ],
+  "enriched_transactions": [
+    {
+      "timestamp": "2022/09/10 11:40",
+      "from_bank": "0282",
+      "from_account": "81C394920",
+      "to_bank": "0262657",
+      "to_account": "81A536E10",
+      "amount_received": 625631.24,
+      "receiving_currency": "Ruble",
+      "amount_paid": 625631.24,
+      "payment_currency": "Ruble",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/10 16:34",
+      "from_bank": "0282",
+      "from_account": "81C394920",
+      "to_bank": "0172156",
+      "to_account": "81BF8B070",
+      "amount_received": 568839.81,
+      "receiving_currency": "Ruble",
+      "amount_paid": 568839.81,
+      "payment_currency": "Ruble",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/12 12:09",
+      "from_bank": "0282",
+      "from_account": "81C394920",
+      "to_bank": "0282",
+      "to_account": "81B272210",
+      "amount_received": 1284917.93,
+      "receiving_currency": "Ruble",
+      "amount_paid": 1284917.93,
+      "payment_currency": "Ruble",
+      "payment_format": "ACH"
+    }
+  ],
+  "transaction_count": 3
+}

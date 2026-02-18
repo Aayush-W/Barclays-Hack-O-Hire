@@ -1,0 +1,970 @@
+{
+  "case_id": "CASE_1626",
+  "typology": "BIPARTITE",
+  "risk_assessment": {
+    "score": 64,
+    "band": "medium",
+    "retrieval_confidence": 0.14421
+  },
+  "signals": {
+    "total_inflow": 139199.82,
+    "total_outflow": 139199.82,
+    "net_flow": 0.0,
+    "unique_senders": 8,
+    "unique_receivers": 8,
+    "hop_count": 1,
+    "cross_bank_ratio": 1.0,
+    "multi_currency_flag": true,
+    "rapid_pass_through_flag": false,
+    "rapid_pass_through_min_hours": null,
+    "transaction_velocity_metrics": {
+      "tx_count": 8,
+      "start_time": "2022-09-10 14:33:00",
+      "end_time": "2022-09-13 05:24:00",
+      "duration_hours": 62.85,
+      "tx_per_day": 3.0549,
+      "avg_interarrival_minutes": 538.71,
+      "median_interarrival_minutes": 710.0,
+      "max_tx_in_1h": 2
+    }
+  },
+  "reasons": [
+    {
+      "reason_id": "R01",
+      "category": "typology_classification",
+      "claim": "Case typology labeled as BIPARTITE based on pattern parser classification.",
+      "retrieval_query": "SAR BIPARTITE category typology_classification Case typology labeled as BIPARTITE based on pattern parser classification. typology BIPARTITE source pattern_parser cross_bank_ratio 1.0 hop_count 1 multi_currency True rapid_pass_through False max_tx_1h 2 tx_per_day 3.055",
+      "evidence_metrics": {
+        "typology": "BIPARTITE",
+        "source": "pattern_parser"
+      },
+      "transaction_ids": [
+        "TX_001",
+        "TX_002",
+        "TX_003",
+        "TX_004",
+        "TX_005",
+        "TX_006",
+        "TX_007",
+        "TX_008"
+      ],
+      "transaction_examples": [
+        {
+          "tx_id": "TX_001",
+          "timestamp": "2022-09-12 15:50:00",
+          "from_bank": "0150202",
+          "from_account": "8129FA550",
+          "to_bank": "012869",
+          "to_account": "805E28B10",
+          "amount_received": 14843.93,
+          "amount_paid": 14843.93,
+          "receiving_currency": "Euro",
+          "payment_currency": "Euro",
+          "payment_format": "ACH"
+        },
+        {
+          "tx_id": "TX_002",
+          "timestamp": "2022-09-11 13:06:00",
+          "from_bank": "025644",
+          "from_account": "819DA7250",
+          "to_bank": "01601",
+          "to_account": "80519C4A0",
+          "amount_received": 14976.17,
+          "amount_paid": 14976.17,
+          "receiving_currency": "US Dollar",
+          "payment_currency": "US Dollar",
+          "payment_format": "ACH"
+        },
+        {
+          "tx_id": "TX_003",
+          "timestamp": "2022-09-10 17:28:00",
+          "from_bank": "029691",
+          "from_account": "80A7A1A40",
+          "to_bank": "0129447",
+          "to_account": "81DCF6060",
+          "amount_received": 2251.95,
+          "amount_paid": 2251.95,
+          "receiving_currency": "Euro",
+          "payment_currency": "Euro",
+          "payment_format": "ACH"
+        },
+        {
+          "tx_id": "TX_004",
+          "timestamp": "2022-09-12 16:37:00",
+          "from_bank": "0243620",
+          "from_account": "811BC5FC0",
+          "to_bank": "018077",
+          "to_account": "80CE05350",
+          "amount_received": 6758.29,
+          "amount_paid": 6758.29,
+          "receiving_currency": "Euro",
+          "payment_currency": "Euro",
+          "payment_format": "ACH"
+        },
+        {
+          "tx_id": "TX_005",
+          "timestamp": "2022-09-11 15:03:00",
+          "from_bank": "0260153",
+          "from_account": "816DB0760",
+          "to_bank": "011",
+          "to_account": "80BC98E80",
+          "amount_received": 15724.39,
+          "amount_paid": 15724.39,
+          "receiving_currency": "US Dollar",
+          "payment_currency": "US Dollar",
+          "payment_format": "ACH"
+        },
+        {
+          "tx_id": "TX_006",
+          "timestamp": "2022-09-12 02:53:00",
+          "from_bank": "0210121",
+          "from_account": "80C2B7060",
+          "to_bank": "0140569",
+          "to_account": "8160CCD70",
+          "amount_received": 3029.13,
+          "amount_paid": 3029.13,
+          "receiving_currency": "US Dollar",
+          "payment_currency": "US Dollar",
+          "payment_format": "ACH"
+        },
+        {
+          "tx_id": "TX_007",
+          "timestamp": "2022-09-13 05:24:00",
+          "from_bank": "005763",
+          "from_account": "804AB3970",
+          "to_bank": "011",
+          "to_account": "8002EB4A0",
+          "amount_received": 4196.43,
+          "amount_paid": 4196.43,
+          "receiving_currency": "Euro",
+          "payment_currency": "Euro",
+          "payment_format": "ACH"
+        },
+        {
+          "tx_id": "TX_008",
+          "timestamp": "2022-09-10 14:33:00",
+          "from_bank": "0260994",
+          "from_account": "8173C8BE0",
+          "to_bank": "012",
+          "to_account": "805DEDB20",
+          "amount_received": 77419.53,
+          "amount_paid": 77419.53,
+          "receiving_currency": "Yuan",
+          "payment_currency": "Yuan",
+          "payment_format": "ACH"
+        }
+      ],
+      "knowledge_support": [
+        {
+          "chunk_id": "d6ab6251233bb58c",
+          "score": 0.132877,
+          "base_score": 0.073466,
+          "source_model_probability": 0.993192,
+          "source_file": "typologies/layering.txt",
+          "source_type": "typologies",
+          "excerpt": "Layering typology focuses on separating illicit proceeds from the original source through multiple account hops. Common layering indicators: - Sequential transfers across unrelated accounts and banks. - Rapid movement of funds after incoming credits. - Repeated near-offsetting in-flow and out-flow values. - Use of multiple payment corridors to break traceability. Reasoning cues for SAR: - Highlight hop depth and timeline compression between linked transactions. - Explain why account behavior is inconsistent with normal customer purpose. - Document cross-bank movement ratio and intermediate account concentration."
+        },
+        {
+          "chunk_id": "c7c59c982b48a1ae",
+          "score": 0.127313,
+          "base_score": 0.221029,
+          "source_model_probability": 0.0,
+          "source_file": "templates/sar_standard.txt",
+          "source_type": "templates",
+          "excerpt": "SAR Standard Template 1) Activity Summary - Subject/account overview - Date range of suspicious activity 2) Key Suspicious Indicators - High-value flow, pass-through, multi-hop, velocity, cross-bank, multi-currency 3) Evidence and Rationale - Reason-by-reason mapping with transaction IDs - Typology and guideline alignment 4) Recommended Action - Escalation recommendation - Internal review and filing workflow notes"
+        },
+        {
+          "chunk_id": "58012ce6979d7119",
+          "score": 0.115839,
+          "base_score": 0.064047,
+          "source_model_probability": 0.993192,
+          "source_file": "typologies/smurfing.txt",
+          "source_type": "typologies",
+          "excerpt": "Smurfing typology describes structuring funds into many smaller transfers to avoid control thresholds. Common smurfing indicators: - Burst of low-to-mid value deposits from multiple senders. - Repeated transaction amounts that remain below expected escalation limits. - Consolidation of many small credits into one beneficiary account. - Frequent ACH or card-like channels with short intervals. Reasoning cues for SAR: - Show transaction velocity and clustering in short time windows. - Map repeated amount bands and sender diversity. - Explain how volume pattern indicates deliberate threshold avoidance."
+        }
+      ]
+    },
+    {
+      "reason_id": "R02",
+      "category": "high_value_activity",
+      "claim": "Aggregate transaction value exceeds high-value threshold.",
+      "retrieval_query": "SAR BIPARTITE category high_value_activity Aggregate transaction value exceeds high-value threshold. total_inflow 139199.82 total_outflow 139199.82 threshold 10000.0 cross_bank_ratio 1.0 hop_count 1 multi_currency True rapid_pass_through False max_tx_1h 2 tx_per_day 3.055",
+      "evidence_metrics": {
+        "total_inflow": 139199.82,
+        "total_outflow": 139199.82,
+        "threshold": 10000.0
+      },
+      "transaction_ids": [
+        "TX_001",
+        "TX_002",
+        "TX_003",
+        "TX_004",
+        "TX_005",
+        "TX_006",
+        "TX_007",
+        "TX_008"
+      ],
+      "transaction_examples": [
+        {
+          "tx_id": "TX_001",
+          "timestamp": "2022-09-12 15:50:00",
+          "from_bank": "0150202",
+          "from_account": "8129FA550",
+          "to_bank": "012869",
+          "to_account": "805E28B10",
+          "amount_received": 14843.93,
+          "amount_paid": 14843.93,
+          "receiving_currency": "Euro",
+          "payment_currency": "Euro",
+          "payment_format": "ACH"
+        },
+        {
+          "tx_id": "TX_002",
+          "timestamp": "2022-09-11 13:06:00",
+          "from_bank": "025644",
+          "from_account": "819DA7250",
+          "to_bank": "01601",
+          "to_account": "80519C4A0",
+          "amount_received": 14976.17,
+          "amount_paid": 14976.17,
+          "receiving_currency": "US Dollar",
+          "payment_currency": "US Dollar",
+          "payment_format": "ACH"
+        },
+        {
+          "tx_id": "TX_003",
+          "timestamp": "2022-09-10 17:28:00",
+          "from_bank": "029691",
+          "from_account": "80A7A1A40",
+          "to_bank": "0129447",
+          "to_account": "81DCF6060",
+          "amount_received": 2251.95,
+          "amount_paid": 2251.95,
+          "receiving_currency": "Euro",
+          "payment_currency": "Euro",
+          "payment_format": "ACH"
+        },
+        {
+          "tx_id": "TX_004",
+          "timestamp": "2022-09-12 16:37:00",
+          "from_bank": "0243620",
+          "from_account": "811BC5FC0",
+          "to_bank": "018077",
+          "to_account": "80CE05350",
+          "amount_received": 6758.29,
+          "amount_paid": 6758.29,
+          "receiving_currency": "Euro",
+          "payment_currency": "Euro",
+          "payment_format": "ACH"
+        },
+        {
+          "tx_id": "TX_005",
+          "timestamp": "2022-09-11 15:03:00",
+          "from_bank": "0260153",
+          "from_account": "816DB0760",
+          "to_bank": "011",
+          "to_account": "80BC98E80",
+          "amount_received": 15724.39,
+          "amount_paid": 15724.39,
+          "receiving_currency": "US Dollar",
+          "payment_currency": "US Dollar",
+          "payment_format": "ACH"
+        },
+        {
+          "tx_id": "TX_006",
+          "timestamp": "2022-09-12 02:53:00",
+          "from_bank": "0210121",
+          "from_account": "80C2B7060",
+          "to_bank": "0140569",
+          "to_account": "8160CCD70",
+          "amount_received": 3029.13,
+          "amount_paid": 3029.13,
+          "receiving_currency": "US Dollar",
+          "payment_currency": "US Dollar",
+          "payment_format": "ACH"
+        },
+        {
+          "tx_id": "TX_007",
+          "timestamp": "2022-09-13 05:24:00",
+          "from_bank": "005763",
+          "from_account": "804AB3970",
+          "to_bank": "011",
+          "to_account": "8002EB4A0",
+          "amount_received": 4196.43,
+          "amount_paid": 4196.43,
+          "receiving_currency": "Euro",
+          "payment_currency": "Euro",
+          "payment_format": "ACH"
+        },
+        {
+          "tx_id": "TX_008",
+          "timestamp": "2022-09-10 14:33:00",
+          "from_bank": "0260994",
+          "from_account": "8173C8BE0",
+          "to_bank": "012",
+          "to_account": "805DEDB20",
+          "amount_received": 77419.53,
+          "amount_paid": 77419.53,
+          "receiving_currency": "Yuan",
+          "payment_currency": "Yuan",
+          "payment_format": "ACH"
+        }
+      ],
+      "knowledge_support": [
+        {
+          "chunk_id": "c7c59c982b48a1ae",
+          "score": 0.159093,
+          "base_score": 0.276204,
+          "source_model_probability": 0.0,
+          "source_file": "templates/sar_standard.txt",
+          "source_type": "templates",
+          "excerpt": "SAR Standard Template 1) Activity Summary - Subject/account overview - Date range of suspicious activity 2) Key Suspicious Indicators - High-value flow, pass-through, multi-hop, velocity, cross-bank, multi-currency 3) Evidence and Rationale - Reason-by-reason mapping with transaction IDs - Typology and guideline alignment 4) Recommended Action - Escalation recommendation - Internal review and filing workflow notes"
+        },
+        {
+          "chunk_id": "58012ce6979d7119",
+          "score": 0.103784,
+          "base_score": 0.103743,
+          "source_model_probability": 0.000883,
+          "source_file": "typologies/smurfing.txt",
+          "source_type": "typologies",
+          "excerpt": "Smurfing typology describes structuring funds into many smaller transfers to avoid control thresholds. Common smurfing indicators: - Burst of low-to-mid value deposits from multiple senders. - Repeated transaction amounts that remain below expected escalation limits. - Consolidation of many small credits into one beneficiary account. - Frequent ACH or card-like channels with short intervals. Reasoning cues for SAR: - Show transaction velocity and clustering in short time windows. - Map repeated amount bands and sender diversity. - Explain how volume pattern indicates deliberate threshold avoidance."
+        },
+        {
+          "chunk_id": "11894b7876c90015",
+          "score": 0.20985,
+          "base_score": 0.121914,
+          "source_model_probability": 0.998906,
+          "source_file": "regulations/narrative_guidelines.txt",
+          "source_type": "regulations",
+          "excerpt": "SAR narrative drafting guidelines: - Use objective, factual language and avoid speculative statements. - Present a clear chronology of events and transaction behavior. - Explain why activity is suspicious using measurable indicators. - Reference typology alignment and controls-impact rationale. - Include supporting evidence identifiers (transaction IDs, account links, and detection metrics). - Conclude with recommended action and whether escalation for filing is advised."
+        }
+      ]
+    },
+    {
+      "reason_id": "R03",
+      "category": "rapid_pass_through",
+      "claim": "Net flow is near zero relative to total inflow, indicating potential pass-through.",
+      "retrieval_query": "SAR BIPARTITE category rapid_pass_through Net flow is near zero relative to total inflow, indicating potential pass-through. net_flow 0.0 total_inflow 139199.82 ratio 0.0 threshold 0.1 cross_bank_ratio 1.0 hop_count 1 multi_currency True rapid_pass_through False max_tx_1h 2 tx_per_day 3.055",
+      "evidence_metrics": {
+        "net_flow": 0.0,
+        "total_inflow": 139199.82,
+        "ratio": 0.0,
+        "threshold": 0.1
+      },
+      "transaction_ids": [
+        "TX_001",
+        "TX_002",
+        "TX_003",
+        "TX_004",
+        "TX_005",
+        "TX_006",
+        "TX_007",
+        "TX_008"
+      ],
+      "transaction_examples": [
+        {
+          "tx_id": "TX_001",
+          "timestamp": "2022-09-12 15:50:00",
+          "from_bank": "0150202",
+          "from_account": "8129FA550",
+          "to_bank": "012869",
+          "to_account": "805E28B10",
+          "amount_received": 14843.93,
+          "amount_paid": 14843.93,
+          "receiving_currency": "Euro",
+          "payment_currency": "Euro",
+          "payment_format": "ACH"
+        },
+        {
+          "tx_id": "TX_002",
+          "timestamp": "2022-09-11 13:06:00",
+          "from_bank": "025644",
+          "from_account": "819DA7250",
+          "to_bank": "01601",
+          "to_account": "80519C4A0",
+          "amount_received": 14976.17,
+          "amount_paid": 14976.17,
+          "receiving_currency": "US Dollar",
+          "payment_currency": "US Dollar",
+          "payment_format": "ACH"
+        },
+        {
+          "tx_id": "TX_003",
+          "timestamp": "2022-09-10 17:28:00",
+          "from_bank": "029691",
+          "from_account": "80A7A1A40",
+          "to_bank": "0129447",
+          "to_account": "81DCF6060",
+          "amount_received": 2251.95,
+          "amount_paid": 2251.95,
+          "receiving_currency": "Euro",
+          "payment_currency": "Euro",
+          "payment_format": "ACH"
+        },
+        {
+          "tx_id": "TX_004",
+          "timestamp": "2022-09-12 16:37:00",
+          "from_bank": "0243620",
+          "from_account": "811BC5FC0",
+          "to_bank": "018077",
+          "to_account": "80CE05350",
+          "amount_received": 6758.29,
+          "amount_paid": 6758.29,
+          "receiving_currency": "Euro",
+          "payment_currency": "Euro",
+          "payment_format": "ACH"
+        },
+        {
+          "tx_id": "TX_005",
+          "timestamp": "2022-09-11 15:03:00",
+          "from_bank": "0260153",
+          "from_account": "816DB0760",
+          "to_bank": "011",
+          "to_account": "80BC98E80",
+          "amount_received": 15724.39,
+          "amount_paid": 15724.39,
+          "receiving_currency": "US Dollar",
+          "payment_currency": "US Dollar",
+          "payment_format": "ACH"
+        },
+        {
+          "tx_id": "TX_006",
+          "timestamp": "2022-09-12 02:53:00",
+          "from_bank": "0210121",
+          "from_account": "80C2B7060",
+          "to_bank": "0140569",
+          "to_account": "8160CCD70",
+          "amount_received": 3029.13,
+          "amount_paid": 3029.13,
+          "receiving_currency": "US Dollar",
+          "payment_currency": "US Dollar",
+          "payment_format": "ACH"
+        },
+        {
+          "tx_id": "TX_007",
+          "timestamp": "2022-09-13 05:24:00",
+          "from_bank": "005763",
+          "from_account": "804AB3970",
+          "to_bank": "011",
+          "to_account": "8002EB4A0",
+          "amount_received": 4196.43,
+          "amount_paid": 4196.43,
+          "receiving_currency": "Euro",
+          "payment_currency": "Euro",
+          "payment_format": "ACH"
+        },
+        {
+          "tx_id": "TX_008",
+          "timestamp": "2022-09-10 14:33:00",
+          "from_bank": "0260994",
+          "from_account": "8173C8BE0",
+          "to_bank": "012",
+          "to_account": "805DEDB20",
+          "amount_received": 77419.53,
+          "amount_paid": 77419.53,
+          "receiving_currency": "Yuan",
+          "payment_currency": "Yuan",
+          "payment_format": "ACH"
+        }
+      ],
+      "knowledge_support": [
+        {
+          "chunk_id": "c2ee309aabe92482",
+          "score": 0.239773,
+          "base_score": 0.138041,
+          "source_model_probability": 0.994397,
+          "source_file": "typologies/funnel_accounts.txt",
+          "source_type": "typologies",
+          "excerpt": "Funnel-account typology centers on accounts that receive many inbound transfers and rapidly forward funds onward. Common funnel-account indicators: - One account receives funds from many origins and disburses to fewer exits. - Minimal retention of value (near-zero net flow over short periods). - Rapid pass-through with dwell time measured in hours. - Multi-bank routing to reduce direct source-to-destination linkage. Reasoning cues for SAR: - Quantify inbound-outbound imbalance and dwell-time metrics. - Trace linked transactions that form the funnel path. - Explain why account profile does not match expected customer behavior."
+        },
+        {
+          "chunk_id": "d6ab6251233bb58c",
+          "score": 0.212881,
+          "base_score": 0.122559,
+          "source_model_probability": 0.994397,
+          "source_file": "typologies/layering.txt",
+          "source_type": "typologies",
+          "excerpt": "Layering typology focuses on separating illicit proceeds from the original source through multiple account hops. Common layering indicators: - Sequential transfers across unrelated accounts and banks. - Rapid movement of funds after incoming credits. - Repeated near-offsetting in-flow and out-flow values. - Use of multiple payment corridors to break traceability. Reasoning cues for SAR: - Highlight hop depth and timeline compression between linked transactions. - Explain why account behavior is inconsistent with normal customer purpose. - Document cross-bank movement ratio and intermediate account concentration."
+        },
+        {
+          "chunk_id": "11894b7876c90015",
+          "score": 0.113123,
+          "base_score": 0.118793,
+          "source_model_probability": 0.005317,
+          "source_file": "regulations/narrative_guidelines.txt",
+          "source_type": "regulations",
+          "excerpt": "SAR narrative drafting guidelines: - Use objective, factual language and avoid speculative statements. - Present a clear chronology of events and transaction behavior. - Explain why activity is suspicious using measurable indicators. - Reference typology alignment and controls-impact rationale. - Include supporting evidence identifiers (transaction IDs, account links, and detection metrics). - Conclude with recommended action and whether escalation for filing is advised."
+        }
+      ]
+    },
+    {
+      "reason_id": "R04",
+      "category": "cross_bank_movement",
+      "claim": "Majority of transfers are cross-bank.",
+      "retrieval_query": "SAR BIPARTITE category cross_bank_movement Majority of transfers are cross-bank. cross_bank_ratio 1.0 threshold 0.6 cross_bank_ratio 1.0 hop_count 1 multi_currency True rapid_pass_through False max_tx_1h 2 tx_per_day 3.055",
+      "evidence_metrics": {
+        "cross_bank_ratio": 1.0,
+        "threshold": 0.6
+      },
+      "transaction_ids": [
+        "TX_001",
+        "TX_002",
+        "TX_003",
+        "TX_004",
+        "TX_005",
+        "TX_006",
+        "TX_007",
+        "TX_008"
+      ],
+      "transaction_examples": [
+        {
+          "tx_id": "TX_001",
+          "timestamp": "2022-09-12 15:50:00",
+          "from_bank": "0150202",
+          "from_account": "8129FA550",
+          "to_bank": "012869",
+          "to_account": "805E28B10",
+          "amount_received": 14843.93,
+          "amount_paid": 14843.93,
+          "receiving_currency": "Euro",
+          "payment_currency": "Euro",
+          "payment_format": "ACH"
+        },
+        {
+          "tx_id": "TX_002",
+          "timestamp": "2022-09-11 13:06:00",
+          "from_bank": "025644",
+          "from_account": "819DA7250",
+          "to_bank": "01601",
+          "to_account": "80519C4A0",
+          "amount_received": 14976.17,
+          "amount_paid": 14976.17,
+          "receiving_currency": "US Dollar",
+          "payment_currency": "US Dollar",
+          "payment_format": "ACH"
+        },
+        {
+          "tx_id": "TX_003",
+          "timestamp": "2022-09-10 17:28:00",
+          "from_bank": "029691",
+          "from_account": "80A7A1A40",
+          "to_bank": "0129447",
+          "to_account": "81DCF6060",
+          "amount_received": 2251.95,
+          "amount_paid": 2251.95,
+          "receiving_currency": "Euro",
+          "payment_currency": "Euro",
+          "payment_format": "ACH"
+        },
+        {
+          "tx_id": "TX_004",
+          "timestamp": "2022-09-12 16:37:00",
+          "from_bank": "0243620",
+          "from_account": "811BC5FC0",
+          "to_bank": "018077",
+          "to_account": "80CE05350",
+          "amount_received": 6758.29,
+          "amount_paid": 6758.29,
+          "receiving_currency": "Euro",
+          "payment_currency": "Euro",
+          "payment_format": "ACH"
+        },
+        {
+          "tx_id": "TX_005",
+          "timestamp": "2022-09-11 15:03:00",
+          "from_bank": "0260153",
+          "from_account": "816DB0760",
+          "to_bank": "011",
+          "to_account": "80BC98E80",
+          "amount_received": 15724.39,
+          "amount_paid": 15724.39,
+          "receiving_currency": "US Dollar",
+          "payment_currency": "US Dollar",
+          "payment_format": "ACH"
+        },
+        {
+          "tx_id": "TX_006",
+          "timestamp": "2022-09-12 02:53:00",
+          "from_bank": "0210121",
+          "from_account": "80C2B7060",
+          "to_bank": "0140569",
+          "to_account": "8160CCD70",
+          "amount_received": 3029.13,
+          "amount_paid": 3029.13,
+          "receiving_currency": "US Dollar",
+          "payment_currency": "US Dollar",
+          "payment_format": "ACH"
+        },
+        {
+          "tx_id": "TX_007",
+          "timestamp": "2022-09-13 05:24:00",
+          "from_bank": "005763",
+          "from_account": "804AB3970",
+          "to_bank": "011",
+          "to_account": "8002EB4A0",
+          "amount_received": 4196.43,
+          "amount_paid": 4196.43,
+          "receiving_currency": "Euro",
+          "payment_currency": "Euro",
+          "payment_format": "ACH"
+        },
+        {
+          "tx_id": "TX_008",
+          "timestamp": "2022-09-10 14:33:00",
+          "from_bank": "0260994",
+          "from_account": "8173C8BE0",
+          "to_bank": "012",
+          "to_account": "805DEDB20",
+          "amount_received": 77419.53,
+          "amount_paid": 77419.53,
+          "receiving_currency": "Yuan",
+          "payment_currency": "Yuan",
+          "payment_format": "ACH"
+        }
+      ],
+      "knowledge_support": [
+        {
+          "chunk_id": "c7c59c982b48a1ae",
+          "score": 0.152195,
+          "base_score": 0.264228,
+          "source_model_probability": 0.0,
+          "source_file": "templates/sar_standard.txt",
+          "source_type": "templates",
+          "excerpt": "SAR Standard Template 1) Activity Summary - Subject/account overview - Date range of suspicious activity 2) Key Suspicious Indicators - High-value flow, pass-through, multi-hop, velocity, cross-bank, multi-currency 3) Evidence and Rationale - Reason-by-reason mapping with transaction IDs - Typology and guideline alignment 4) Recommended Action - Escalation recommendation - Internal review and filing workflow notes"
+        },
+        {
+          "chunk_id": "d6ab6251233bb58c",
+          "score": 0.132101,
+          "base_score": 0.076066,
+          "source_model_probability": 0.993831,
+          "source_file": "typologies/layering.txt",
+          "source_type": "typologies",
+          "excerpt": "Layering typology focuses on separating illicit proceeds from the original source through multiple account hops. Common layering indicators: - Sequential transfers across unrelated accounts and banks. - Rapid movement of funds after incoming credits. - Repeated near-offsetting in-flow and out-flow values. - Use of multiple payment corridors to break traceability. Reasoning cues for SAR: - Highlight hop depth and timeline compression between linked transactions. - Explain why account behavior is inconsistent with normal customer purpose. - Document cross-bank movement ratio and intermediate account concentration."
+        },
+        {
+          "chunk_id": "efbbc00f03de92fd",
+          "score": 0.10564,
+          "base_score": 0.060829,
+          "source_model_probability": 0.993831,
+          "source_file": "typologies/structuring.txt",
+          "source_type": "typologies",
+          "excerpt": "Structuring involves splitting deposits or payments to reduce detectability against internal controls. Common structuring indicators: - Multiple transactions with deliberate fragmentation of a larger value. - Repeated activity around policy thresholds with similar counterparties. - Alternation between cash-like and electronic channels to obscure continuity. - Circular transfer behavior with limited economic purpose. Reasoning cues for SAR: - Include threshold context and explain why observed amounts are suspicious. - Tie repeated transaction cadence to potential evasion behavior. - Reference sender and beneficiary concentration where relevant."
+        }
+      ]
+    },
+    {
+      "reason_id": "R05",
+      "category": "multi_party_network",
+      "claim": "Multiple originators or beneficiaries are involved.",
+      "retrieval_query": "SAR BIPARTITE category multi_party_network Multiple originators or beneficiaries are involved. unique_senders 8 unique_receivers 8 threshold 3 cross_bank_ratio 1.0 hop_count 1 multi_currency True rapid_pass_through False max_tx_1h 2 tx_per_day 3.055",
+      "evidence_metrics": {
+        "unique_senders": 8,
+        "unique_receivers": 8,
+        "threshold": 3
+      },
+      "transaction_ids": [
+        "TX_001",
+        "TX_002",
+        "TX_003",
+        "TX_004",
+        "TX_005",
+        "TX_006",
+        "TX_007",
+        "TX_008"
+      ],
+      "transaction_examples": [
+        {
+          "tx_id": "TX_001",
+          "timestamp": "2022-09-12 15:50:00",
+          "from_bank": "0150202",
+          "from_account": "8129FA550",
+          "to_bank": "012869",
+          "to_account": "805E28B10",
+          "amount_received": 14843.93,
+          "amount_paid": 14843.93,
+          "receiving_currency": "Euro",
+          "payment_currency": "Euro",
+          "payment_format": "ACH"
+        },
+        {
+          "tx_id": "TX_002",
+          "timestamp": "2022-09-11 13:06:00",
+          "from_bank": "025644",
+          "from_account": "819DA7250",
+          "to_bank": "01601",
+          "to_account": "80519C4A0",
+          "amount_received": 14976.17,
+          "amount_paid": 14976.17,
+          "receiving_currency": "US Dollar",
+          "payment_currency": "US Dollar",
+          "payment_format": "ACH"
+        },
+        {
+          "tx_id": "TX_003",
+          "timestamp": "2022-09-10 17:28:00",
+          "from_bank": "029691",
+          "from_account": "80A7A1A40",
+          "to_bank": "0129447",
+          "to_account": "81DCF6060",
+          "amount_received": 2251.95,
+          "amount_paid": 2251.95,
+          "receiving_currency": "Euro",
+          "payment_currency": "Euro",
+          "payment_format": "ACH"
+        },
+        {
+          "tx_id": "TX_004",
+          "timestamp": "2022-09-12 16:37:00",
+          "from_bank": "0243620",
+          "from_account": "811BC5FC0",
+          "to_bank": "018077",
+          "to_account": "80CE05350",
+          "amount_received": 6758.29,
+          "amount_paid": 6758.29,
+          "receiving_currency": "Euro",
+          "payment_currency": "Euro",
+          "payment_format": "ACH"
+        },
+        {
+          "tx_id": "TX_005",
+          "timestamp": "2022-09-11 15:03:00",
+          "from_bank": "0260153",
+          "from_account": "816DB0760",
+          "to_bank": "011",
+          "to_account": "80BC98E80",
+          "amount_received": 15724.39,
+          "amount_paid": 15724.39,
+          "receiving_currency": "US Dollar",
+          "payment_currency": "US Dollar",
+          "payment_format": "ACH"
+        },
+        {
+          "tx_id": "TX_006",
+          "timestamp": "2022-09-12 02:53:00",
+          "from_bank": "0210121",
+          "from_account": "80C2B7060",
+          "to_bank": "0140569",
+          "to_account": "8160CCD70",
+          "amount_received": 3029.13,
+          "amount_paid": 3029.13,
+          "receiving_currency": "US Dollar",
+          "payment_currency": "US Dollar",
+          "payment_format": "ACH"
+        },
+        {
+          "tx_id": "TX_007",
+          "timestamp": "2022-09-13 05:24:00",
+          "from_bank": "005763",
+          "from_account": "804AB3970",
+          "to_bank": "011",
+          "to_account": "8002EB4A0",
+          "amount_received": 4196.43,
+          "amount_paid": 4196.43,
+          "receiving_currency": "Euro",
+          "payment_currency": "Euro",
+          "payment_format": "ACH"
+        },
+        {
+          "tx_id": "TX_008",
+          "timestamp": "2022-09-10 14:33:00",
+          "from_bank": "0260994",
+          "from_account": "8173C8BE0",
+          "to_bank": "012",
+          "to_account": "805DEDB20",
+          "amount_received": 77419.53,
+          "amount_paid": 77419.53,
+          "receiving_currency": "Yuan",
+          "payment_currency": "Yuan",
+          "payment_format": "ACH"
+        }
+      ],
+      "knowledge_support": [
+        {
+          "chunk_id": "efbbc00f03de92fd",
+          "score": 0.164779,
+          "base_score": 0.0965,
+          "source_model_probability": 0.9935,
+          "source_file": "typologies/structuring.txt",
+          "source_type": "typologies",
+          "excerpt": "Structuring involves splitting deposits or payments to reduce detectability against internal controls. Common structuring indicators: - Multiple transactions with deliberate fragmentation of a larger value. - Repeated activity around policy thresholds with similar counterparties. - Alternation between cash-like and electronic channels to obscure continuity. - Circular transfer behavior with limited economic purpose. Reasoning cues for SAR: - Include threshold context and explain why observed amounts are suspicious. - Tie repeated transaction cadence to potential evasion behavior. - Reference sender and beneficiary concentration where relevant."
+        },
+        {
+          "chunk_id": "c7c59c982b48a1ae",
+          "score": 0.137388,
+          "base_score": 0.232703,
+          "source_model_probability": 0.0,
+          "source_file": "templates/sar_standard.txt",
+          "source_type": "templates",
+          "excerpt": "SAR Standard Template 1) Activity Summary - Subject/account overview - Date range of suspicious activity 2) Key Suspicious Indicators - High-value flow, pass-through, multi-hop, velocity, cross-bank, multi-currency 3) Evidence and Rationale - Reason-by-reason mapping with transaction IDs - Typology and guideline alignment 4) Recommended Action - Escalation recommendation - Internal review and filing workflow notes"
+        },
+        {
+          "chunk_id": "58012ce6979d7119",
+          "score": 0.111991,
+          "base_score": 0.065586,
+          "source_model_probability": 0.9935,
+          "source_file": "typologies/smurfing.txt",
+          "source_type": "typologies",
+          "excerpt": "Smurfing typology describes structuring funds into many smaller transfers to avoid control thresholds. Common smurfing indicators: - Burst of low-to-mid value deposits from multiple senders. - Repeated transaction amounts that remain below expected escalation limits. - Consolidation of many small credits into one beneficiary account. - Frequent ACH or card-like channels with short intervals. Reasoning cues for SAR: - Show transaction velocity and clustering in short time windows. - Map repeated amount bands and sender diversity. - Explain how volume pattern indicates deliberate threshold avoidance."
+        }
+      ]
+    },
+    {
+      "reason_id": "R06",
+      "category": "multi_currency_activity",
+      "claim": "Multiple currencies appear within the transaction set.",
+      "retrieval_query": "SAR BIPARTITE category multi_currency_activity Multiple currencies appear within the transaction set. multi_currency_flag True cross_bank_ratio 1.0 hop_count 1 multi_currency True rapid_pass_through False max_tx_1h 2 tx_per_day 3.055",
+      "evidence_metrics": {
+        "multi_currency_flag": true
+      },
+      "transaction_ids": [
+        "TX_001",
+        "TX_002",
+        "TX_003",
+        "TX_004",
+        "TX_005",
+        "TX_006",
+        "TX_007",
+        "TX_008"
+      ],
+      "transaction_examples": [
+        {
+          "tx_id": "TX_001",
+          "timestamp": "2022-09-12 15:50:00",
+          "from_bank": "0150202",
+          "from_account": "8129FA550",
+          "to_bank": "012869",
+          "to_account": "805E28B10",
+          "amount_received": 14843.93,
+          "amount_paid": 14843.93,
+          "receiving_currency": "Euro",
+          "payment_currency": "Euro",
+          "payment_format": "ACH"
+        },
+        {
+          "tx_id": "TX_002",
+          "timestamp": "2022-09-11 13:06:00",
+          "from_bank": "025644",
+          "from_account": "819DA7250",
+          "to_bank": "01601",
+          "to_account": "80519C4A0",
+          "amount_received": 14976.17,
+          "amount_paid": 14976.17,
+          "receiving_currency": "US Dollar",
+          "payment_currency": "US Dollar",
+          "payment_format": "ACH"
+        },
+        {
+          "tx_id": "TX_003",
+          "timestamp": "2022-09-10 17:28:00",
+          "from_bank": "029691",
+          "from_account": "80A7A1A40",
+          "to_bank": "0129447",
+          "to_account": "81DCF6060",
+          "amount_received": 2251.95,
+          "amount_paid": 2251.95,
+          "receiving_currency": "Euro",
+          "payment_currency": "Euro",
+          "payment_format": "ACH"
+        },
+        {
+          "tx_id": "TX_004",
+          "timestamp": "2022-09-12 16:37:00",
+          "from_bank": "0243620",
+          "from_account": "811BC5FC0",
+          "to_bank": "018077",
+          "to_account": "80CE05350",
+          "amount_received": 6758.29,
+          "amount_paid": 6758.29,
+          "receiving_currency": "Euro",
+          "payment_currency": "Euro",
+          "payment_format": "ACH"
+        },
+        {
+          "tx_id": "TX_005",
+          "timestamp": "2022-09-11 15:03:00",
+          "from_bank": "0260153",
+          "from_account": "816DB0760",
+          "to_bank": "011",
+          "to_account": "80BC98E80",
+          "amount_received": 15724.39,
+          "amount_paid": 15724.39,
+          "receiving_currency": "US Dollar",
+          "payment_currency": "US Dollar",
+          "payment_format": "ACH"
+        },
+        {
+          "tx_id": "TX_006",
+          "timestamp": "2022-09-12 02:53:00",
+          "from_bank": "0210121",
+          "from_account": "80C2B7060",
+          "to_bank": "0140569",
+          "to_account": "8160CCD70",
+          "amount_received": 3029.13,
+          "amount_paid": 3029.13,
+          "receiving_currency": "US Dollar",
+          "payment_currency": "US Dollar",
+          "payment_format": "ACH"
+        },
+        {
+          "tx_id": "TX_007",
+          "timestamp": "2022-09-13 05:24:00",
+          "from_bank": "005763",
+          "from_account": "804AB3970",
+          "to_bank": "011",
+          "to_account": "8002EB4A0",
+          "amount_received": 4196.43,
+          "amount_paid": 4196.43,
+          "receiving_currency": "Euro",
+          "payment_currency": "Euro",
+          "payment_format": "ACH"
+        },
+        {
+          "tx_id": "TX_008",
+          "timestamp": "2022-09-10 14:33:00",
+          "from_bank": "0260994",
+          "from_account": "8173C8BE0",
+          "to_bank": "012",
+          "to_account": "805DEDB20",
+          "amount_received": 77419.53,
+          "amount_paid": 77419.53,
+          "receiving_currency": "Yuan",
+          "payment_currency": "Yuan",
+          "payment_format": "ACH"
+        }
+      ],
+      "knowledge_support": [
+        {
+          "chunk_id": "c7c59c982b48a1ae",
+          "score": 0.145753,
+          "base_score": 0.246872,
+          "source_model_probability": 0.0,
+          "source_file": "templates/sar_standard.txt",
+          "source_type": "templates",
+          "excerpt": "SAR Standard Template 1) Activity Summary - Subject/account overview - Date range of suspicious activity 2) Key Suspicious Indicators - High-value flow, pass-through, multi-hop, velocity, cross-bank, multi-currency 3) Evidence and Rationale - Reason-by-reason mapping with transaction IDs - Typology and guideline alignment 4) Recommended Action - Escalation recommendation - Internal review and filing workflow notes"
+        },
+        {
+          "chunk_id": "d6ab6251233bb58c",
+          "score": 0.137979,
+          "base_score": 0.079535,
+          "source_model_probability": 0.990393,
+          "source_file": "typologies/layering.txt",
+          "source_type": "typologies",
+          "excerpt": "Layering typology focuses on separating illicit proceeds from the original source through multiple account hops. Common layering indicators: - Sequential transfers across unrelated accounts and banks. - Rapid movement of funds after incoming credits. - Repeated near-offsetting in-flow and out-flow values. - Use of multiple payment corridors to break traceability. Reasoning cues for SAR: - Highlight hop depth and timeline compression between linked transactions. - Explain why account behavior is inconsistent with normal customer purpose. - Document cross-bank movement ratio and intermediate account concentration."
+        },
+        {
+          "chunk_id": "58012ce6979d7119",
+          "score": 0.093424,
+          "base_score": 0.053852,
+          "source_model_probability": 0.990393,
+          "source_file": "typologies/smurfing.txt",
+          "source_type": "typologies",
+          "excerpt": "Smurfing typology describes structuring funds into many smaller transfers to avoid control thresholds. Common smurfing indicators: - Burst of low-to-mid value deposits from multiple senders. - Repeated transaction amounts that remain below expected escalation limits. - Consolidation of many small credits into one beneficiary account. - Frequent ACH or card-like channels with short intervals. Reasoning cues for SAR: - Show transaction velocity and clustering in short time windows. - Map repeated amount bands and sender diversity. - Explain how volume pattern indicates deliberate threshold avoidance."
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "transaction_count": 8,
+    "reason_count": 6
+  }
+}

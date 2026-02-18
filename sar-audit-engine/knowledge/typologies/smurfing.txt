@@ -1,0 +1,12 @@
+Smurfing typology describes structuring funds into many smaller transfers to avoid control thresholds.
+
+Common smurfing indicators:
+- Burst of low-to-mid value deposits from multiple senders.
+- Repeated transaction amounts that remain below expected escalation limits.
+- Consolidation of many small credits into one beneficiary account.
+- Frequent ACH or card-like channels with short intervals.
+
+Reasoning cues for SAR:
+- Show transaction velocity and clustering in short time windows.
+- Map repeated amount bands and sender diversity.
+- Explain how volume pattern indicates deliberate threshold avoidance.

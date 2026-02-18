@@ -1,0 +1,44 @@
+{
+  "case_id": "CASE_755",
+  "typology": "CYCLE",
+  "reasoning": [
+    {
+      "step_id": "R01",
+      "step": "Case typology labeled as CYCLE based on pattern parser classification.",
+      "evidence": {
+        "typology": "CYCLE",
+        "source": "pattern_parser"
+      },
+      "transaction_ids": [
+        "TX_001",
+        "TX_002"
+      ]
+    },
+    {
+      "step_id": "R02",
+      "step": "Net flow is near zero relative to total inflow, indicating potential pass-through.",
+      "evidence": {
+        "net_flow": 0.0,
+        "total_inflow": 3967.44,
+        "ratio": 0.0,
+        "threshold": 0.1
+      },
+      "transaction_ids": [
+        "TX_001",
+        "TX_002"
+      ]
+    },
+    {
+      "step_id": "R03",
+      "step": "Majority of transfers are cross-bank.",
+      "evidence": {
+        "cross_bank_ratio": 1.0,
+        "threshold": 0.6
+      },
+      "transaction_ids": [
+        "TX_001",
+        "TX_002"
+      ]
+    }
+  ]
+}

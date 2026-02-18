@@ -1,0 +1,54 @@
+{
+    "case_id": "CASE_1644",
+    "typology": "CYCLE",
+    "transactions": [
+        {
+            "timestamp": "2022/09/10 14:33",
+            "from_bank": "0232428",
+            "from_account": "80DAD3AA0",
+            "to_bank": "012582",
+            "to_account": "801B3EFE0",
+            "amount_received": 7368.68,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 7368.68,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/11 17:23",
+            "from_bank": "012582",
+            "from_account": "801B3EFE0",
+            "to_bank": "0160226",
+            "to_account": "816F1ACB0",
+            "amount_received": 555168.68,
+            "receiving_currency": "Rupee",
+            "amount_paid": 555168.68,
+            "payment_currency": "Rupee",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/12 19:21",
+            "from_bank": "0160226",
+            "from_account": "816F1ACB0",
+            "to_bank": "0252918",
+            "to_account": "819BDC020",
+            "amount_received": 7263.74,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 7263.74,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/14 14:45",
+            "from_bank": "0252918",
+            "from_account": "819BDC020",
+            "to_bank": "0232428",
+            "to_account": "80DAD3AA0",
+            "amount_received": 6198.88,
+            "receiving_currency": "Euro",
+            "amount_paid": 6198.88,
+            "payment_currency": "Euro",
+            "payment_format": "ACH"
+        }
+    ]
+}

@@ -1,0 +1,57 @@
+{
+  "case_id": "CASE_1479",
+  "typology": "BIPARTITE",
+  "transactions": [
+    {
+      "timestamp": "2022/09/10 14:58",
+      "from_bank": "02954",
+      "from_account": "807AF1520",
+      "to_bank": "0029652",
+      "to_account": "810856660",
+      "amount_received": 64021.41,
+      "receiving_currency": "Yuan",
+      "amount_paid": 64021.41,
+      "payment_currency": "Yuan",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/11 18:24",
+      "from_bank": "01924",
+      "from_account": "820653270",
+      "to_bank": "0037523",
+      "to_account": "81C3DBEF0",
+      "amount_received": 1315.63,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 1315.63,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    }
+  ],
+  "enriched_transactions": [
+    {
+      "timestamp": "2022/09/10 14:58",
+      "from_bank": "02954",
+      "from_account": "807AF1520",
+      "to_bank": "0029652",
+      "to_account": "810856660",
+      "amount_received": 64021.41,
+      "receiving_currency": "Yuan",
+      "amount_paid": 64021.41,
+      "payment_currency": "Yuan",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/11 18:24",
+      "from_bank": "01924",
+      "from_account": "820653270",
+      "to_bank": "0037523",
+      "to_account": "81C3DBEF0",
+      "amount_received": 1315.63,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 1315.63,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    }
+  ],
+  "transaction_count": 2
+}

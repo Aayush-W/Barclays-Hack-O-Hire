@@ -1,0 +1,30 @@
+{
+    "case_id": "CASE_1806",
+    "typology": "In",
+    "transactions": [
+        {
+            "timestamp": "2022/09/11 15:07",
+            "from_bank": "0161863",
+            "from_account": "823D27450",
+            "to_bank": "0272858",
+            "to_account": "823D274A0",
+            "amount_received": 16703.7,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 16703.7,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/11 05:46",
+            "from_bank": "0272858",
+            "from_account": "823D274A0",
+            "to_bank": "0161863",
+            "to_account": "823D27450",
+            "amount_received": 19268.28,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 19268.28,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        }
+    ]
+}

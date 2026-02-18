@@ -1,0 +1,42 @@
+{
+    "case_id": "CASE_383",
+    "typology": "Out",
+    "transactions": [
+        {
+            "timestamp": "2022/09/03 07:29",
+            "from_bank": "0125872",
+            "from_account": "80C1BB8B0",
+            "to_bank": "0020874",
+            "to_account": "80AAD5580",
+            "amount_received": 10444.25,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 10444.25,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/07 10:51",
+            "from_bank": "0125872",
+            "from_account": "80C1BB8B0",
+            "to_bank": "016327",
+            "to_account": "803CEF8E0",
+            "amount_received": 11804.99,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 11804.99,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/09 00:51",
+            "from_bank": "0125872",
+            "from_account": "80C1BB8B0",
+            "to_bank": "0260994",
+            "to_account": "818416DD0",
+            "amount_received": 933655.11,
+            "receiving_currency": "Rupee",
+            "amount_paid": 933655.11,
+            "payment_currency": "Rupee",
+            "payment_format": "ACH"
+        }
+    ]
+}

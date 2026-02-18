@@ -1,0 +1,57 @@
+{
+  "case_id": "CASE_2418",
+  "typology": "GATHER",
+  "transactions": [
+    {
+      "timestamp": "2022/09/15 01:25",
+      "from_bank": "0280086",
+      "from_account": "823D1A460",
+      "to_bank": "0031691",
+      "to_account": "823D1A4B0",
+      "amount_received": 9809.07,
+      "receiving_currency": "Euro",
+      "amount_paid": 9809.07,
+      "payment_currency": "Euro",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/16 07:43",
+      "from_bank": "0031691",
+      "from_account": "823D1A4B0",
+      "to_bank": "0280086",
+      "to_account": "823D1A460",
+      "amount_received": 9639.01,
+      "receiving_currency": "Euro",
+      "amount_paid": 9639.01,
+      "payment_currency": "Euro",
+      "payment_format": "ACH"
+    }
+  ],
+  "enriched_transactions": [
+    {
+      "timestamp": "2022/09/15 01:25",
+      "from_bank": "0280086",
+      "from_account": "823D1A460",
+      "to_bank": "0031691",
+      "to_account": "823D1A4B0",
+      "amount_received": 9809.07,
+      "receiving_currency": "Euro",
+      "amount_paid": 9809.07,
+      "payment_currency": "Euro",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/16 07:43",
+      "from_bank": "0031691",
+      "from_account": "823D1A4B0",
+      "to_bank": "0280086",
+      "to_account": "823D1A460",
+      "amount_received": 9639.01,
+      "receiving_currency": "Euro",
+      "amount_paid": 9639.01,
+      "payment_currency": "Euro",
+      "payment_format": "ACH"
+    }
+  ],
+  "transaction_count": 2
+}

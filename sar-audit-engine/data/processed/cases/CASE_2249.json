@@ -1,0 +1,18 @@
+{
+    "case_id": "CASE_2249",
+    "typology": "BIPARTITE",
+    "transactions": [
+        {
+            "timestamp": "2022/09/16 12:38",
+            "from_bank": "01115965",
+            "from_account": "82B75BF30",
+            "to_bank": "00113154",
+            "to_account": "82AD58260",
+            "amount_received": 25496.68,
+            "receiving_currency": "Canadian Dollar",
+            "amount_paid": 25496.68,
+            "payment_currency": "Canadian Dollar",
+            "payment_format": "ACH"
+        }
+    ]
+}

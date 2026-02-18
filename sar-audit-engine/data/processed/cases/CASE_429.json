@@ -1,0 +1,18 @@
+{
+    "case_id": "CASE_429",
+    "typology": "Out",
+    "transactions": [
+        {
+            "timestamp": "2022/09/03 12:34",
+            "from_bank": "0195899",
+            "from_account": "824C0E130",
+            "to_bank": "0096471",
+            "to_account": "824C0E180",
+            "amount_received": 12932.42,
+            "receiving_currency": "UK Pound",
+            "amount_paid": 12932.42,
+            "payment_currency": "UK Pound",
+            "payment_format": "ACH"
+        }
+    ]
+}

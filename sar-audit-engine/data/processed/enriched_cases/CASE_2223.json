@@ -1,0 +1,81 @@
+{
+  "case_id": "CASE_2223",
+  "typology": "CYCLE",
+  "transactions": [
+    {
+      "timestamp": "2022/09/13 19:37",
+      "from_bank": "0065399",
+      "from_account": "81807F940",
+      "to_bank": "026206",
+      "to_account": "80FB79D70",
+      "amount_received": 8304.5,
+      "receiving_currency": "Euro",
+      "amount_paid": 8304.5,
+      "payment_currency": "Euro",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/16 13:30",
+      "from_bank": "026206",
+      "from_account": "80FB79D70",
+      "to_bank": "001315",
+      "to_account": "80B5DEEE0",
+      "amount_received": 9572.66,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 9572.66,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/18 18:53",
+      "from_bank": "001315",
+      "from_account": "80B5DEEE0",
+      "to_bank": "0065399",
+      "to_account": "81807F940",
+      "amount_received": 778833.46,
+      "receiving_currency": "Rupee",
+      "amount_paid": 778833.46,
+      "payment_currency": "Rupee",
+      "payment_format": "ACH"
+    }
+  ],
+  "enriched_transactions": [
+    {
+      "timestamp": "2022/09/13 19:37",
+      "from_bank": "0065399",
+      "from_account": "81807F940",
+      "to_bank": "026206",
+      "to_account": "80FB79D70",
+      "amount_received": 8304.5,
+      "receiving_currency": "Euro",
+      "amount_paid": 8304.5,
+      "payment_currency": "Euro",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/16 13:30",
+      "from_bank": "026206",
+      "from_account": "80FB79D70",
+      "to_bank": "001315",
+      "to_account": "80B5DEEE0",
+      "amount_received": 9572.66,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 9572.66,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/18 18:53",
+      "from_bank": "001315",
+      "from_account": "80B5DEEE0",
+      "to_bank": "0065399",
+      "to_account": "81807F940",
+      "amount_received": 778833.46,
+      "receiving_currency": "Rupee",
+      "amount_paid": 778833.46,
+      "payment_currency": "Rupee",
+      "payment_format": "ACH"
+    }
+  ],
+  "transaction_count": 3
+}

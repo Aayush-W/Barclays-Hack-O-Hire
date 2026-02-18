@@ -1,0 +1,129 @@
+{
+  "case_id": "CASE_2331",
+  "typology": "CYCLE",
+  "transactions": [
+    {
+      "timestamp": "2022/09/14 12:20",
+      "from_bank": "005965",
+      "from_account": "8057540B0",
+      "to_bank": "025644",
+      "to_account": "805753EC0",
+      "amount_received": 19566.19,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 19566.19,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/15 12:23",
+      "from_bank": "025644",
+      "from_account": "805753EC0",
+      "to_bank": "029630",
+      "to_account": "805754540",
+      "amount_received": 17930.85,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 17930.85,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/17 01:08",
+      "from_bank": "029630",
+      "from_account": "805754540",
+      "to_bank": "028219",
+      "to_account": "803C25F20",
+      "amount_received": 18926.8,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 18926.8,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/17 10:50",
+      "from_bank": "028219",
+      "from_account": "803C25F20",
+      "to_bank": "011796",
+      "to_account": "801F15560",
+      "amount_received": 19206.44,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 19206.44,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/18 16:56",
+      "from_bank": "011796",
+      "from_account": "801F15560",
+      "to_bank": "005965",
+      "to_account": "8057540B0",
+      "amount_received": 20781.39,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 20781.39,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    }
+  ],
+  "enriched_transactions": [
+    {
+      "timestamp": "2022/09/14 12:20",
+      "from_bank": "005965",
+      "from_account": "8057540B0",
+      "to_bank": "025644",
+      "to_account": "805753EC0",
+      "amount_received": 19566.19,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 19566.19,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/15 12:23",
+      "from_bank": "025644",
+      "from_account": "805753EC0",
+      "to_bank": "029630",
+      "to_account": "805754540",
+      "amount_received": 17930.85,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 17930.85,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/17 01:08",
+      "from_bank": "029630",
+      "from_account": "805754540",
+      "to_bank": "028219",
+      "to_account": "803C25F20",
+      "amount_received": 18926.8,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 18926.8,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/17 10:50",
+      "from_bank": "028219",
+      "from_account": "803C25F20",
+      "to_bank": "011796",
+      "to_account": "801F15560",
+      "amount_received": 19206.44,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 19206.44,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/18 16:56",
+      "from_bank": "011796",
+      "from_account": "801F15560",
+      "to_bank": "005965",
+      "to_account": "8057540B0",
+      "amount_received": 20781.39,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 20781.39,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    }
+  ],
+  "transaction_count": 5
+}

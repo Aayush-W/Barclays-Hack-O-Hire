@@ -1,0 +1,30 @@
+{
+    "case_id": "CASE_2121",
+    "typology": "Out",
+    "transactions": [
+        {
+            "timestamp": "2022/09/13 06:41",
+            "from_bank": "002",
+            "from_account": "8050EEDD0",
+            "to_bank": "01924",
+            "to_account": "80112E810",
+            "amount_received": 5109.21,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 5109.21,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/14 01:54",
+            "from_bank": "002",
+            "from_account": "8050EEDD0",
+            "to_bank": "00718",
+            "to_account": "80181B130",
+            "amount_received": 14558.76,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 14558.76,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        }
+    ]
+}

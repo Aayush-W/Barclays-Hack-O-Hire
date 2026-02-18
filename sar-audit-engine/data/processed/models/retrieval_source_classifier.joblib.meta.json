@@ -1,0 +1,15 @@
+{
+  "accuracy": 1.0,
+  "macro_f1": 1.0,
+  "train_samples": 12590,
+  "test_samples": 3148,
+  "classes": [
+    "regulations",
+    "typologies"
+  ],
+  "label_distribution": {
+    "regulations": 2461,
+    "typologies": 13277
+  },
+  "model_path": "C:\\Users\\Aayush Walsangikar\\OneDrive\\Desktop\\Barclays\\sar-audit-engine\\data\\processed\\models\\retrieval_source_classifier.joblib"
+}

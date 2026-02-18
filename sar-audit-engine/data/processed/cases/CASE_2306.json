@@ -1,0 +1,30 @@
+{
+    "case_id": "CASE_2306",
+    "typology": "STACK",
+    "transactions": [
+        {
+            "timestamp": "2022/09/15 04:31",
+            "from_bank": "00125319",
+            "from_account": "82E6C0C30",
+            "to_bank": "0111",
+            "to_account": "82E921920",
+            "amount_received": 19542.01,
+            "receiving_currency": "Australian Dollar",
+            "amount_paid": 19542.01,
+            "payment_currency": "Australian Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/15 17:28",
+            "from_bank": "0111",
+            "from_account": "82E921920",
+            "to_bank": "029",
+            "to_account": "82DD77190",
+            "amount_received": 19950.84,
+            "receiving_currency": "Australian Dollar",
+            "amount_paid": 19950.84,
+            "payment_currency": "Australian Dollar",
+            "payment_format": "ACH"
+        }
+    ]
+}

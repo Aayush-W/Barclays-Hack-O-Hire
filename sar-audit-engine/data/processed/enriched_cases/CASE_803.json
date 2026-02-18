@@ -1,0 +1,57 @@
+{
+  "case_id": "CASE_803",
+  "typology": "RANDOM",
+  "transactions": [
+    {
+      "timestamp": "2022/09/05 17:29",
+      "from_bank": "00718",
+      "from_account": "824D54C10",
+      "to_bank": "009340",
+      "to_account": "824D54C60",
+      "amount_received": 6700.89,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 6700.89,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/05 19:33",
+      "from_bank": "009340",
+      "from_account": "824D54C60",
+      "to_bank": "005665",
+      "to_account": "824D54BC0",
+      "amount_received": 6700.89,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 6700.89,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    }
+  ],
+  "enriched_transactions": [
+    {
+      "timestamp": "2022/09/05 17:29",
+      "from_bank": "00718",
+      "from_account": "824D54C10",
+      "to_bank": "009340",
+      "to_account": "824D54C60",
+      "amount_received": 6700.89,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 6700.89,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/05 19:33",
+      "from_bank": "009340",
+      "from_account": "824D54C60",
+      "to_bank": "005665",
+      "to_account": "824D54BC0",
+      "amount_received": 6700.89,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 6700.89,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    }
+  ],
+  "transaction_count": 2
+}

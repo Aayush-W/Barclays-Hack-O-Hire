@@ -1,0 +1,57 @@
+{
+  "case_id": "CASE_2215",
+  "typology": "GATHER",
+  "transactions": [
+    {
+      "timestamp": "2022/09/13 18:50",
+      "from_bank": "0293268",
+      "from_account": "8238ACEC0",
+      "to_bank": "0295233",
+      "to_account": "8238ACCD0",
+      "amount_received": 1348.9,
+      "receiving_currency": "UK Pound",
+      "amount_paid": 1348.9,
+      "payment_currency": "UK Pound",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/19 11:36",
+      "from_bank": "0295233",
+      "from_account": "8238ACCD0",
+      "to_bank": "0293268",
+      "to_account": "8238ACEC0",
+      "amount_received": 9053.68,
+      "receiving_currency": "UK Pound",
+      "amount_paid": 9053.68,
+      "payment_currency": "UK Pound",
+      "payment_format": "ACH"
+    }
+  ],
+  "enriched_transactions": [
+    {
+      "timestamp": "2022/09/13 18:50",
+      "from_bank": "0293268",
+      "from_account": "8238ACEC0",
+      "to_bank": "0295233",
+      "to_account": "8238ACCD0",
+      "amount_received": 1348.9,
+      "receiving_currency": "UK Pound",
+      "amount_paid": 1348.9,
+      "payment_currency": "UK Pound",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/19 11:36",
+      "from_bank": "0295233",
+      "from_account": "8238ACCD0",
+      "to_bank": "0293268",
+      "to_account": "8238ACEC0",
+      "amount_received": 9053.68,
+      "receiving_currency": "UK Pound",
+      "amount_paid": 9053.68,
+      "payment_currency": "UK Pound",
+      "payment_format": "ACH"
+    }
+  ],
+  "transaction_count": 2
+}

@@ -1,0 +1,30 @@
+{
+    "case_id": "CASE_2680",
+    "typology": "CYCLE",
+    "transactions": [
+        {
+            "timestamp": "2022/09/16 13:58",
+            "from_bank": "02131507",
+            "from_account": "8301A0340",
+            "to_bank": "00127022",
+            "to_account": "830462B80",
+            "amount_received": 7923.9,
+            "receiving_currency": "Australian Dollar",
+            "amount_paid": 7923.9,
+            "payment_currency": "Australian Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/17 17:50",
+            "from_bank": "00127022",
+            "from_account": "830462B80",
+            "to_bank": "02131507",
+            "to_account": "8301A0340",
+            "amount_received": 8368.16,
+            "receiving_currency": "Australian Dollar",
+            "amount_paid": 8368.16,
+            "payment_currency": "Australian Dollar",
+            "payment_format": "ACH"
+        }
+    ]
+}

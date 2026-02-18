@@ -1,0 +1,66 @@
+{
+    "case_id": "CASE_2382",
+    "typology": "BIPARTITE",
+    "transactions": [
+        {
+            "timestamp": "2022/09/16 02:42",
+            "from_bank": "026564",
+            "from_account": "80445CA50",
+            "to_bank": "025644",
+            "to_account": "808A89AF0",
+            "amount_received": 19489.25,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 19489.25,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/17 00:07",
+            "from_bank": "0136708",
+            "from_account": "80E04C6A0",
+            "to_bank": "0215945",
+            "to_account": "81A402970",
+            "amount_received": 8137.25,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 8137.25,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/15 14:31",
+            "from_bank": "023299",
+            "from_account": "806212540",
+            "to_bank": "026206",
+            "to_account": "8028387D0",
+            "amount_received": 2035.84,
+            "receiving_currency": "Euro",
+            "amount_paid": 2035.84,
+            "payment_currency": "Euro",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/15 12:40",
+            "from_bank": "029463",
+            "from_account": "805704500",
+            "to_bank": "0029765",
+            "to_account": "80D64C0A0",
+            "amount_received": 103265.37,
+            "receiving_currency": "Yuan",
+            "amount_paid": 103265.37,
+            "payment_currency": "Yuan",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/15 13:23",
+            "from_bank": "0075101",
+            "from_account": "81BE422D0",
+            "to_bank": "019053",
+            "to_account": "80494ED20",
+            "amount_received": 16231.29,
+            "receiving_currency": "Euro",
+            "amount_paid": 16231.29,
+            "payment_currency": "Euro",
+            "payment_format": "ACH"
+        }
+    ]
+}

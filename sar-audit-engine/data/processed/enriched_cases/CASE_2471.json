@@ -1,0 +1,33 @@
+{
+  "case_id": "CASE_2471",
+  "typology": "BIPARTITE",
+  "transactions": [
+    {
+      "timestamp": "2022/09/16 16:19",
+      "from_bank": "0110",
+      "from_account": "82E6C08C0",
+      "to_bank": "02127249",
+      "to_account": "82E921690",
+      "amount_received": 16734.91,
+      "receiving_currency": "Australian Dollar",
+      "amount_paid": 16734.91,
+      "payment_currency": "Australian Dollar",
+      "payment_format": "ACH"
+    }
+  ],
+  "enriched_transactions": [
+    {
+      "timestamp": "2022/09/16 16:19",
+      "from_bank": "0110",
+      "from_account": "82E6C08C0",
+      "to_bank": "02127249",
+      "to_account": "82E921690",
+      "amount_received": 16734.91,
+      "receiving_currency": "Australian Dollar",
+      "amount_paid": 16734.91,
+      "payment_currency": "Australian Dollar",
+      "payment_format": "ACH"
+    }
+  ],
+  "transaction_count": 1
+}

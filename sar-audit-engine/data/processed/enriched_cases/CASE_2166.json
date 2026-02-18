@@ -1,0 +1,33 @@
+{
+  "case_id": "CASE_2166",
+  "typology": "Out",
+  "transactions": [
+    {
+      "timestamp": "2022/09/13 12:18",
+      "from_bank": "0097570",
+      "from_account": "824CAF320",
+      "to_bank": "0196902",
+      "to_account": "824D406A0",
+      "amount_received": 12757.08,
+      "receiving_currency": "UK Pound",
+      "amount_paid": 12757.08,
+      "payment_currency": "UK Pound",
+      "payment_format": "ACH"
+    }
+  ],
+  "enriched_transactions": [
+    {
+      "timestamp": "2022/09/13 12:18",
+      "from_bank": "0097570",
+      "from_account": "824CAF320",
+      "to_bank": "0196902",
+      "to_account": "824D406A0",
+      "amount_received": 12757.08,
+      "receiving_currency": "UK Pound",
+      "amount_paid": 12757.08,
+      "payment_currency": "UK Pound",
+      "payment_format": "ACH"
+    }
+  ],
+  "transaction_count": 1
+}

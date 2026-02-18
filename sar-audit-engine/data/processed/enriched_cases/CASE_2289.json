@@ -1,0 +1,33 @@
+{
+  "case_id": "CASE_2289",
+  "typology": "BIPARTITE",
+  "transactions": [
+    {
+      "timestamp": "2022/09/16 11:42",
+      "from_bank": "0096471",
+      "from_account": "824C0E180",
+      "to_bank": "0195899",
+      "to_account": "824C0E130",
+      "amount_received": 3490.04,
+      "receiving_currency": "UK Pound",
+      "amount_paid": 3490.04,
+      "payment_currency": "UK Pound",
+      "payment_format": "ACH"
+    }
+  ],
+  "enriched_transactions": [
+    {
+      "timestamp": "2022/09/16 11:42",
+      "from_bank": "0096471",
+      "from_account": "824C0E180",
+      "to_bank": "0195899",
+      "to_account": "824C0E130",
+      "amount_received": 3490.04,
+      "receiving_currency": "UK Pound",
+      "amount_paid": 3490.04,
+      "payment_currency": "UK Pound",
+      "payment_format": "ACH"
+    }
+  ],
+  "transaction_count": 1
+}

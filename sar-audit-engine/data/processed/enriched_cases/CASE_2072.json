@@ -1,0 +1,33 @@
+{
+  "case_id": "CASE_2072",
+  "typology": "BIPARTITE",
+  "transactions": [
+    {
+      "timestamp": "2022/09/14 17:29",
+      "from_bank": "0053964",
+      "from_account": "8150771B0",
+      "to_bank": "0136239",
+      "to_account": "80DF6BDC0",
+      "amount_received": 56094.77,
+      "receiving_currency": "Yuan",
+      "amount_paid": 56094.77,
+      "payment_currency": "Yuan",
+      "payment_format": "ACH"
+    }
+  ],
+  "enriched_transactions": [
+    {
+      "timestamp": "2022/09/14 17:29",
+      "from_bank": "0053964",
+      "from_account": "8150771B0",
+      "to_bank": "0136239",
+      "to_account": "80DF6BDC0",
+      "amount_received": 56094.77,
+      "receiving_currency": "Yuan",
+      "amount_paid": 56094.77,
+      "payment_currency": "Yuan",
+      "payment_format": "ACH"
+    }
+  ],
+  "transaction_count": 1
+}

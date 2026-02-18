@@ -1,0 +1,177 @@
+{
+  "case_id": "CASE_436",
+  "typology": "In",
+  "transactions": [
+    {
+      "timestamp": "2022/09/03 13:39",
+      "from_bank": "0172156",
+      "from_account": "81BF8B070",
+      "to_bank": "0073691",
+      "to_account": "81C394830",
+      "amount_received": 599746.26,
+      "receiving_currency": "Ruble",
+      "amount_paid": 599746.26,
+      "payment_currency": "Ruble",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/07 15:41",
+      "from_bank": "0282",
+      "from_account": "81B272210",
+      "to_bank": "0073691",
+      "to_account": "81C394830",
+      "amount_received": 898294.84,
+      "receiving_currency": "Ruble",
+      "amount_paid": 898294.84,
+      "payment_currency": "Ruble",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/07 21:35",
+      "from_bank": "0262657",
+      "from_account": "81A536E10",
+      "to_bank": "0073691",
+      "to_account": "81C394830",
+      "amount_received": 1473026.5,
+      "receiving_currency": "Ruble",
+      "amount_paid": 1473026.5,
+      "payment_currency": "Ruble",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/07 02:10",
+      "from_bank": "0073691",
+      "from_account": "81C394830",
+      "to_bank": "0282",
+      "to_account": "81B272210",
+      "amount_received": 253096.63,
+      "receiving_currency": "Ruble",
+      "amount_paid": 253096.63,
+      "payment_currency": "Ruble",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/08 16:32",
+      "from_bank": "0073691",
+      "from_account": "81C394830",
+      "to_bank": "0282",
+      "to_account": "81C394920",
+      "amount_received": 1169895.89,
+      "receiving_currency": "Ruble",
+      "amount_paid": 1169895.89,
+      "payment_currency": "Ruble",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/09 08:48",
+      "from_bank": "0073691",
+      "from_account": "81C394830",
+      "to_bank": "0262657",
+      "to_account": "81A536E10",
+      "amount_received": 584120.89,
+      "receiving_currency": "Ruble",
+      "amount_paid": 584120.89,
+      "payment_currency": "Ruble",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/11 09:29",
+      "from_bank": "0073691",
+      "from_account": "81C394830",
+      "to_bank": "0073691",
+      "to_account": "81C394830",
+      "amount_received": 519806.5,
+      "receiving_currency": "Ruble",
+      "amount_paid": 519806.5,
+      "payment_currency": "Ruble",
+      "payment_format": "ACH"
+    }
+  ],
+  "enriched_transactions": [
+    {
+      "timestamp": "2022/09/03 13:39",
+      "from_bank": "0172156",
+      "from_account": "81BF8B070",
+      "to_bank": "0073691",
+      "to_account": "81C394830",
+      "amount_received": 599746.26,
+      "receiving_currency": "Ruble",
+      "amount_paid": 599746.26,
+      "payment_currency": "Ruble",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/07 15:41",
+      "from_bank": "0282",
+      "from_account": "81B272210",
+      "to_bank": "0073691",
+      "to_account": "81C394830",
+      "amount_received": 898294.84,
+      "receiving_currency": "Ruble",
+      "amount_paid": 898294.84,
+      "payment_currency": "Ruble",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/07 21:35",
+      "from_bank": "0262657",
+      "from_account": "81A536E10",
+      "to_bank": "0073691",
+      "to_account": "81C394830",
+      "amount_received": 1473026.5,
+      "receiving_currency": "Ruble",
+      "amount_paid": 1473026.5,
+      "payment_currency": "Ruble",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/07 02:10",
+      "from_bank": "0073691",
+      "from_account": "81C394830",
+      "to_bank": "0282",
+      "to_account": "81B272210",
+      "amount_received": 253096.63,
+      "receiving_currency": "Ruble",
+      "amount_paid": 253096.63,
+      "payment_currency": "Ruble",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/08 16:32",
+      "from_bank": "0073691",
+      "from_account": "81C394830",
+      "to_bank": "0282",
+      "to_account": "81C394920",
+      "amount_received": 1169895.89,
+      "receiving_currency": "Ruble",
+      "amount_paid": 1169895.89,
+      "payment_currency": "Ruble",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/09 08:48",
+      "from_bank": "0073691",
+      "from_account": "81C394830",
+      "to_bank": "0262657",
+      "to_account": "81A536E10",
+      "amount_received": 584120.89,
+      "receiving_currency": "Ruble",
+      "amount_paid": 584120.89,
+      "payment_currency": "Ruble",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/11 09:29",
+      "from_bank": "0073691",
+      "from_account": "81C394830",
+      "to_bank": "0073691",
+      "to_account": "81C394830",
+      "amount_received": 519806.5,
+      "receiving_currency": "Ruble",
+      "amount_paid": 519806.5,
+      "payment_currency": "Ruble",
+      "payment_format": "ACH"
+    }
+  ],
+  "transaction_count": 7
+}

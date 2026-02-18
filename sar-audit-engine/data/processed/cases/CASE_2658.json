@@ -1,0 +1,30 @@
+{
+    "case_id": "CASE_2658",
+    "typology": "CYCLE",
+    "transactions": [
+        {
+            "timestamp": "2022/09/16 10:04",
+            "from_bank": "0198627",
+            "from_account": "824D60D50",
+            "to_bank": "0294248",
+            "to_account": "824D608A0",
+            "amount_received": 4773.1,
+            "receiving_currency": "UK Pound",
+            "amount_paid": 4773.1,
+            "payment_currency": "UK Pound",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/21 08:56",
+            "from_bank": "0294248",
+            "from_account": "824D608A0",
+            "to_bank": "0198627",
+            "to_account": "824D60D50",
+            "amount_received": 2973.25,
+            "receiving_currency": "UK Pound",
+            "amount_paid": 2973.25,
+            "payment_currency": "UK Pound",
+            "payment_format": "ACH"
+        }
+    ]
+}

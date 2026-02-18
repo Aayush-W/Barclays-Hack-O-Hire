@@ -1,0 +1,18 @@
+{
+    "case_id": "CASE_829",
+    "typology": "In",
+    "transactions": [
+        {
+            "timestamp": "2022/09/05 21:03",
+            "from_bank": "0239258",
+            "from_account": "820D462D0",
+            "to_bank": "0131185",
+            "to_account": "823D33310",
+            "amount_received": 870.03,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 870.03,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        }
+    ]
+}

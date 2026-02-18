@@ -1,0 +1,57 @@
+{
+  "case_id": "CASE_262",
+  "typology": "CYCLE",
+  "transactions": [
+    {
+      "timestamp": "2022/09/02 14:25",
+      "from_bank": "0253109",
+      "from_account": "8146BB370",
+      "to_bank": "0024703",
+      "to_account": "80EB5AE70",
+      "amount_received": 15992.77,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 15992.77,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/05 16:28",
+      "from_bank": "0024703",
+      "from_account": "80EB5AE70",
+      "to_bank": "0253109",
+      "to_account": "8146BB370",
+      "amount_received": 1685638.23,
+      "receiving_currency": "Yen",
+      "amount_paid": 1685638.23,
+      "payment_currency": "Yen",
+      "payment_format": "ACH"
+    }
+  ],
+  "enriched_transactions": [
+    {
+      "timestamp": "2022/09/02 14:25",
+      "from_bank": "0253109",
+      "from_account": "8146BB370",
+      "to_bank": "0024703",
+      "to_account": "80EB5AE70",
+      "amount_received": 15992.77,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 15992.77,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/05 16:28",
+      "from_bank": "0024703",
+      "from_account": "80EB5AE70",
+      "to_bank": "0253109",
+      "to_account": "8146BB370",
+      "amount_received": 1685638.23,
+      "receiving_currency": "Yen",
+      "amount_paid": 1685638.23,
+      "payment_currency": "Yen",
+      "payment_format": "ACH"
+    }
+  ],
+  "transaction_count": 2
+}

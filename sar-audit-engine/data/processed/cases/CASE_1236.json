@@ -1,0 +1,30 @@
+{
+    "case_id": "CASE_1236",
+    "typology": "STACK",
+    "transactions": [
+        {
+            "timestamp": "2022/09/08 09:59",
+            "from_bank": "0193643",
+            "from_account": "8237E3A70",
+            "to_bank": "027",
+            "to_account": "8237E36B0",
+            "amount_received": 10048.5,
+            "receiving_currency": "UK Pound",
+            "amount_paid": 10048.5,
+            "payment_currency": "UK Pound",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/08 14:45",
+            "from_bank": "027",
+            "from_account": "8237E36B0",
+            "to_bank": "0193643",
+            "to_account": "8237E3A70",
+            "amount_received": 8508.75,
+            "receiving_currency": "UK Pound",
+            "amount_paid": 8508.75,
+            "payment_currency": "UK Pound",
+            "payment_format": "ACH"
+        }
+    ]
+}

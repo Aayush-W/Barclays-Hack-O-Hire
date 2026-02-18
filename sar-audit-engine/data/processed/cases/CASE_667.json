@@ -1,0 +1,30 @@
+{
+    "case_id": "CASE_667",
+    "typology": "BIPARTITE",
+    "transactions": [
+        {
+            "timestamp": "2022/09/06 08:45",
+            "from_bank": "0274707",
+            "from_account": "820753D50",
+            "to_bank": "0141460",
+            "to_account": "811F5D2C0",
+            "amount_received": 30888.77,
+            "receiving_currency": "Yuan",
+            "amount_paid": 30888.77,
+            "payment_currency": "Yuan",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/05 17:10",
+            "from_bank": "0019022",
+            "from_account": "81176E6F0",
+            "to_bank": "0013347",
+            "to_account": "80DF166B0",
+            "amount_received": 12084.57,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 12084.57,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        }
+    ]
+}

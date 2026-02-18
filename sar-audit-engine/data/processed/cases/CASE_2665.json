@@ -1,0 +1,18 @@
+{
+    "case_id": "CASE_2665",
+    "typology": "BIPARTITE",
+    "transactions": [
+        {
+            "timestamp": "2022/09/16 11:24",
+            "from_bank": "012986",
+            "from_account": "8015FDA90",
+            "to_bank": "02609",
+            "to_account": "80129F380",
+            "amount_received": 6736.84,
+            "receiving_currency": "Euro",
+            "amount_paid": 6736.84,
+            "payment_currency": "Euro",
+            "payment_format": "ACH"
+        }
+    ]
+}

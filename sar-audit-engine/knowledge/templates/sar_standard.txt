@@ -1,0 +1,16 @@
+SAR Standard Template
+
+1) Activity Summary
+- Subject/account overview
+- Date range of suspicious activity
+
+2) Key Suspicious Indicators
+- High-value flow, pass-through, multi-hop, velocity, cross-bank, multi-currency
+
+3) Evidence and Rationale
+- Reason-by-reason mapping with transaction IDs
+- Typology and guideline alignment
+
+4) Recommended Action
+- Escalation recommendation
+- Internal review and filing workflow notes

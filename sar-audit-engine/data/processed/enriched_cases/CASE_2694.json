@@ -1,0 +1,33 @@
+{
+  "case_id": "CASE_2694",
+  "typology": "BIPARTITE",
+  "transactions": [
+    {
+      "timestamp": "2022/09/16 17:51",
+      "from_bank": "00113154",
+      "from_account": "82AD58260",
+      "to_bank": "01115965",
+      "to_account": "82B75BF30",
+      "amount_received": 14252.44,
+      "receiving_currency": "Canadian Dollar",
+      "amount_paid": 14252.44,
+      "payment_currency": "Canadian Dollar",
+      "payment_format": "ACH"
+    }
+  ],
+  "enriched_transactions": [
+    {
+      "timestamp": "2022/09/16 17:51",
+      "from_bank": "00113154",
+      "from_account": "82AD58260",
+      "to_bank": "01115965",
+      "to_account": "82B75BF30",
+      "amount_received": 14252.44,
+      "receiving_currency": "Canadian Dollar",
+      "amount_paid": 14252.44,
+      "payment_currency": "Canadian Dollar",
+      "payment_format": "ACH"
+    }
+  ],
+  "transaction_count": 1
+}

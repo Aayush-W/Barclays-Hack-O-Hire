@@ -1,0 +1,153 @@
+{
+  "case_id": "CASE_1271",
+  "typology": "In",
+  "transactions": [
+    {
+      "timestamp": "2022/09/08 10:07",
+      "from_bank": "0293924",
+      "from_account": "822C3FBE0",
+      "to_bank": "006",
+      "to_account": "823DD3180",
+      "amount_received": 23932562.68,
+      "receiving_currency": "UK Pound",
+      "amount_paid": 23932562.68,
+      "payment_currency": "UK Pound",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/10 17:06",
+      "from_bank": "0295764",
+      "from_account": "823DD25D0",
+      "to_bank": "006",
+      "to_account": "823DD3180",
+      "amount_received": 4372.67,
+      "receiving_currency": "UK Pound",
+      "amount_paid": 4372.67,
+      "payment_currency": "UK Pound",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/11 17:32",
+      "from_bank": "0297435",
+      "from_account": "823DD2F90",
+      "to_bank": "006",
+      "to_account": "823DD3180",
+      "amount_received": 4049.89,
+      "receiving_currency": "UK Pound",
+      "amount_paid": 4049.89,
+      "payment_currency": "UK Pound",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/11 18:53",
+      "from_bank": "0097075",
+      "from_account": "823DD2390",
+      "to_bank": "006",
+      "to_account": "823DD3180",
+      "amount_received": 9443.2,
+      "receiving_currency": "UK Pound",
+      "amount_paid": 9443.2,
+      "payment_currency": "UK Pound",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/11 03:50",
+      "from_bank": "006",
+      "from_account": "823DD3180",
+      "to_bank": "0095274",
+      "to_account": "823DD2B80",
+      "amount_received": 9901.85,
+      "receiving_currency": "UK Pound",
+      "amount_paid": 9901.85,
+      "payment_currency": "UK Pound",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/11 16:06",
+      "from_bank": "006",
+      "from_account": "823DD3180",
+      "to_bank": "0295764",
+      "to_account": "823DD25D0",
+      "amount_received": 12541.28,
+      "receiving_currency": "UK Pound",
+      "amount_paid": 12541.28,
+      "payment_currency": "UK Pound",
+      "payment_format": "ACH"
+    }
+  ],
+  "enriched_transactions": [
+    {
+      "timestamp": "2022/09/08 10:07",
+      "from_bank": "0293924",
+      "from_account": "822C3FBE0",
+      "to_bank": "006",
+      "to_account": "823DD3180",
+      "amount_received": 23932562.68,
+      "receiving_currency": "UK Pound",
+      "amount_paid": 23932562.68,
+      "payment_currency": "UK Pound",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/10 17:06",
+      "from_bank": "0295764",
+      "from_account": "823DD25D0",
+      "to_bank": "006",
+      "to_account": "823DD3180",
+      "amount_received": 4372.67,
+      "receiving_currency": "UK Pound",
+      "amount_paid": 4372.67,
+      "payment_currency": "UK Pound",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/11 17:32",
+      "from_bank": "0297435",
+      "from_account": "823DD2F90",
+      "to_bank": "006",
+      "to_account": "823DD3180",
+      "amount_received": 4049.89,
+      "receiving_currency": "UK Pound",
+      "amount_paid": 4049.89,
+      "payment_currency": "UK Pound",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/11 18:53",
+      "from_bank": "0097075",
+      "from_account": "823DD2390",
+      "to_bank": "006",
+      "to_account": "823DD3180",
+      "amount_received": 9443.2,
+      "receiving_currency": "UK Pound",
+      "amount_paid": 9443.2,
+      "payment_currency": "UK Pound",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/11 03:50",
+      "from_bank": "006",
+      "from_account": "823DD3180",
+      "to_bank": "0095274",
+      "to_account": "823DD2B80",
+      "amount_received": 9901.85,
+      "receiving_currency": "UK Pound",
+      "amount_paid": 9901.85,
+      "payment_currency": "UK Pound",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/11 16:06",
+      "from_bank": "006",
+      "from_account": "823DD3180",
+      "to_bank": "0295764",
+      "to_account": "823DD25D0",
+      "amount_received": 12541.28,
+      "receiving_currency": "UK Pound",
+      "amount_paid": 12541.28,
+      "payment_currency": "UK Pound",
+      "payment_format": "ACH"
+    }
+  ],
+  "transaction_count": 6
+}

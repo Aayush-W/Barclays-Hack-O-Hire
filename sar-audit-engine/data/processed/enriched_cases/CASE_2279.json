@@ -1,0 +1,129 @@
+{
+  "case_id": "CASE_2279",
+  "typology": "Out",
+  "transactions": [
+    {
+      "timestamp": "2022/09/14 02:51",
+      "from_bank": "0139124",
+      "from_account": "818BEA610",
+      "to_bank": "028474",
+      "to_account": "80700EAA0",
+      "amount_received": 10160.58,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 10160.58,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/16 07:31",
+      "from_bank": "0139124",
+      "from_account": "818BEA610",
+      "to_bank": "0248381",
+      "to_account": "81C3E7DE0",
+      "amount_received": 12785.14,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 12785.14,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/16 13:54",
+      "from_bank": "0139124",
+      "from_account": "818BEA610",
+      "to_bank": "0117305",
+      "to_account": "8137BCFB0",
+      "amount_received": 2990.57,
+      "receiving_currency": "Euro",
+      "amount_paid": 2990.57,
+      "payment_currency": "Euro",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/17 12:56",
+      "from_bank": "0139124",
+      "from_account": "818BEA610",
+      "to_bank": "0021712",
+      "to_account": "808FB4D10",
+      "amount_received": 10137.38,
+      "receiving_currency": "Euro",
+      "amount_paid": 10137.38,
+      "payment_currency": "Euro",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/19 00:07",
+      "from_bank": "0139124",
+      "from_account": "818BEA610",
+      "to_bank": "0260994",
+      "to_account": "8189456F0",
+      "amount_received": 169399.88,
+      "receiving_currency": "Rupee",
+      "amount_paid": 169399.88,
+      "payment_currency": "Rupee",
+      "payment_format": "ACH"
+    }
+  ],
+  "enriched_transactions": [
+    {
+      "timestamp": "2022/09/14 02:51",
+      "from_bank": "0139124",
+      "from_account": "818BEA610",
+      "to_bank": "028474",
+      "to_account": "80700EAA0",
+      "amount_received": 10160.58,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 10160.58,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/16 07:31",
+      "from_bank": "0139124",
+      "from_account": "818BEA610",
+      "to_bank": "0248381",
+      "to_account": "81C3E7DE0",
+      "amount_received": 12785.14,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 12785.14,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/16 13:54",
+      "from_bank": "0139124",
+      "from_account": "818BEA610",
+      "to_bank": "0117305",
+      "to_account": "8137BCFB0",
+      "amount_received": 2990.57,
+      "receiving_currency": "Euro",
+      "amount_paid": 2990.57,
+      "payment_currency": "Euro",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/17 12:56",
+      "from_bank": "0139124",
+      "from_account": "818BEA610",
+      "to_bank": "0021712",
+      "to_account": "808FB4D10",
+      "amount_received": 10137.38,
+      "receiving_currency": "Euro",
+      "amount_paid": 10137.38,
+      "payment_currency": "Euro",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/19 00:07",
+      "from_bank": "0139124",
+      "from_account": "818BEA610",
+      "to_bank": "0260994",
+      "to_account": "8189456F0",
+      "amount_received": 169399.88,
+      "receiving_currency": "Rupee",
+      "amount_paid": 169399.88,
+      "payment_currency": "Rupee",
+      "payment_format": "ACH"
+    }
+  ],
+  "transaction_count": 5
+}

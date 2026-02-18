@@ -1,0 +1,81 @@
+{
+  "case_id": "CASE_1103",
+  "typology": "RANDOM",
+  "transactions": [
+    {
+      "timestamp": "2022/09/07 11:16",
+      "from_bank": "0210",
+      "from_account": "82D25BC50",
+      "to_bank": "0164441",
+      "to_account": "818AC5240",
+      "amount_received": 1254660.8,
+      "receiving_currency": "Rupee",
+      "amount_paid": 1254660.8,
+      "payment_currency": "Rupee",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/08 11:19",
+      "from_bank": "0164441",
+      "from_account": "818AC5240",
+      "to_bank": "0061776",
+      "to_account": "818AF73C0",
+      "amount_received": 18155.75,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 18155.75,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/10 14:05",
+      "from_bank": "0061776",
+      "from_account": "818AF73C0",
+      "to_bank": "02129461",
+      "to_account": "82F583090",
+      "amount_received": 25276.74,
+      "receiving_currency": "Australian Dollar",
+      "amount_paid": 25276.74,
+      "payment_currency": "Australian Dollar",
+      "payment_format": "ACH"
+    }
+  ],
+  "enriched_transactions": [
+    {
+      "timestamp": "2022/09/07 11:16",
+      "from_bank": "0210",
+      "from_account": "82D25BC50",
+      "to_bank": "0164441",
+      "to_account": "818AC5240",
+      "amount_received": 1254660.8,
+      "receiving_currency": "Rupee",
+      "amount_paid": 1254660.8,
+      "payment_currency": "Rupee",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/08 11:19",
+      "from_bank": "0164441",
+      "from_account": "818AC5240",
+      "to_bank": "0061776",
+      "to_account": "818AF73C0",
+      "amount_received": 18155.75,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 18155.75,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/10 14:05",
+      "from_bank": "0061776",
+      "from_account": "818AF73C0",
+      "to_bank": "02129461",
+      "to_account": "82F583090",
+      "amount_received": 25276.74,
+      "receiving_currency": "Australian Dollar",
+      "amount_paid": 25276.74,
+      "payment_currency": "Australian Dollar",
+      "payment_format": "ACH"
+    }
+  ],
+  "transaction_count": 3
+}

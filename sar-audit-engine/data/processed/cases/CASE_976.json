@@ -1,0 +1,42 @@
+{
+    "case_id": "CASE_976",
+    "typology": "BIPARTITE",
+    "transactions": [
+        {
+            "timestamp": "2022/09/09 15:02",
+            "from_bank": "024878",
+            "from_account": "804003820",
+            "to_bank": "00214",
+            "to_account": "801D33850",
+            "amount_received": 9373.22,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 9373.22,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/07 20:34",
+            "from_bank": "00952",
+            "from_account": "8007ECF70",
+            "to_bank": "00369",
+            "to_account": "8002B5EE0",
+            "amount_received": 6516.29,
+            "receiving_currency": "Euro",
+            "amount_paid": 6516.29,
+            "payment_currency": "Euro",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/07 09:31",
+            "from_bank": "004292",
+            "from_account": "80260B590",
+            "to_bank": "02408",
+            "to_account": "80101B7F0",
+            "amount_received": 2534.21,
+            "receiving_currency": "Euro",
+            "amount_paid": 2534.21,
+            "payment_currency": "Euro",
+            "payment_format": "ACH"
+        }
+    ]
+}

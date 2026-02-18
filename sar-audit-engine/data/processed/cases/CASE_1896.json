@@ -1,0 +1,30 @@
+{
+    "case_id": "CASE_1896",
+    "typology": "BIPARTITE",
+    "transactions": [
+        {
+            "timestamp": "2022/09/12 18:23",
+            "from_bank": "0266946",
+            "from_account": "81A790740",
+            "to_bank": "0072043",
+            "to_account": "81A4C4A70",
+            "amount_received": 244313.01,
+            "receiving_currency": "Ruble",
+            "amount_paid": 244313.01,
+            "payment_currency": "Ruble",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/14 11:34",
+            "from_bank": "0276002",
+            "from_account": "81C3680B0",
+            "to_bank": "0266946",
+            "to_account": "81A790790",
+            "amount_received": 286059.53,
+            "receiving_currency": "Ruble",
+            "amount_paid": 286059.53,
+            "payment_currency": "Ruble",
+            "payment_format": "ACH"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "case_id": "CASE_252",
+    "typology": "RANDOM",
+    "transactions": [
+        {
+            "timestamp": "2022/09/02 12:19",
+            "from_bank": "0099927",
+            "from_account": "824EFD540",
+            "to_bank": "0099479",
+            "to_account": "824EFD4F0",
+            "amount_received": 13022.71,
+            "receiving_currency": "UK Pound",
+            "amount_paid": 13022.71,
+            "payment_currency": "UK Pound",
+            "payment_format": "ACH"
+        }
+    ]
+}

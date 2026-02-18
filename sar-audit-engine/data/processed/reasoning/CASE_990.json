@@ -1,0 +1,135 @@
+{
+  "case_id": "CASE_990",
+  "typology": "RANDOM",
+  "reasoning": [
+    {
+      "step_id": "R01",
+      "step": "Case typology labeled as RANDOM based on pattern parser classification.",
+      "evidence": {
+        "typology": "RANDOM",
+        "source": "pattern_parser"
+      },
+      "transaction_ids": [
+        "TX_001",
+        "TX_002",
+        "TX_003",
+        "TX_004",
+        "TX_005",
+        "TX_006",
+        "TX_007",
+        "TX_008"
+      ]
+    },
+    {
+      "step_id": "R02",
+      "step": "Aggregate transaction value exceeds high-value threshold.",
+      "evidence": {
+        "total_inflow": 2914902.47,
+        "total_outflow": 2914902.47,
+        "threshold": 10000.0
+      },
+      "transaction_ids": [
+        "TX_001",
+        "TX_002",
+        "TX_003",
+        "TX_004",
+        "TX_005",
+        "TX_006",
+        "TX_007",
+        "TX_008"
+      ]
+    },
+    {
+      "step_id": "R03",
+      "step": "Net flow is near zero relative to total inflow, indicating potential pass-through.",
+      "evidence": {
+        "net_flow": 0.0,
+        "total_inflow": 2914902.47,
+        "ratio": 0.0,
+        "threshold": 0.1
+      },
+      "transaction_ids": [
+        "TX_001",
+        "TX_002",
+        "TX_003",
+        "TX_004",
+        "TX_005",
+        "TX_006",
+        "TX_007",
+        "TX_008"
+      ]
+    },
+    {
+      "step_id": "R04",
+      "step": "Funds traversed 8 hops across accounts.",
+      "evidence": {
+        "hop_count": 8,
+        "threshold": 3
+      },
+      "transaction_ids": [
+        "TX_001",
+        "TX_002",
+        "TX_003",
+        "TX_004",
+        "TX_005",
+        "TX_006",
+        "TX_007",
+        "TX_008"
+      ]
+    },
+    {
+      "step_id": "R05",
+      "step": "Majority of transfers are cross-bank.",
+      "evidence": {
+        "cross_bank_ratio": 0.875,
+        "threshold": 0.6
+      },
+      "transaction_ids": [
+        "TX_001",
+        "TX_002",
+        "TX_003",
+        "TX_004",
+        "TX_005",
+        "TX_007",
+        "TX_008"
+      ]
+    },
+    {
+      "step_id": "R06",
+      "step": "Multiple originators or beneficiaries are involved.",
+      "evidence": {
+        "unique_senders": 8,
+        "unique_receivers": 8,
+        "threshold": 3
+      },
+      "transaction_ids": [
+        "TX_001",
+        "TX_002",
+        "TX_003",
+        "TX_004",
+        "TX_005",
+        "TX_006",
+        "TX_007",
+        "TX_008"
+      ]
+    },
+    {
+      "step_id": "R07",
+      "step": "Rapid pass-through activity observed.",
+      "evidence": {
+        "min_dwell_hours": 0.58,
+        "threshold_hours": 24
+      },
+      "transaction_ids": [
+        "TX_001",
+        "TX_002",
+        "TX_003",
+        "TX_004",
+        "TX_005",
+        "TX_006",
+        "TX_007",
+        "TX_008"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "case_id": "CASE_1288",
+  "typology": "RANDOM",
+  "transactions": [
+    {
+      "timestamp": "2022/09/08 11:58",
+      "from_bank": "00131127",
+      "from_account": "8304659A0",
+      "to_bank": "02126978",
+      "to_account": "8304659F0",
+      "amount_received": 3402.83,
+      "receiving_currency": "Australian Dollar",
+      "amount_paid": 3402.83,
+      "payment_currency": "Australian Dollar",
+      "payment_format": "ACH"
+    }
+  ],
+  "enriched_transactions": [
+    {
+      "timestamp": "2022/09/08 11:58",
+      "from_bank": "00131127",
+      "from_account": "8304659A0",
+      "to_bank": "02126978",
+      "to_account": "8304659F0",
+      "amount_received": 3402.83,
+      "receiving_currency": "Australian Dollar",
+      "amount_paid": 3402.83,
+      "payment_currency": "Australian Dollar",
+      "payment_format": "ACH"
+    }
+  ],
+  "transaction_count": 1
+}

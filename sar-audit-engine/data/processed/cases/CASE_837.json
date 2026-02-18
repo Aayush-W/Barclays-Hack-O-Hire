@@ -1,0 +1,54 @@
+{
+    "case_id": "CASE_837",
+    "typology": "STACK",
+    "transactions": [
+        {
+            "timestamp": "2022/09/07 11:22",
+            "from_bank": "0098593",
+            "from_account": "824DFC940",
+            "to_bank": "0279590",
+            "to_account": "824DFC8F0",
+            "amount_received": 19933.24,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 19933.24,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/08 12:49",
+            "from_bank": "0279590",
+            "from_account": "824DFC8F0",
+            "to_bank": "0098593",
+            "to_account": "824DFC940",
+            "amount_received": 19173.12,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 19173.12,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/08 16:55",
+            "from_bank": "029630",
+            "from_account": "80C7F2F20",
+            "to_bank": "0061191",
+            "to_account": "824DFCB30",
+            "amount_received": 18126.16,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 18126.16,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/12 04:42",
+            "from_bank": "0061191",
+            "from_account": "824DFCB30",
+            "to_bank": "029630",
+            "to_account": "80C7F2F20",
+            "amount_received": 18881.96,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 18881.96,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        }
+    ]
+}

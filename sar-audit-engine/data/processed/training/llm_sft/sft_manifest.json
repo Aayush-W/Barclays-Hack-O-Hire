@@ -1,0 +1,28 @@
+{
+  "input": {
+    "evidence_dir": "data\\processed\\evidence_maps",
+    "sar_dir": "data\\processed\\sar_drafts"
+  },
+  "output": {
+    "all": "data\\processed\\training\\llm_sft\\sft_all.jsonl",
+    "train": "data\\processed\\training\\llm_sft\\sft_train.jsonl",
+    "val": "data\\processed\\training\\llm_sft\\sft_val.jsonl",
+    "test": "data\\processed\\training\\llm_sft\\sft_test.jsonl"
+  },
+  "stats": {
+    "cases_with_both_files": 2756,
+    "records_total": 2756,
+    "train_records": 2206,
+    "val_records": 275,
+    "test_records": 275,
+    "skipped_empty": 0,
+    "skipped_short": 0,
+    "min_narrative_words": 20
+  },
+  "params": {
+    "style": "standard",
+    "val_ratio": 0.1,
+    "test_ratio": 0.1,
+    "seed": 42
+  }
+}

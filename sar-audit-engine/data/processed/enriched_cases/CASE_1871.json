@@ -1,0 +1,129 @@
+{
+  "case_id": "CASE_1871",
+  "typology": "CYCLE",
+  "transactions": [
+    {
+      "timestamp": "2022/09/11 23:01",
+      "from_bank": "020",
+      "from_account": "800229770",
+      "to_bank": "014",
+      "to_account": "800507EF0",
+      "amount_received": 4016.25,
+      "receiving_currency": "Euro",
+      "amount_paid": 4016.25,
+      "payment_currency": "Euro",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/12 11:26",
+      "from_bank": "014",
+      "from_account": "800507EF0",
+      "to_bank": "01347",
+      "to_account": "8004F5CB0",
+      "amount_received": 4016.25,
+      "receiving_currency": "Euro",
+      "amount_paid": 4016.25,
+      "payment_currency": "Euro",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/13 16:43",
+      "from_bank": "01347",
+      "from_account": "8004F5CB0",
+      "to_bank": "0110",
+      "to_account": "8000C0B90",
+      "amount_received": 7342.12,
+      "receiving_currency": "Australian Dollar",
+      "amount_paid": 7342.12,
+      "payment_currency": "Australian Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/16 08:13",
+      "from_bank": "0110",
+      "from_account": "8000C0B90",
+      "to_bank": "02597",
+      "to_account": "800418310",
+      "amount_received": 5256.93,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 5256.93,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/16 13:58",
+      "from_bank": "02597",
+      "from_account": "800418310",
+      "to_bank": "020",
+      "to_account": "800229770",
+      "amount_received": 4931.11,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 4931.11,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    }
+  ],
+  "enriched_transactions": [
+    {
+      "timestamp": "2022/09/11 23:01",
+      "from_bank": "020",
+      "from_account": "800229770",
+      "to_bank": "014",
+      "to_account": "800507EF0",
+      "amount_received": 4016.25,
+      "receiving_currency": "Euro",
+      "amount_paid": 4016.25,
+      "payment_currency": "Euro",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/12 11:26",
+      "from_bank": "014",
+      "from_account": "800507EF0",
+      "to_bank": "01347",
+      "to_account": "8004F5CB0",
+      "amount_received": 4016.25,
+      "receiving_currency": "Euro",
+      "amount_paid": 4016.25,
+      "payment_currency": "Euro",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/13 16:43",
+      "from_bank": "01347",
+      "from_account": "8004F5CB0",
+      "to_bank": "0110",
+      "to_account": "8000C0B90",
+      "amount_received": 7342.12,
+      "receiving_currency": "Australian Dollar",
+      "amount_paid": 7342.12,
+      "payment_currency": "Australian Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/16 08:13",
+      "from_bank": "0110",
+      "from_account": "8000C0B90",
+      "to_bank": "02597",
+      "to_account": "800418310",
+      "amount_received": 5256.93,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 5256.93,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/16 13:58",
+      "from_bank": "02597",
+      "from_account": "800418310",
+      "to_bank": "020",
+      "to_account": "800229770",
+      "amount_received": 4931.11,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 4931.11,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    }
+  ],
+  "transaction_count": 5
+}

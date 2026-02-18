@@ -1,0 +1,42 @@
+{
+    "case_id": "CASE_747",
+    "typology": "Out",
+    "transactions": [
+        {
+            "timestamp": "2022/09/05 08:21",
+            "from_bank": "0127707",
+            "from_account": "81359C070",
+            "to_bank": "0214178",
+            "to_account": "80B9C3120",
+            "amount_received": 12784.89,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 12784.89,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/06 13:38",
+            "from_bank": "0127707",
+            "from_account": "81359C070",
+            "to_bank": "01108523",
+            "to_account": "8283D9AA0",
+            "amount_received": 16255.35,
+            "receiving_currency": "Canadian Dollar",
+            "amount_paid": 16255.35,
+            "payment_currency": "Canadian Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/06 14:32",
+            "from_bank": "0127707",
+            "from_account": "81359C070",
+            "to_bank": "0124667",
+            "to_account": "80F4BE1B0",
+            "amount_received": 5199.81,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 5199.81,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        }
+    ]
+}

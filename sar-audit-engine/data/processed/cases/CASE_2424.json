@@ -1,0 +1,18 @@
+{
+    "case_id": "CASE_2424",
+    "typology": "In",
+    "transactions": [
+        {
+            "timestamp": "2022/09/15 01:58",
+            "from_bank": "02131507",
+            "from_account": "8301A0340",
+            "to_bank": "00127022",
+            "to_account": "830462B80",
+            "amount_received": 15147.52,
+            "receiving_currency": "Australian Dollar",
+            "amount_paid": 15147.52,
+            "payment_currency": "Australian Dollar",
+            "payment_format": "ACH"
+        }
+    ]
+}

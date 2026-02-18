@@ -1,0 +1,30 @@
+{
+    "case_id": "CASE_2674",
+    "typology": "In",
+    "transactions": [
+        {
+            "timestamp": "2022/09/16 12:06",
+            "from_bank": "0272896",
+            "from_account": "81BBEA160",
+            "to_bank": "0272142",
+            "to_account": "81C393430",
+            "amount_received": 1141009.42,
+            "receiving_currency": "Ruble",
+            "amount_paid": 1141009.42,
+            "payment_currency": "Ruble",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/18 11:27",
+            "from_bank": "0275027",
+            "from_account": "81C393240",
+            "to_bank": "0272142",
+            "to_account": "81C393430",
+            "amount_received": 413512.97,
+            "receiving_currency": "Ruble",
+            "amount_paid": 413512.97,
+            "payment_currency": "Ruble",
+            "payment_format": "ACH"
+        }
+    ]
+}

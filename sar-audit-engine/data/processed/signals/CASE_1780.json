@@ -1,0 +1,26 @@
+{
+  "case_id": "CASE_1780",
+  "typology": "GATHER",
+  "signals": {
+    "total_inflow": 4622294.62,
+    "total_outflow": 4622294.62,
+    "net_flow": 0.0,
+    "unique_senders": 17,
+    "unique_receivers": 17,
+    "hop_count": 2,
+    "cross_bank_ratio": 1.0,
+    "multi_currency_flag": true,
+    "rapid_pass_through_flag": false,
+    "rapid_pass_through_min_hours": 68.53,
+    "transaction_velocity_metrics": {
+      "tx_count": 32,
+      "start_time": "2022-09-11 10:52:00",
+      "end_time": "2022-09-17 03:43:00",
+      "duration_hours": 136.85,
+      "tx_per_day": 5.612,
+      "avg_interarrival_minutes": 264.87,
+      "median_interarrival_minutes": 173.0,
+      "max_tx_in_1h": 2
+    }
+  }
+}

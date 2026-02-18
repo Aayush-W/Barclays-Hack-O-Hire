@@ -1,0 +1,57 @@
+{
+  "case_id": "CASE_2737",
+  "typology": "BIPARTITE",
+  "transactions": [
+    {
+      "timestamp": "2022/09/19 19:49",
+      "from_bank": "00867",
+      "from_account": "800BA6C10",
+      "to_bank": "01226",
+      "to_account": "80134D710",
+      "amount_received": 12021.89,
+      "receiving_currency": "Euro",
+      "amount_paid": 12021.89,
+      "payment_currency": "Euro",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/19 16:01",
+      "from_bank": "01213",
+      "from_account": "80015C170",
+      "to_bank": "02464",
+      "to_account": "801179C80",
+      "amount_received": 11212.85,
+      "receiving_currency": "Euro",
+      "amount_paid": 11212.85,
+      "payment_currency": "Euro",
+      "payment_format": "ACH"
+    }
+  ],
+  "enriched_transactions": [
+    {
+      "timestamp": "2022/09/19 19:49",
+      "from_bank": "00867",
+      "from_account": "800BA6C10",
+      "to_bank": "01226",
+      "to_account": "80134D710",
+      "amount_received": 12021.89,
+      "receiving_currency": "Euro",
+      "amount_paid": 12021.89,
+      "payment_currency": "Euro",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/19 16:01",
+      "from_bank": "01213",
+      "from_account": "80015C170",
+      "to_bank": "02464",
+      "to_account": "801179C80",
+      "amount_received": 11212.85,
+      "receiving_currency": "Euro",
+      "amount_paid": 11212.85,
+      "payment_currency": "Euro",
+      "payment_format": "ACH"
+    }
+  ],
+  "transaction_count": 2
+}

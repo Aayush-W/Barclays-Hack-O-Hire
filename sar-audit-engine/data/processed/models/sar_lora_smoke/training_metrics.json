@@ -1,0 +1,20 @@
+{
+  "base_model": "sshleifer/tiny-gpt2",
+  "output_dir": "data\\processed\\models\\sar_lora_smoke",
+  "train_rows": 24,
+  "val_rows": 8,
+  "max_length": 256,
+  "epochs": 0.2,
+  "learning_rate": 0.0005,
+  "lora_rank": 16,
+  "lora_alpha": 32,
+  "lora_dropout": 0.05,
+  "lora_target_modules": [
+    "c_attn",
+    "c_proj"
+  ],
+  "train_loss": NaN,
+  "train_perplexity": NaN,
+  "val_loss": NaN,
+  "val_perplexity": NaN
+}

@@ -1,0 +1,54 @@
+{
+    "case_id": "CASE_2676",
+    "typology": "GATHER",
+    "transactions": [
+        {
+            "timestamp": "2022/09/16 12:49",
+            "from_bank": "02597",
+            "from_account": "800A912D0",
+            "to_bank": "01538",
+            "to_account": "8008279E0",
+            "amount_received": 9639.12,
+            "receiving_currency": "Euro",
+            "amount_paid": 9639.12,
+            "payment_currency": "Euro",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/20 11:19",
+            "from_bank": "01538",
+            "from_account": "8008279E0",
+            "to_bank": "003",
+            "to_account": "800F2C940",
+            "amount_received": 8204.47,
+            "receiving_currency": "Euro",
+            "amount_paid": 8204.47,
+            "payment_currency": "Euro",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/16 16:16",
+            "from_bank": "02597",
+            "from_account": "800A912D0",
+            "to_bank": "001488",
+            "to_account": "801747CC0",
+            "amount_received": 7021.45,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 7021.45,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/21 19:09",
+            "from_bank": "001488",
+            "from_account": "801747CC0",
+            "to_bank": "003",
+            "to_account": "800F2C940",
+            "amount_received": 4829.76,
+            "receiving_currency": "Euro",
+            "amount_paid": 4829.76,
+            "payment_currency": "Euro",
+            "payment_format": "ACH"
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+{
+  "case_id": "CASE_1757",
+  "typology": "BIPARTITE",
+  "transactions": [
+    {
+      "timestamp": "2022/09/12 23:10",
+      "from_bank": "009340",
+      "from_account": "824D54C60",
+      "to_bank": "005665",
+      "to_account": "824D54BC0",
+      "amount_received": 7129.33,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 7129.33,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    }
+  ],
+  "enriched_transactions": [
+    {
+      "timestamp": "2022/09/12 23:10",
+      "from_bank": "009340",
+      "from_account": "824D54C60",
+      "to_bank": "005665",
+      "to_account": "824D54BC0",
+      "amount_received": 7129.33,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 7129.33,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    }
+  ],
+  "transaction_count": 1
+}

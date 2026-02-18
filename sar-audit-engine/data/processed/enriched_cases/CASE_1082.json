@@ -1,0 +1,57 @@
+{
+  "case_id": "CASE_1082",
+  "typology": "RANDOM",
+  "transactions": [
+    {
+      "timestamp": "2022/09/07 08:50",
+      "from_bank": "0179275",
+      "from_account": "81DA2CF60",
+      "to_bank": "0026629",
+      "to_account": "81CC842D0",
+      "amount_received": 1395.78,
+      "receiving_currency": "Euro",
+      "amount_paid": 1395.78,
+      "payment_currency": "Euro",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/09 13:10",
+      "from_bank": "0026629",
+      "from_account": "81CC842D0",
+      "to_bank": "0235832",
+      "to_account": "812D520A0",
+      "amount_received": 167947.13,
+      "receiving_currency": "Yen",
+      "amount_paid": 167947.13,
+      "payment_currency": "Yen",
+      "payment_format": "ACH"
+    }
+  ],
+  "enriched_transactions": [
+    {
+      "timestamp": "2022/09/07 08:50",
+      "from_bank": "0179275",
+      "from_account": "81DA2CF60",
+      "to_bank": "0026629",
+      "to_account": "81CC842D0",
+      "amount_received": 1395.78,
+      "receiving_currency": "Euro",
+      "amount_paid": 1395.78,
+      "payment_currency": "Euro",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/09 13:10",
+      "from_bank": "0026629",
+      "from_account": "81CC842D0",
+      "to_bank": "0235832",
+      "to_account": "812D520A0",
+      "amount_received": 167947.13,
+      "receiving_currency": "Yen",
+      "amount_paid": 167947.13,
+      "payment_currency": "Yen",
+      "payment_format": "ACH"
+    }
+  ],
+  "transaction_count": 2
+}

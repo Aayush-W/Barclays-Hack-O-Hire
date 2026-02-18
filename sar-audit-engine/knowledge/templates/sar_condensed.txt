@@ -1,0 +1,6 @@
+SAR Condensed Template
+
+- Case and typology
+- Suspicion score and primary indicators
+- Short evidence summary with key transaction IDs
+- Decision recommendation (escalate or monitor)

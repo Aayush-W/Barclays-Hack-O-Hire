@@ -1,0 +1,110 @@
+{
+  "case_id": "CASE_569",
+  "typology": "BIPARTITE",
+  "reasoning": [
+    {
+      "step_id": "R01",
+      "step": "Case typology labeled as BIPARTITE based on pattern parser classification.",
+      "evidence": {
+        "typology": "BIPARTITE",
+        "source": "pattern_parser"
+      },
+      "transaction_ids": [
+        "TX_001",
+        "TX_002",
+        "TX_003",
+        "TX_004",
+        "TX_005",
+        "TX_006",
+        "TX_007"
+      ]
+    },
+    {
+      "step_id": "R02",
+      "step": "Aggregate transaction value exceeds high-value threshold.",
+      "evidence": {
+        "total_inflow": 62992.83,
+        "total_outflow": 62992.83,
+        "threshold": 10000.0
+      },
+      "transaction_ids": [
+        "TX_001",
+        "TX_002",
+        "TX_003",
+        "TX_004",
+        "TX_005",
+        "TX_006",
+        "TX_007"
+      ]
+    },
+    {
+      "step_id": "R03",
+      "step": "Net flow is near zero relative to total inflow, indicating potential pass-through.",
+      "evidence": {
+        "net_flow": 0.0,
+        "total_inflow": 62992.83,
+        "ratio": 0.0,
+        "threshold": 0.1
+      },
+      "transaction_ids": [
+        "TX_001",
+        "TX_002",
+        "TX_003",
+        "TX_004",
+        "TX_005",
+        "TX_006",
+        "TX_007"
+      ]
+    },
+    {
+      "step_id": "R04",
+      "step": "Majority of transfers are cross-bank.",
+      "evidence": {
+        "cross_bank_ratio": 0.8571,
+        "threshold": 0.6
+      },
+      "transaction_ids": [
+        "TX_001",
+        "TX_002",
+        "TX_003",
+        "TX_004",
+        "TX_006",
+        "TX_007"
+      ]
+    },
+    {
+      "step_id": "R05",
+      "step": "Multiple originators or beneficiaries are involved.",
+      "evidence": {
+        "unique_senders": 7,
+        "unique_receivers": 7,
+        "threshold": 3
+      },
+      "transaction_ids": [
+        "TX_001",
+        "TX_002",
+        "TX_003",
+        "TX_004",
+        "TX_005",
+        "TX_006",
+        "TX_007"
+      ]
+    },
+    {
+      "step_id": "R06",
+      "step": "Multiple currencies appear within the transaction set.",
+      "evidence": {
+        "multi_currency_flag": true
+      },
+      "transaction_ids": [
+        "TX_001",
+        "TX_002",
+        "TX_003",
+        "TX_004",
+        "TX_005",
+        "TX_006",
+        "TX_007"
+      ]
+    }
+  ]
+}

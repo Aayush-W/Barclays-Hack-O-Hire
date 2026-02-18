@@ -1,0 +1,33 @@
+{
+  "case_id": "CASE_911",
+  "typology": "In",
+  "transactions": [
+    {
+      "timestamp": "2022/09/06 08:49",
+      "from_bank": "005763",
+      "from_account": "823D31B40",
+      "to_bank": "0277079",
+      "to_account": "81DC1E690",
+      "amount_received": 16938.26,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 16938.26,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    }
+  ],
+  "enriched_transactions": [
+    {
+      "timestamp": "2022/09/06 08:49",
+      "from_bank": "005763",
+      "from_account": "823D31B40",
+      "to_bank": "0277079",
+      "to_account": "81DC1E690",
+      "amount_received": 16938.26,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 16938.26,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    }
+  ],
+  "transaction_count": 1
+}

@@ -1,0 +1,54 @@
+{
+    "case_id": "CASE_404",
+    "typology": "GATHER",
+    "transactions": [
+        {
+            "timestamp": "2022/09/03 09:09",
+            "from_bank": "0125344",
+            "from_account": "819D80110",
+            "to_bank": "017569",
+            "to_account": "809255A20",
+            "amount_received": 9280.25,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 9280.25,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/08 08:27",
+            "from_bank": "017569",
+            "from_account": "809255A20",
+            "to_bank": "0152606",
+            "to_account": "81463EE10",
+            "amount_received": 1009035.79,
+            "receiving_currency": "Yen",
+            "amount_paid": 1009035.79,
+            "payment_currency": "Yen",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/07 18:12",
+            "from_bank": "0125344",
+            "from_account": "819D80110",
+            "to_bank": "0212490",
+            "to_account": "80C373920",
+            "amount_received": 9077.37,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 9077.37,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/08 14:00",
+            "from_bank": "0212490",
+            "from_account": "80C373920",
+            "to_bank": "0152606",
+            "to_account": "81463EE10",
+            "amount_received": 936353.6,
+            "receiving_currency": "Yen",
+            "amount_paid": 936353.6,
+            "payment_currency": "Yen",
+            "payment_format": "ACH"
+        }
+    ]
+}

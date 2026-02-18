@@ -1,0 +1,57 @@
+{
+  "case_id": "CASE_2339",
+  "typology": "Out",
+  "transactions": [
+    {
+      "timestamp": "2022/09/14 13:51",
+      "from_bank": "02310",
+      "from_account": "80038CAF0",
+      "to_bank": "020",
+      "to_account": "801801790",
+      "amount_received": 14346.55,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 14346.55,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/16 11:58",
+      "from_bank": "02310",
+      "from_account": "80038CAF0",
+      "to_bank": "00718",
+      "to_account": "800E96070",
+      "amount_received": 19499.82,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 19499.82,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    }
+  ],
+  "enriched_transactions": [
+    {
+      "timestamp": "2022/09/14 13:51",
+      "from_bank": "02310",
+      "from_account": "80038CAF0",
+      "to_bank": "020",
+      "to_account": "801801790",
+      "amount_received": 14346.55,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 14346.55,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/16 11:58",
+      "from_bank": "02310",
+      "from_account": "80038CAF0",
+      "to_bank": "00718",
+      "to_account": "800E96070",
+      "amount_received": 19499.82,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 19499.82,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    }
+  ],
+  "transaction_count": 2
+}

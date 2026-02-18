@@ -1,0 +1,30 @@
+{
+    "case_id": "CASE_2603",
+    "typology": "BIPARTITE",
+    "transactions": [
+        {
+            "timestamp": "2022/09/17 01:53",
+            "from_bank": "0146613",
+            "from_account": "81836A500",
+            "to_bank": "025",
+            "to_account": "8167A6820",
+            "amount_received": 205384.92,
+            "receiving_currency": "Rupee",
+            "amount_paid": 205384.92,
+            "payment_currency": "Rupee",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/18 15:56",
+            "from_bank": "0227453",
+            "from_account": "820F4B220",
+            "to_bank": "0195600",
+            "to_account": "823A729F0",
+            "amount_received": 2883.92,
+            "receiving_currency": "UK Pound",
+            "amount_paid": 2883.92,
+            "payment_currency": "UK Pound",
+            "payment_format": "ACH"
+        }
+    ]
+}

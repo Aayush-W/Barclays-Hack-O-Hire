@@ -1,0 +1,66 @@
+{
+    "case_id": "CASE_1680",
+    "typology": "Out",
+    "transactions": [
+        {
+            "timestamp": "2022/09/10 20:15",
+            "from_bank": "0039424",
+            "from_account": "815F74D10",
+            "to_bank": "004292",
+            "to_account": "80248A360",
+            "amount_received": 18847.9,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 18847.9,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/12 07:36",
+            "from_bank": "0039424",
+            "from_account": "815F74D10",
+            "to_bank": "0131380",
+            "to_account": "814D5F7A0",
+            "amount_received": 4015.07,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 4015.07,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/16 11:23",
+            "from_bank": "0039424",
+            "from_account": "815F74D10",
+            "to_bank": "0013612",
+            "to_account": "809C73B90",
+            "amount_received": 16207.28,
+            "receiving_currency": "Euro",
+            "amount_paid": 16207.28,
+            "payment_currency": "Euro",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/16 12:46",
+            "from_bank": "0039424",
+            "from_account": "815F74D10",
+            "to_bank": "0267742",
+            "to_account": "818F36990",
+            "amount_received": 458531.96,
+            "receiving_currency": "Rupee",
+            "amount_paid": 458531.96,
+            "payment_currency": "Rupee",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/16 16:32",
+            "from_bank": "0039424",
+            "from_account": "815F74D10",
+            "to_bank": "0220255",
+            "to_account": "80D513E10",
+            "amount_received": 3789.33,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 3789.33,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        }
+    ]
+}

@@ -1,0 +1,81 @@
+{
+  "case_id": "CASE_2006",
+  "typology": "RANDOM",
+  "transactions": [
+    {
+      "timestamp": "2022/09/12 16:30",
+      "from_bank": "014420",
+      "from_account": "806601290",
+      "to_bank": "003902",
+      "to_account": "80381BAA0",
+      "amount_received": 3037.72,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 3037.72,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/17 13:20",
+      "from_bank": "003902",
+      "from_account": "80381BAA0",
+      "to_bank": "0116024",
+      "to_account": "8076127D0",
+      "amount_received": 2592.39,
+      "receiving_currency": "Euro",
+      "amount_paid": 2592.39,
+      "payment_currency": "Euro",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/15 19:29",
+      "from_bank": "0116024",
+      "from_account": "8076127D0",
+      "to_bank": "001046",
+      "to_account": "8015AFAF0",
+      "amount_received": 3037.72,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 3037.72,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    }
+  ],
+  "enriched_transactions": [
+    {
+      "timestamp": "2022/09/12 16:30",
+      "from_bank": "014420",
+      "from_account": "806601290",
+      "to_bank": "003902",
+      "to_account": "80381BAA0",
+      "amount_received": 3037.72,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 3037.72,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/17 13:20",
+      "from_bank": "003902",
+      "from_account": "80381BAA0",
+      "to_bank": "0116024",
+      "to_account": "8076127D0",
+      "amount_received": 2592.39,
+      "receiving_currency": "Euro",
+      "amount_paid": 2592.39,
+      "payment_currency": "Euro",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/15 19:29",
+      "from_bank": "0116024",
+      "from_account": "8076127D0",
+      "to_bank": "001046",
+      "to_account": "8015AFAF0",
+      "amount_received": 3037.72,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 3037.72,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    }
+  ],
+  "transaction_count": 3
+}

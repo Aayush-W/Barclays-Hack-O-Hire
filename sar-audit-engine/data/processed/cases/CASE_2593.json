@@ -1,0 +1,30 @@
+{
+    "case_id": "CASE_2593",
+    "typology": "GATHER",
+    "transactions": [
+        {
+            "timestamp": "2022/09/16 02:02",
+            "from_bank": "0294136",
+            "from_account": "824F0C5D0",
+            "to_bank": "0198627",
+            "to_account": "824F0C7C0",
+            "amount_received": 692.78,
+            "receiving_currency": "UK Pound",
+            "amount_paid": 692.78,
+            "payment_currency": "UK Pound",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/19 14:52",
+            "from_bank": "0198627",
+            "from_account": "824F0C7C0",
+            "to_bank": "0294136",
+            "to_account": "824F0C5D0",
+            "amount_received": 717.0,
+            "receiving_currency": "UK Pound",
+            "amount_paid": 717.0,
+            "payment_currency": "UK Pound",
+            "payment_format": "ACH"
+        }
+    ]
+}

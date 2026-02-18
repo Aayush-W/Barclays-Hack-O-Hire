@@ -1,0 +1,30 @@
+{
+    "case_id": "CASE_1559",
+    "typology": "STACK",
+    "transactions": [
+        {
+            "timestamp": "2022/09/11 23:52",
+            "from_bank": "01115965",
+            "from_account": "82B75BF30",
+            "to_bank": "00113154",
+            "to_account": "82AD58260",
+            "amount_received": 19507.83,
+            "receiving_currency": "Canadian Dollar",
+            "amount_paid": 19507.83,
+            "payment_currency": "Canadian Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/12 16:13",
+            "from_bank": "00113154",
+            "from_account": "82AD58260",
+            "to_bank": "01115965",
+            "to_account": "82B75BF30",
+            "amount_received": 20476.09,
+            "receiving_currency": "Canadian Dollar",
+            "amount_paid": 20476.09,
+            "payment_currency": "Canadian Dollar",
+            "payment_format": "ACH"
+        }
+    ]
+}

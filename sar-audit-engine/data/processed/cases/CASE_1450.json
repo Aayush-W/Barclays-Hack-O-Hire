@@ -1,0 +1,18 @@
+{
+    "case_id": "CASE_1450",
+    "typology": "BIPARTITE",
+    "transactions": [
+        {
+            "timestamp": "2022/09/11 16:35",
+            "from_bank": "0272142",
+            "from_account": "81C387B50",
+            "to_bank": "0272142",
+            "to_account": "81ACBE4A0",
+            "amount_received": 385444.29,
+            "receiving_currency": "Ruble",
+            "amount_paid": 385444.29,
+            "payment_currency": "Ruble",
+            "payment_format": "ACH"
+        }
+    ]
+}

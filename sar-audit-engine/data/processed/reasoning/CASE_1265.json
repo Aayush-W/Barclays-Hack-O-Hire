@@ -1,0 +1,71 @@
+{
+  "case_id": "CASE_1265",
+  "typology": "In",
+  "reasoning": [
+    {
+      "step_id": "R01",
+      "step": "Case typology labeled as In based on pattern parser classification.",
+      "evidence": {
+        "typology": "In",
+        "source": "pattern_parser"
+      },
+      "transaction_ids": [
+        "TX_001",
+        "TX_002"
+      ]
+    },
+    {
+      "step_id": "R02",
+      "step": "Aggregate transaction value exceeds high-value threshold.",
+      "evidence": {
+        "total_inflow": 12304.16,
+        "total_outflow": 12304.16,
+        "threshold": 10000.0
+      },
+      "transaction_ids": [
+        "TX_001",
+        "TX_002"
+      ]
+    },
+    {
+      "step_id": "R03",
+      "step": "Net flow is near zero relative to total inflow, indicating potential pass-through.",
+      "evidence": {
+        "net_flow": 0.0,
+        "total_inflow": 12304.16,
+        "ratio": 0.0,
+        "threshold": 0.1
+      },
+      "transaction_ids": [
+        "TX_001",
+        "TX_002"
+      ]
+    },
+    {
+      "step_id": "R04",
+      "step": "Majority of transfers are cross-bank.",
+      "evidence": {
+        "cross_bank_ratio": 1.0,
+        "threshold": 0.6
+      },
+      "transaction_ids": [
+        "TX_001",
+        "TX_002"
+      ]
+    },
+    {
+      "step_id": "R05",
+      "step": "Transaction velocity exceeds monitoring thresholds.",
+      "evidence": {
+        "tx_per_day": 9.8969,
+        "max_tx_in_1h": 1,
+        "tx_per_day_threshold": 5,
+        "max_tx_in_1h_threshold": 3
+      },
+      "transaction_ids": [
+        "TX_001",
+        "TX_002"
+      ]
+    }
+  ]
+}

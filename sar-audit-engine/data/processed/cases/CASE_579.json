@@ -1,0 +1,66 @@
+{
+    "case_id": "CASE_579",
+    "typology": "In",
+    "transactions": [
+        {
+            "timestamp": "2022/09/04 09:45",
+            "from_bank": "0293268",
+            "from_account": "822266F70",
+            "to_bank": "0210789",
+            "to_account": "8076420F0",
+            "amount_received": 4037.34,
+            "receiving_currency": "Euro",
+            "amount_paid": 4037.34,
+            "payment_currency": "Euro",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/04 18:42",
+            "from_bank": "0025268",
+            "from_account": "8225DAE10",
+            "to_bank": "0210789",
+            "to_account": "8076420F0",
+            "amount_received": 7352.29,
+            "receiving_currency": "Euro",
+            "amount_paid": 7352.29,
+            "payment_currency": "Euro",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/07 17:14",
+            "from_bank": "0192597",
+            "from_account": "8222D14F0",
+            "to_bank": "0210789",
+            "to_account": "8076420F0",
+            "amount_received": 4403.0,
+            "receiving_currency": "Euro",
+            "amount_paid": 4403.0,
+            "payment_currency": "Euro",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/09 03:10",
+            "from_bank": "0293924",
+            "from_account": "824BF89E0",
+            "to_bank": "0210789",
+            "to_account": "8076420F0",
+            "amount_received": 10845.3,
+            "receiving_currency": "Euro",
+            "amount_paid": 10845.3,
+            "payment_currency": "Euro",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/10 06:17",
+            "from_bank": "006",
+            "from_account": "822C47930",
+            "to_bank": "0210789",
+            "to_account": "8076420F0",
+            "amount_received": 584.05,
+            "receiving_currency": "Euro",
+            "amount_paid": 584.05,
+            "payment_currency": "Euro",
+            "payment_format": "ACH"
+        }
+    ]
+}

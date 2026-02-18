@@ -1,0 +1,90 @@
+{
+    "case_id": "CASE_2362",
+    "typology": "In",
+    "transactions": [
+        {
+            "timestamp": "2022/09/14 16:17",
+            "from_bank": "023",
+            "from_account": "80C8DD5B0",
+            "to_bank": "0251758",
+            "to_account": "8136F3BA0",
+            "amount_received": 1265974.06,
+            "receiving_currency": "Yen",
+            "amount_paid": 1265974.06,
+            "payment_currency": "Yen",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/14 16:37",
+            "from_bank": "0144337",
+            "from_account": "81A6EAE90",
+            "to_bank": "0251758",
+            "to_account": "8136F3BA0",
+            "amount_received": 584757.15,
+            "receiving_currency": "Yen",
+            "amount_paid": 584757.15,
+            "payment_currency": "Yen",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/16 05:22",
+            "from_bank": "0115474",
+            "from_account": "814015680",
+            "to_bank": "0251758",
+            "to_account": "8136F3BA0",
+            "amount_received": 1843832.12,
+            "receiving_currency": "Yen",
+            "amount_paid": 1843832.12,
+            "payment_currency": "Yen",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/17 01:54",
+            "from_bank": "0011034",
+            "from_account": "805D9B560",
+            "to_bank": "0251758",
+            "to_account": "8136F3BA0",
+            "amount_received": 1933868.33,
+            "receiving_currency": "Yen",
+            "amount_paid": 1933868.33,
+            "payment_currency": "Yen",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/17 17:59",
+            "from_bank": "015598",
+            "from_account": "802072DC0",
+            "to_bank": "0251758",
+            "to_account": "8136F3BA0",
+            "amount_received": 370241.83,
+            "receiving_currency": "Yen",
+            "amount_paid": 370241.83,
+            "payment_currency": "Yen",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/19 08:54",
+            "from_bank": "0045195",
+            "from_account": "81E34FA20",
+            "to_bank": "0251758",
+            "to_account": "8136F3BA0",
+            "amount_received": 1140041.94,
+            "receiving_currency": "Yen",
+            "amount_paid": 1140041.94,
+            "payment_currency": "Yen",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/19 12:05",
+            "from_bank": "0224508",
+            "from_account": "8117C5420",
+            "to_bank": "0251758",
+            "to_account": "8136F3BA0",
+            "amount_received": 41620.86,
+            "receiving_currency": "Yen",
+            "amount_paid": 41620.86,
+            "payment_currency": "Yen",
+            "payment_format": "ACH"
+        }
+    ]
+}

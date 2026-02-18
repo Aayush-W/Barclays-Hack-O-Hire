@@ -1,0 +1,57 @@
+{
+  "case_id": "CASE_732",
+  "typology": "BIPARTITE",
+  "transactions": [
+    {
+      "timestamp": "2022/09/05 14:52",
+      "from_bank": "0011611",
+      "from_account": "811CD0600",
+      "to_bank": "00718",
+      "to_account": "8075597E0",
+      "amount_received": 9281.45,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 9281.45,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/08 01:55",
+      "from_bank": "013688",
+      "from_account": "8019DEDB0",
+      "to_bank": "0250403",
+      "to_account": "8145BC8C0",
+      "amount_received": 1415179.25,
+      "receiving_currency": "Yen",
+      "amount_paid": 1415179.25,
+      "payment_currency": "Yen",
+      "payment_format": "ACH"
+    }
+  ],
+  "enriched_transactions": [
+    {
+      "timestamp": "2022/09/05 14:52",
+      "from_bank": "0011611",
+      "from_account": "811CD0600",
+      "to_bank": "00718",
+      "to_account": "8075597E0",
+      "amount_received": 9281.45,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 9281.45,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/08 01:55",
+      "from_bank": "013688",
+      "from_account": "8019DEDB0",
+      "to_bank": "0250403",
+      "to_account": "8145BC8C0",
+      "amount_received": 1415179.25,
+      "receiving_currency": "Yen",
+      "amount_paid": 1415179.25,
+      "payment_currency": "Yen",
+      "payment_format": "ACH"
+    }
+  ],
+  "transaction_count": 2
+}

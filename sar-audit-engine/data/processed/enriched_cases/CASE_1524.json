@@ -1,0 +1,57 @@
+{
+  "case_id": "CASE_1524",
+  "typology": "In",
+  "transactions": [
+    {
+      "timestamp": "2022/09/09 23:18",
+      "from_bank": "0239258",
+      "from_account": "820D462D0",
+      "to_bank": "0131185",
+      "to_account": "823D33310",
+      "amount_received": 916.26,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 916.26,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/09 01:38",
+      "from_bank": "0131185",
+      "from_account": "823D33310",
+      "to_bank": "0131185",
+      "to_account": "823D33310",
+      "amount_received": 48385.55,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 48385.55,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    }
+  ],
+  "enriched_transactions": [
+    {
+      "timestamp": "2022/09/09 23:18",
+      "from_bank": "0239258",
+      "from_account": "820D462D0",
+      "to_bank": "0131185",
+      "to_account": "823D33310",
+      "amount_received": 916.26,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 916.26,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/09 01:38",
+      "from_bank": "0131185",
+      "from_account": "823D33310",
+      "to_bank": "0131185",
+      "to_account": "823D33310",
+      "amount_received": 48385.55,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 48385.55,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    }
+  ],
+  "transaction_count": 2
+}

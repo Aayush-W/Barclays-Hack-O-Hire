@@ -1,0 +1,100 @@
+{
+  "case_id": "CASE_1538",
+  "typology": "RANDOM",
+  "reasoning": [
+    {
+      "step_id": "R01",
+      "step": "Case typology labeled as RANDOM based on pattern parser classification.",
+      "evidence": {
+        "typology": "RANDOM",
+        "source": "pattern_parser"
+      },
+      "transaction_ids": [
+        "TX_001",
+        "TX_002",
+        "TX_003"
+      ]
+    },
+    {
+      "step_id": "R02",
+      "step": "Aggregate transaction value exceeds high-value threshold.",
+      "evidence": {
+        "total_inflow": 39790.8,
+        "total_outflow": 39790.8,
+        "threshold": 10000.0
+      },
+      "transaction_ids": [
+        "TX_001",
+        "TX_002",
+        "TX_003"
+      ]
+    },
+    {
+      "step_id": "R03",
+      "step": "Net flow is near zero relative to total inflow, indicating potential pass-through.",
+      "evidence": {
+        "net_flow": 0.0,
+        "total_inflow": 39790.8,
+        "ratio": 0.0,
+        "threshold": 0.1
+      },
+      "transaction_ids": [
+        "TX_001",
+        "TX_002",
+        "TX_003"
+      ]
+    },
+    {
+      "step_id": "R04",
+      "step": "Funds traversed 3 hops across accounts.",
+      "evidence": {
+        "hop_count": 3,
+        "threshold": 3
+      },
+      "transaction_ids": [
+        "TX_001",
+        "TX_002",
+        "TX_003"
+      ]
+    },
+    {
+      "step_id": "R05",
+      "step": "Majority of transfers are cross-bank.",
+      "evidence": {
+        "cross_bank_ratio": 1.0,
+        "threshold": 0.6
+      },
+      "transaction_ids": [
+        "TX_001",
+        "TX_002",
+        "TX_003"
+      ]
+    },
+    {
+      "step_id": "R06",
+      "step": "Multiple originators or beneficiaries are involved.",
+      "evidence": {
+        "unique_senders": 3,
+        "unique_receivers": 3,
+        "threshold": 3
+      },
+      "transaction_ids": [
+        "TX_001",
+        "TX_002",
+        "TX_003"
+      ]
+    },
+    {
+      "step_id": "R07",
+      "step": "Multiple currencies appear within the transaction set.",
+      "evidence": {
+        "multi_currency_flag": true
+      },
+      "transaction_ids": [
+        "TX_001",
+        "TX_002",
+        "TX_003"
+      ]
+    }
+  ]
+}

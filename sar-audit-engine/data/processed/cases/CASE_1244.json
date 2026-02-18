@@ -1,0 +1,18 @@
+{
+    "case_id": "CASE_1244",
+    "typology": "BIPARTITE",
+    "transactions": [
+        {
+            "timestamp": "2022/09/09 01:55",
+            "from_bank": "0057107",
+            "from_account": "824BF4150",
+            "to_bank": "009340",
+            "to_account": "804682F80",
+            "amount_received": 11042.04,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 11042.04,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        }
+    ]
+}

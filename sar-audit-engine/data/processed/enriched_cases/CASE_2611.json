@@ -1,0 +1,57 @@
+{
+  "case_id": "CASE_2611",
+  "typology": "CYCLE",
+  "transactions": [
+    {
+      "timestamp": "2022/09/16 04:39",
+      "from_bank": "0123281",
+      "from_account": "818AD49B0",
+      "to_bank": "0068533",
+      "to_account": "8216FEDA0",
+      "amount_received": 16515.29,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 16515.29,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/17 16:26",
+      "from_bank": "0068533",
+      "from_account": "8216FEDA0",
+      "to_bank": "0123281",
+      "to_account": "818AD49B0",
+      "amount_received": 113057.69,
+      "receiving_currency": "Yuan",
+      "amount_paid": 113057.69,
+      "payment_currency": "Yuan",
+      "payment_format": "ACH"
+    }
+  ],
+  "enriched_transactions": [
+    {
+      "timestamp": "2022/09/16 04:39",
+      "from_bank": "0123281",
+      "from_account": "818AD49B0",
+      "to_bank": "0068533",
+      "to_account": "8216FEDA0",
+      "amount_received": 16515.29,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 16515.29,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/17 16:26",
+      "from_bank": "0068533",
+      "from_account": "8216FEDA0",
+      "to_bank": "0123281",
+      "to_account": "818AD49B0",
+      "amount_received": 113057.69,
+      "receiving_currency": "Yuan",
+      "amount_paid": 113057.69,
+      "payment_currency": "Yuan",
+      "payment_format": "ACH"
+    }
+  ],
+  "transaction_count": 2
+}

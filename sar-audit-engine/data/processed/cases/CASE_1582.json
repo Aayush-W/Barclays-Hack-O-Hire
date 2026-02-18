@@ -1,0 +1,54 @@
+{
+    "case_id": "CASE_1582",
+    "typology": "GATHER",
+    "transactions": [
+        {
+            "timestamp": "2022/09/10 06:38",
+            "from_bank": "019596",
+            "from_account": "812113F70",
+            "to_bank": "023375",
+            "to_account": "80AAFDEE0",
+            "amount_received": 6265.89,
+            "receiving_currency": "Euro",
+            "amount_paid": 6265.89,
+            "payment_currency": "Euro",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/15 13:36",
+            "from_bank": "023375",
+            "from_account": "80AAFDEE0",
+            "to_bank": "01831",
+            "to_account": "8015A5530",
+            "amount_received": 6250.02,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 6250.02,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/11 02:07",
+            "from_bank": "019596",
+            "from_account": "812113F70",
+            "to_bank": "012",
+            "to_account": "80E15BB90",
+            "amount_received": 71247.76,
+            "receiving_currency": "Yuan",
+            "amount_paid": 71247.76,
+            "payment_currency": "Yuan",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/15 19:41",
+            "from_bank": "012",
+            "from_account": "80E15BB90",
+            "to_bank": "01831",
+            "to_account": "8015A5530",
+            "amount_received": 10637.81,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 10637.81,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        }
+    ]
+}

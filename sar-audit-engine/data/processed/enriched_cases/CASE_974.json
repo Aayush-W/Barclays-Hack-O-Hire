@@ -1,0 +1,57 @@
+{
+  "case_id": "CASE_974",
+  "typology": "CYCLE",
+  "transactions": [
+    {
+      "timestamp": "2022/09/06 16:49",
+      "from_bank": "003",
+      "from_account": "814C053A0",
+      "to_bank": "026967",
+      "to_account": "81E581350",
+      "amount_received": 950.03,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 950.03,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/06 19:17",
+      "from_bank": "026967",
+      "from_account": "81E581350",
+      "to_bank": "003",
+      "to_account": "814C053A0",
+      "amount_received": 97498.73,
+      "receiving_currency": "Yen",
+      "amount_paid": 97498.73,
+      "payment_currency": "Yen",
+      "payment_format": "ACH"
+    }
+  ],
+  "enriched_transactions": [
+    {
+      "timestamp": "2022/09/06 16:49",
+      "from_bank": "003",
+      "from_account": "814C053A0",
+      "to_bank": "026967",
+      "to_account": "81E581350",
+      "amount_received": 950.03,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 950.03,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/06 19:17",
+      "from_bank": "026967",
+      "from_account": "81E581350",
+      "to_bank": "003",
+      "to_account": "814C053A0",
+      "amount_received": 97498.73,
+      "receiving_currency": "Yen",
+      "amount_paid": 97498.73,
+      "payment_currency": "Yen",
+      "payment_format": "ACH"
+    }
+  ],
+  "transaction_count": 2
+}

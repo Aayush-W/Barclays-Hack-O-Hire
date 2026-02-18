@@ -1,0 +1,57 @@
+{
+  "case_id": "CASE_1575",
+  "typology": "RANDOM",
+  "transactions": [
+    {
+      "timestamp": "2022/09/10 05:48",
+      "from_bank": "0217059",
+      "from_account": "80B4FAA90",
+      "to_bank": "0172128",
+      "to_account": "81BEBF1C0",
+      "amount_received": 664265.27,
+      "receiving_currency": "Ruble",
+      "amount_paid": 664265.27,
+      "payment_currency": "Ruble",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/11 12:47",
+      "from_bank": "0172128",
+      "from_account": "81BEBF1C0",
+      "to_bank": "0116754",
+      "to_account": "806B85290",
+      "amount_received": 53137.2,
+      "receiving_currency": "Yuan",
+      "amount_paid": 53137.2,
+      "payment_currency": "Yuan",
+      "payment_format": "ACH"
+    }
+  ],
+  "enriched_transactions": [
+    {
+      "timestamp": "2022/09/10 05:48",
+      "from_bank": "0217059",
+      "from_account": "80B4FAA90",
+      "to_bank": "0172128",
+      "to_account": "81BEBF1C0",
+      "amount_received": 664265.27,
+      "receiving_currency": "Ruble",
+      "amount_paid": 664265.27,
+      "payment_currency": "Ruble",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/11 12:47",
+      "from_bank": "0172128",
+      "from_account": "81BEBF1C0",
+      "to_bank": "0116754",
+      "to_account": "806B85290",
+      "amount_received": 53137.2,
+      "receiving_currency": "Yuan",
+      "amount_paid": 53137.2,
+      "payment_currency": "Yuan",
+      "payment_format": "ACH"
+    }
+  ],
+  "transaction_count": 2
+}

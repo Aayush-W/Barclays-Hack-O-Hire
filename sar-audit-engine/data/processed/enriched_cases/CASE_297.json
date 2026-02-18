@@ -1,0 +1,33 @@
+{
+  "case_id": "CASE_297",
+  "typology": "RANDOM",
+  "transactions": [
+    {
+      "timestamp": "2022/09/02 18:31",
+      "from_bank": "018527",
+      "from_account": "809369FD0",
+      "to_bank": "025",
+      "to_account": "8127A2FB0",
+      "amount_received": 923950.22,
+      "receiving_currency": "Rupee",
+      "amount_paid": 923950.22,
+      "payment_currency": "Rupee",
+      "payment_format": "ACH"
+    }
+  ],
+  "enriched_transactions": [
+    {
+      "timestamp": "2022/09/02 18:31",
+      "from_bank": "018527",
+      "from_account": "809369FD0",
+      "to_bank": "025",
+      "to_account": "8127A2FB0",
+      "amount_received": 923950.22,
+      "receiving_currency": "Rupee",
+      "amount_paid": 923950.22,
+      "payment_currency": "Rupee",
+      "payment_format": "ACH"
+    }
+  ],
+  "transaction_count": 1
+}

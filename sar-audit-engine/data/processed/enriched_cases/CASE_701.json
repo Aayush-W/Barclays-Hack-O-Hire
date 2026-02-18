@@ -1,0 +1,57 @@
+{
+  "case_id": "CASE_701",
+  "typology": "GATHER",
+  "transactions": [
+    {
+      "timestamp": "2022/09/05 02:25",
+      "from_bank": "0037262",
+      "from_account": "81C389DF0",
+      "to_bank": "0025268",
+      "to_account": "81C389FE0",
+      "amount_received": 14067.57,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 14067.57,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/08 20:19",
+      "from_bank": "0025268",
+      "from_account": "81C389FE0",
+      "to_bank": "0037262",
+      "to_account": "81C389DF0",
+      "amount_received": 15371.01,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 15371.01,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    }
+  ],
+  "enriched_transactions": [
+    {
+      "timestamp": "2022/09/05 02:25",
+      "from_bank": "0037262",
+      "from_account": "81C389DF0",
+      "to_bank": "0025268",
+      "to_account": "81C389FE0",
+      "amount_received": 14067.57,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 14067.57,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/08 20:19",
+      "from_bank": "0025268",
+      "from_account": "81C389FE0",
+      "to_bank": "0037262",
+      "to_account": "81C389DF0",
+      "amount_received": 15371.01,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 15371.01,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    }
+  ],
+  "transaction_count": 2
+}

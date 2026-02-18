@@ -1,0 +1,18 @@
+{
+    "case_id": "CASE_2355",
+    "typology": "Out",
+    "transactions": [
+        {
+            "timestamp": "2022/09/14 15:00",
+            "from_bank": "0097570",
+            "from_account": "824CAF320",
+            "to_bank": "0196902",
+            "to_account": "824D406A0",
+            "amount_received": 6965.17,
+            "receiving_currency": "UK Pound",
+            "amount_paid": 6965.17,
+            "payment_currency": "UK Pound",
+            "payment_format": "ACH"
+        }
+    ]
+}

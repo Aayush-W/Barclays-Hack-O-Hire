@@ -1,0 +1,26 @@
+{
+  "case_id": "CASE_1274",
+  "typology": "BIPARTITE",
+  "signals": {
+    "total_inflow": 86164.31,
+    "total_outflow": 86164.31,
+    "net_flow": 0.0,
+    "unique_senders": 9,
+    "unique_receivers": 9,
+    "hop_count": 1,
+    "cross_bank_ratio": 0.8889,
+    "multi_currency_flag": true,
+    "rapid_pass_through_flag": false,
+    "rapid_pass_through_min_hours": null,
+    "transaction_velocity_metrics": {
+      "tx_count": 9,
+      "start_time": "2022-09-08 15:08:00",
+      "end_time": "2022-09-11 04:13:00",
+      "duration_hours": 61.08,
+      "tx_per_day": 3.5362,
+      "avg_interarrival_minutes": 458.12,
+      "median_interarrival_minutes": 235.0,
+      "max_tx_in_1h": 2
+    }
+  }
+}

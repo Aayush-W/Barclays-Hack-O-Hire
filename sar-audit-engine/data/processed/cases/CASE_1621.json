@@ -1,0 +1,54 @@
+{
+    "case_id": "CASE_1621",
+    "typology": "RANDOM",
+    "transactions": [
+        {
+            "timestamp": "2022/09/10 12:07",
+            "from_bank": "00357",
+            "from_account": "800EE73D0",
+            "to_bank": "0111904",
+            "to_account": "8047567B0",
+            "amount_received": 16161.59,
+            "receiving_currency": "Euro",
+            "amount_paid": 16161.59,
+            "payment_currency": "Euro",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/14 12:22",
+            "from_bank": "0111904",
+            "from_account": "8047567B0",
+            "to_bank": "023506",
+            "to_account": "802605000",
+            "amount_received": 15746.48,
+            "receiving_currency": "Euro",
+            "amount_paid": 15746.48,
+            "payment_currency": "Euro",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/14 16:23",
+            "from_bank": "023506",
+            "from_account": "802605000",
+            "to_bank": "001488",
+            "to_account": "800A449B0",
+            "amount_received": 18355.03,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 18355.03,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/15 06:38",
+            "from_bank": "001488",
+            "from_account": "800A449B0",
+            "to_bank": "011081",
+            "to_account": "800DBE040",
+            "amount_received": 20312.37,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 20312.37,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        }
+    ]
+}

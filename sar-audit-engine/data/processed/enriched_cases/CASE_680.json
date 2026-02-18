@@ -1,0 +1,129 @@
+{
+  "case_id": "CASE_680",
+  "typology": "In",
+  "transactions": [
+    {
+      "timestamp": "2022/09/04 23:01",
+      "from_bank": "024830",
+      "from_account": "802321AF0",
+      "to_bank": "0165793",
+      "to_account": "8193EDE00",
+      "amount_received": 595052.29,
+      "receiving_currency": "Rupee",
+      "amount_paid": 595052.29,
+      "payment_currency": "Rupee",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/05 01:00",
+      "from_bank": "0048911",
+      "from_account": "820A5A430",
+      "to_bank": "0165793",
+      "to_account": "8193EDE00",
+      "amount_received": 184070.63,
+      "receiving_currency": "Rupee",
+      "amount_paid": 184070.63,
+      "payment_currency": "Rupee",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/08 05:04",
+      "from_bank": "0227453",
+      "from_account": "810A1A390",
+      "to_bank": "0165793",
+      "to_account": "8193EDE00",
+      "amount_received": 607881.12,
+      "receiving_currency": "Rupee",
+      "amount_paid": 607881.12,
+      "payment_currency": "Rupee",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/08 10:17",
+      "from_bank": "012986",
+      "from_account": "802B12FC0",
+      "to_bank": "0165793",
+      "to_account": "8193EDE00",
+      "amount_received": 1162447.65,
+      "receiving_currency": "Rupee",
+      "amount_paid": 1162447.65,
+      "payment_currency": "Rupee",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/08 14:40",
+      "from_bank": "0039424",
+      "from_account": "812905E70",
+      "to_bank": "0165793",
+      "to_account": "8193EDE00",
+      "amount_received": 913167.22,
+      "receiving_currency": "Rupee",
+      "amount_paid": 913167.22,
+      "payment_currency": "Rupee",
+      "payment_format": "ACH"
+    }
+  ],
+  "enriched_transactions": [
+    {
+      "timestamp": "2022/09/04 23:01",
+      "from_bank": "024830",
+      "from_account": "802321AF0",
+      "to_bank": "0165793",
+      "to_account": "8193EDE00",
+      "amount_received": 595052.29,
+      "receiving_currency": "Rupee",
+      "amount_paid": 595052.29,
+      "payment_currency": "Rupee",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/05 01:00",
+      "from_bank": "0048911",
+      "from_account": "820A5A430",
+      "to_bank": "0165793",
+      "to_account": "8193EDE00",
+      "amount_received": 184070.63,
+      "receiving_currency": "Rupee",
+      "amount_paid": 184070.63,
+      "payment_currency": "Rupee",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/08 05:04",
+      "from_bank": "0227453",
+      "from_account": "810A1A390",
+      "to_bank": "0165793",
+      "to_account": "8193EDE00",
+      "amount_received": 607881.12,
+      "receiving_currency": "Rupee",
+      "amount_paid": 607881.12,
+      "payment_currency": "Rupee",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/08 10:17",
+      "from_bank": "012986",
+      "from_account": "802B12FC0",
+      "to_bank": "0165793",
+      "to_account": "8193EDE00",
+      "amount_received": 1162447.65,
+      "receiving_currency": "Rupee",
+      "amount_paid": 1162447.65,
+      "payment_currency": "Rupee",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/08 14:40",
+      "from_bank": "0039424",
+      "from_account": "812905E70",
+      "to_bank": "0165793",
+      "to_account": "8193EDE00",
+      "amount_received": 913167.22,
+      "receiving_currency": "Rupee",
+      "amount_paid": 913167.22,
+      "payment_currency": "Rupee",
+      "payment_format": "ACH"
+    }
+  ],
+  "transaction_count": 5
+}

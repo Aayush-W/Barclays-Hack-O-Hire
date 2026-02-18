@@ -1,0 +1,54 @@
+{
+    "case_id": "CASE_444",
+    "typology": "CYCLE",
+    "transactions": [
+        {
+            "timestamp": "2022/09/03 14:31",
+            "from_bank": "003503",
+            "from_account": "801DA5690",
+            "to_bank": "0026682",
+            "to_account": "824B55C60",
+            "amount_received": 15806.48,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 15806.48,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/05 07:26",
+            "from_bank": "0026682",
+            "from_account": "824B55C60",
+            "to_bank": "0116290",
+            "to_account": "824B55ED0",
+            "amount_received": 13382.62,
+            "receiving_currency": "Euro",
+            "amount_paid": 13382.62,
+            "payment_currency": "Euro",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/05 15:44",
+            "from_bank": "0116290",
+            "from_account": "824B55ED0",
+            "to_bank": "000",
+            "to_account": "8039EF170",
+            "amount_received": 14136.71,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 14136.71,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/09 14:58",
+            "from_bank": "000",
+            "from_account": "8039EF170",
+            "to_bank": "003503",
+            "to_account": "801DA5690",
+            "amount_received": 12778.6,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 12778.6,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        }
+    ]
+}

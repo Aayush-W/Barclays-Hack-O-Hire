@@ -1,0 +1,18 @@
+{
+    "case_id": "CASE_922",
+    "typology": "RANDOM",
+    "transactions": [
+        {
+            "timestamp": "2022/09/06 10:00",
+            "from_bank": "00113154",
+            "from_account": "82AD58260",
+            "to_bank": "01115965",
+            "to_account": "82B75BF30",
+            "amount_received": 2104.76,
+            "receiving_currency": "Canadian Dollar",
+            "amount_paid": 2104.76,
+            "payment_currency": "Canadian Dollar",
+            "payment_format": "ACH"
+        }
+    ]
+}

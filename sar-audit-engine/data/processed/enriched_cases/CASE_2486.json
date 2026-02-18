@@ -1,0 +1,57 @@
+{
+  "case_id": "CASE_2486",
+  "typology": "CYCLE",
+  "transactions": [
+    {
+      "timestamp": "2022/09/15 11:11",
+      "from_bank": "0128727",
+      "from_account": "81093CE20",
+      "to_bank": "027753",
+      "to_account": "808FAC770",
+      "amount_received": 9059.03,
+      "receiving_currency": "Euro",
+      "amount_paid": 9059.03,
+      "payment_currency": "Euro",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/16 14:51",
+      "from_bank": "027753",
+      "from_account": "808FAC770",
+      "to_bank": "0128727",
+      "to_account": "81093CE20",
+      "amount_received": 9603.98,
+      "receiving_currency": "Euro",
+      "amount_paid": 9603.98,
+      "payment_currency": "Euro",
+      "payment_format": "ACH"
+    }
+  ],
+  "enriched_transactions": [
+    {
+      "timestamp": "2022/09/15 11:11",
+      "from_bank": "0128727",
+      "from_account": "81093CE20",
+      "to_bank": "027753",
+      "to_account": "808FAC770",
+      "amount_received": 9059.03,
+      "receiving_currency": "Euro",
+      "amount_paid": 9059.03,
+      "payment_currency": "Euro",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/16 14:51",
+      "from_bank": "027753",
+      "from_account": "808FAC770",
+      "to_bank": "0128727",
+      "to_account": "81093CE20",
+      "amount_received": 9603.98,
+      "receiving_currency": "Euro",
+      "amount_paid": 9603.98,
+      "payment_currency": "Euro",
+      "payment_format": "ACH"
+    }
+  ],
+  "transaction_count": 2
+}

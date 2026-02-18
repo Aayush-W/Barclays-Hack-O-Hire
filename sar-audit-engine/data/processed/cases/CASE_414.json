@@ -1,0 +1,30 @@
+{
+    "case_id": "CASE_414",
+    "typology": "GATHER",
+    "transactions": [
+        {
+            "timestamp": "2022/09/03 10:01",
+            "from_bank": "0272142",
+            "from_account": "81C393430",
+            "to_bank": "0272896",
+            "to_account": "81BBEA160",
+            "amount_received": 200711.03,
+            "receiving_currency": "Ruble",
+            "amount_paid": 200711.03,
+            "payment_currency": "Ruble",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/07 19:17",
+            "from_bank": "0272896",
+            "from_account": "81BBEA160",
+            "to_bank": "0272142",
+            "to_account": "81C393430",
+            "amount_received": 184897.89,
+            "receiving_currency": "Ruble",
+            "amount_paid": 184897.89,
+            "payment_currency": "Ruble",
+            "payment_format": "ACH"
+        }
+    ]
+}

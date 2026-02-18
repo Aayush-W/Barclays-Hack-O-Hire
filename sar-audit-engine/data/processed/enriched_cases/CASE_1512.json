@@ -1,0 +1,33 @@
+{
+  "case_id": "CASE_1512",
+  "typology": "BIPARTITE",
+  "transactions": [
+    {
+      "timestamp": "2022/09/12 17:56",
+      "from_bank": "0272142",
+      "from_account": "81ACBE4A0",
+      "to_bank": "0074621",
+      "to_account": "81C387820",
+      "amount_received": 1424350.08,
+      "receiving_currency": "Ruble",
+      "amount_paid": 1424350.08,
+      "payment_currency": "Ruble",
+      "payment_format": "ACH"
+    }
+  ],
+  "enriched_transactions": [
+    {
+      "timestamp": "2022/09/12 17:56",
+      "from_bank": "0272142",
+      "from_account": "81ACBE4A0",
+      "to_bank": "0074621",
+      "to_account": "81C387820",
+      "amount_received": 1424350.08,
+      "receiving_currency": "Ruble",
+      "amount_paid": 1424350.08,
+      "payment_currency": "Ruble",
+      "payment_format": "ACH"
+    }
+  ],
+  "transaction_count": 1
+}

@@ -1,0 +1,81 @@
+{
+  "case_id": "CASE_2153",
+  "typology": "CYCLE",
+  "transactions": [
+    {
+      "timestamp": "2022/09/13 10:28",
+      "from_bank": "018283",
+      "from_account": "8172D1590",
+      "to_bank": "008483",
+      "to_account": "808B913A0",
+      "amount_received": 6167.82,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 6167.82,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/13 15:48",
+      "from_bank": "008483",
+      "from_account": "808B913A0",
+      "to_bank": "008904",
+      "to_account": "805098F00",
+      "amount_received": 5831.42,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 5831.42,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/14 12:31",
+      "from_bank": "008904",
+      "from_account": "805098F00",
+      "to_bank": "018283",
+      "to_account": "8172D1590",
+      "amount_received": 5155.25,
+      "receiving_currency": "Euro",
+      "amount_paid": 5155.25,
+      "payment_currency": "Euro",
+      "payment_format": "ACH"
+    }
+  ],
+  "enriched_transactions": [
+    {
+      "timestamp": "2022/09/13 10:28",
+      "from_bank": "018283",
+      "from_account": "8172D1590",
+      "to_bank": "008483",
+      "to_account": "808B913A0",
+      "amount_received": 6167.82,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 6167.82,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/13 15:48",
+      "from_bank": "008483",
+      "from_account": "808B913A0",
+      "to_bank": "008904",
+      "to_account": "805098F00",
+      "amount_received": 5831.42,
+      "receiving_currency": "US Dollar",
+      "amount_paid": 5831.42,
+      "payment_currency": "US Dollar",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/14 12:31",
+      "from_bank": "008904",
+      "from_account": "805098F00",
+      "to_bank": "018283",
+      "to_account": "8172D1590",
+      "amount_received": 5155.25,
+      "receiving_currency": "Euro",
+      "amount_paid": 5155.25,
+      "payment_currency": "Euro",
+      "payment_format": "ACH"
+    }
+  ],
+  "transaction_count": 3
+}

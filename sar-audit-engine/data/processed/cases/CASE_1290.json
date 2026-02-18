@@ -1,0 +1,66 @@
+{
+    "case_id": "CASE_1290",
+    "typology": "BIPARTITE",
+    "transactions": [
+        {
+            "timestamp": "2022/09/10 11:28",
+            "from_bank": "01831",
+            "from_account": "800B959C0",
+            "to_bank": "011081",
+            "to_account": "800F87180",
+            "amount_received": 19153.09,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 19153.09,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/09 10:14",
+            "from_bank": "0159975",
+            "from_account": "823D5E760",
+            "to_bank": "029655",
+            "to_account": "8080E1E60",
+            "amount_received": 2494.27,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 2494.27,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/09 01:55",
+            "from_bank": "0110859",
+            "from_account": "80E28C7F0",
+            "to_bank": "013729",
+            "to_account": "801CF2E60",
+            "amount_received": 5478.73,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 5478.73,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/11 04:43",
+            "from_bank": "0038471",
+            "from_account": "820DCB6D0",
+            "to_bank": "0213834",
+            "to_account": "808757B00",
+            "amount_received": 13154.64,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 13154.64,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/10 19:09",
+            "from_bank": "0024750",
+            "from_account": "81363F410",
+            "to_bank": "0110200",
+            "to_account": "80BE1BC80",
+            "amount_received": 8597.42,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 8597.42,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        }
+    ]
+}

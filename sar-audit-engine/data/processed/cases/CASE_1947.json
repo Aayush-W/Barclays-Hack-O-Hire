@@ -1,0 +1,66 @@
+{
+    "case_id": "CASE_1947",
+    "typology": "In",
+    "transactions": [
+        {
+            "timestamp": "2022/09/12 09:05",
+            "from_bank": "0266946",
+            "from_account": "81A790790",
+            "to_bank": "0276002",
+            "to_account": "81C3680B0",
+            "amount_received": 470134.76,
+            "receiving_currency": "Ruble",
+            "amount_paid": 470134.76,
+            "payment_currency": "Ruble",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/12 13:30",
+            "from_bank": "0266946",
+            "from_account": "81A790740",
+            "to_bank": "0276002",
+            "to_account": "81C3680B0",
+            "amount_received": 1334736.0,
+            "receiving_currency": "Ruble",
+            "amount_paid": 1334736.0,
+            "payment_currency": "Ruble",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/12 17:37",
+            "from_bank": "0276002",
+            "from_account": "81C3680B0",
+            "to_bank": "0072043",
+            "to_account": "81A4C4A70",
+            "amount_received": 1337689.73,
+            "receiving_currency": "Ruble",
+            "amount_paid": 1337689.73,
+            "payment_currency": "Ruble",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/14 12:47",
+            "from_bank": "0276002",
+            "from_account": "81C3680B0",
+            "to_bank": "0266946",
+            "to_account": "81A790790",
+            "amount_received": 3439018.15,
+            "receiving_currency": "Ruble",
+            "amount_paid": 3439018.15,
+            "payment_currency": "Ruble",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/18 15:23",
+            "from_bank": "0276002",
+            "from_account": "81C3680B0",
+            "to_bank": "0266946",
+            "to_account": "81A790740",
+            "amount_received": 1292921.71,
+            "receiving_currency": "Ruble",
+            "amount_paid": 1292921.71,
+            "payment_currency": "Ruble",
+            "payment_format": "ACH"
+        }
+    ]
+}

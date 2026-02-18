@@ -1,0 +1,42 @@
+{
+    "case_id": "CASE_2426",
+    "typology": "In",
+    "transactions": [
+        {
+            "timestamp": "2022/09/15 02:15",
+            "from_bank": "02129461",
+            "from_account": "83000DC90",
+            "to_bank": "0239197",
+            "to_account": "83000D0D0",
+            "amount_received": 6364.72,
+            "receiving_currency": "Yuan",
+            "amount_paid": 6364.72,
+            "payment_currency": "Yuan",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/19 04:03",
+            "from_bank": "02126306",
+            "from_account": "83000CE40",
+            "to_bank": "0239197",
+            "to_account": "83000D0D0",
+            "amount_received": 129678.06,
+            "receiving_currency": "Yuan",
+            "amount_paid": 129678.06,
+            "payment_currency": "Yuan",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/20 19:19",
+            "from_bank": "02127249",
+            "from_account": "82E921690",
+            "to_bank": "0239197",
+            "to_account": "83000D0D0",
+            "amount_received": 86068.91,
+            "receiving_currency": "Yuan",
+            "amount_paid": 86068.91,
+            "payment_currency": "Yuan",
+            "payment_format": "ACH"
+        }
+    ]
+}

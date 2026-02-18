@@ -1,0 +1,66 @@
+{
+    "case_id": "CASE_2259",
+    "typology": "RANDOM",
+    "transactions": [
+        {
+            "timestamp": "2022/09/13 23:54",
+            "from_bank": "0152081",
+            "from_account": "814CFD680",
+            "to_bank": "0027904",
+            "to_account": "8146D8C60",
+            "amount_received": 8859.26,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 8859.26,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/14 14:35",
+            "from_bank": "0027904",
+            "from_account": "8146D8C60",
+            "to_bank": "0193643",
+            "to_account": "822778120",
+            "amount_received": 6858.84,
+            "receiving_currency": "UK Pound",
+            "amount_paid": 6858.84,
+            "payment_currency": "UK Pound",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/15 09:44",
+            "from_bank": "0193643",
+            "from_account": "822778120",
+            "to_bank": "0229839",
+            "to_account": "82B687C80",
+            "amount_received": 59335.76,
+            "receiving_currency": "Yuan",
+            "amount_paid": 59335.76,
+            "payment_currency": "Yuan",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/16 02:19",
+            "from_bank": "0229839",
+            "from_account": "82B687C80",
+            "to_bank": "0039382",
+            "to_account": "827CB7D30",
+            "amount_received": 61680.54,
+            "receiving_currency": "Yuan",
+            "amount_paid": 61680.54,
+            "payment_currency": "Yuan",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/18 16:56",
+            "from_bank": "0039382",
+            "from_account": "827CB7D30",
+            "to_bank": "00100721",
+            "to_account": "8252D1970",
+            "amount_received": 6592.33,
+            "receiving_currency": "UK Pound",
+            "amount_paid": 6592.33,
+            "payment_currency": "UK Pound",
+            "payment_format": "ACH"
+        }
+    ]
+}

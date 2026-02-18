@@ -1,0 +1,18 @@
+{
+    "case_id": "CASE_473",
+    "typology": "RANDOM",
+    "transactions": [
+        {
+            "timestamp": "2022/09/03 18:47",
+            "from_bank": "0194363",
+            "from_account": "828E203E0",
+            "to_bank": "0234541",
+            "to_account": "80DB3FDF0",
+            "amount_received": 83231.32,
+            "receiving_currency": "Yuan",
+            "amount_paid": 83231.32,
+            "payment_currency": "Yuan",
+            "payment_format": "ACH"
+        }
+    ]
+}

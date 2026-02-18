@@ -1,0 +1,57 @@
+{
+  "case_id": "CASE_494",
+  "typology": "Out",
+  "transactions": [
+    {
+      "timestamp": "2022/09/03 21:59",
+      "from_bank": "0192597",
+      "from_account": "8222D14F0",
+      "to_bank": "0213",
+      "to_account": "8000DE230",
+      "amount_received": 80027.59,
+      "receiving_currency": "Brazil Real",
+      "amount_paid": 80027.59,
+      "payment_currency": "Brazil Real",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/07 18:51",
+      "from_bank": "0192597",
+      "from_account": "8222D14F0",
+      "to_bank": "018",
+      "to_account": "8225DAC20",
+      "amount_received": 13651.67,
+      "receiving_currency": "UK Pound",
+      "amount_paid": 13651.67,
+      "payment_currency": "UK Pound",
+      "payment_format": "ACH"
+    }
+  ],
+  "enriched_transactions": [
+    {
+      "timestamp": "2022/09/03 21:59",
+      "from_bank": "0192597",
+      "from_account": "8222D14F0",
+      "to_bank": "0213",
+      "to_account": "8000DE230",
+      "amount_received": 80027.59,
+      "receiving_currency": "Brazil Real",
+      "amount_paid": 80027.59,
+      "payment_currency": "Brazil Real",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/07 18:51",
+      "from_bank": "0192597",
+      "from_account": "8222D14F0",
+      "to_bank": "018",
+      "to_account": "8225DAC20",
+      "amount_received": 13651.67,
+      "receiving_currency": "UK Pound",
+      "amount_paid": 13651.67,
+      "payment_currency": "UK Pound",
+      "payment_format": "ACH"
+    }
+  ],
+  "transaction_count": 2
+}

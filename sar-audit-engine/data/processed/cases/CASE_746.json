@@ -1,0 +1,18 @@
+{
+    "case_id": "CASE_746",
+    "typology": "BIPARTITE",
+    "transactions": [
+        {
+            "timestamp": "2022/09/07 14:04",
+            "from_bank": "0196902",
+            "from_account": "824EFBB60",
+            "to_bank": "0095274",
+            "to_account": "824EFBB10",
+            "amount_received": 9434.49,
+            "receiving_currency": "UK Pound",
+            "amount_paid": 9434.49,
+            "payment_currency": "UK Pound",
+            "payment_format": "ACH"
+        }
+    ]
+}

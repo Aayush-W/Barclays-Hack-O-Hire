@@ -1,0 +1,57 @@
+{
+  "case_id": "CASE_1937",
+  "typology": "GATHER",
+  "transactions": [
+    {
+      "timestamp": "2022/09/12 08:07",
+      "from_bank": "006",
+      "from_account": "823DD3180",
+      "to_bank": "0297435",
+      "to_account": "823DD2F90",
+      "amount_received": 638.59,
+      "receiving_currency": "UK Pound",
+      "amount_paid": 638.59,
+      "payment_currency": "UK Pound",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/12 14:57",
+      "from_bank": "0297435",
+      "from_account": "823DD2F90",
+      "to_bank": "006",
+      "to_account": "823DD3180",
+      "amount_received": 769.57,
+      "receiving_currency": "UK Pound",
+      "amount_paid": 769.57,
+      "payment_currency": "UK Pound",
+      "payment_format": "ACH"
+    }
+  ],
+  "enriched_transactions": [
+    {
+      "timestamp": "2022/09/12 08:07",
+      "from_bank": "006",
+      "from_account": "823DD3180",
+      "to_bank": "0297435",
+      "to_account": "823DD2F90",
+      "amount_received": 638.59,
+      "receiving_currency": "UK Pound",
+      "amount_paid": 638.59,
+      "payment_currency": "UK Pound",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/12 14:57",
+      "from_bank": "0297435",
+      "from_account": "823DD2F90",
+      "to_bank": "006",
+      "to_account": "823DD3180",
+      "amount_received": 769.57,
+      "receiving_currency": "UK Pound",
+      "amount_paid": 769.57,
+      "payment_currency": "UK Pound",
+      "payment_format": "ACH"
+    }
+  ],
+  "transaction_count": 2
+}

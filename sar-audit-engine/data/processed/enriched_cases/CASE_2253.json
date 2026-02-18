@@ -1,0 +1,81 @@
+{
+  "case_id": "CASE_2253",
+  "typology": "Out",
+  "transactions": [
+    {
+      "timestamp": "2022/09/13 22:38",
+      "from_bank": "0193675",
+      "from_account": "8228B97D0",
+      "to_bank": "0295764",
+      "to_account": "8234B06D0",
+      "amount_received": 9002.35,
+      "receiving_currency": "UK Pound",
+      "amount_paid": 9002.35,
+      "payment_currency": "UK Pound",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/16 07:13",
+      "from_bank": "0193675",
+      "from_account": "8228B97D0",
+      "to_bank": "0295233",
+      "to_account": "824C0A830",
+      "amount_received": 2121.79,
+      "receiving_currency": "UK Pound",
+      "amount_paid": 2121.79,
+      "payment_currency": "UK Pound",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/18 14:43",
+      "from_bank": "0193675",
+      "from_account": "8228B97D0",
+      "to_bank": "0293977",
+      "to_account": "822F69B70",
+      "amount_received": 14092.57,
+      "receiving_currency": "UK Pound",
+      "amount_paid": 14092.57,
+      "payment_currency": "UK Pound",
+      "payment_format": "ACH"
+    }
+  ],
+  "enriched_transactions": [
+    {
+      "timestamp": "2022/09/13 22:38",
+      "from_bank": "0193675",
+      "from_account": "8228B97D0",
+      "to_bank": "0295764",
+      "to_account": "8234B06D0",
+      "amount_received": 9002.35,
+      "receiving_currency": "UK Pound",
+      "amount_paid": 9002.35,
+      "payment_currency": "UK Pound",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/16 07:13",
+      "from_bank": "0193675",
+      "from_account": "8228B97D0",
+      "to_bank": "0295233",
+      "to_account": "824C0A830",
+      "amount_received": 2121.79,
+      "receiving_currency": "UK Pound",
+      "amount_paid": 2121.79,
+      "payment_currency": "UK Pound",
+      "payment_format": "ACH"
+    },
+    {
+      "timestamp": "2022/09/18 14:43",
+      "from_bank": "0193675",
+      "from_account": "8228B97D0",
+      "to_bank": "0293977",
+      "to_account": "822F69B70",
+      "amount_received": 14092.57,
+      "receiving_currency": "UK Pound",
+      "amount_paid": 14092.57,
+      "payment_currency": "UK Pound",
+      "payment_format": "ACH"
+    }
+  ],
+  "transaction_count": 3
+}

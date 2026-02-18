@@ -1,0 +1,66 @@
+{
+    "case_id": "CASE_2178",
+    "typology": "BIPARTITE",
+    "transactions": [
+        {
+            "timestamp": "2022/09/14 16:19",
+            "from_bank": "00369",
+            "from_account": "80716A4B0",
+            "to_bank": "0258663",
+            "to_account": "8159BEBB0",
+            "amount_received": 1374405.22,
+            "receiving_currency": "Yen",
+            "amount_paid": 1374405.22,
+            "payment_currency": "Yen",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/16 04:43",
+            "from_bank": "01924",
+            "from_account": "817E93CC0",
+            "to_bank": "0031953",
+            "to_account": "811BDE680",
+            "amount_received": 10919.47,
+            "receiving_currency": "Euro",
+            "amount_paid": 10919.47,
+            "payment_currency": "Euro",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/14 05:33",
+            "from_bank": "021217",
+            "from_account": "80780E070",
+            "to_bank": "02597",
+            "to_account": "8003942C0",
+            "amount_received": 8962.45,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 8962.45,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/15 17:20",
+            "from_bank": "0239603",
+            "from_account": "811548B70",
+            "to_bank": "0249028",
+            "to_account": "8174C7F80",
+            "amount_received": 8742.35,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 8742.35,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/16 09:53",
+            "from_bank": "0211753",
+            "from_account": "804F1FA70",
+            "to_bank": "0235422",
+            "to_account": "811195570",
+            "amount_received": 31424.29,
+            "receiving_currency": "Yuan",
+            "amount_paid": 31424.29,
+            "payment_currency": "Yuan",
+            "payment_format": "ACH"
+        }
+    ]
+}

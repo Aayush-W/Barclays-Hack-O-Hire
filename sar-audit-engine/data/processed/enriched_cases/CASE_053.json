@@ -1,0 +1,33 @@
+{
+  "case_id": "CASE_053",
+  "typology": "Out",
+  "transactions": [
+    {
+      "timestamp": "2022/09/01 06:11",
+      "from_bank": "015",
+      "from_account": "81C5B2A60",
+      "to_bank": "0174634",
+      "to_account": "81C5B2AB0",
+      "amount_received": 863427.21,
+      "receiving_currency": "Ruble",
+      "amount_paid": 863427.21,
+      "payment_currency": "Ruble",
+      "payment_format": "ACH"
+    }
+  ],
+  "enriched_transactions": [
+    {
+      "timestamp": "2022/09/01 06:11",
+      "from_bank": "015",
+      "from_account": "81C5B2A60",
+      "to_bank": "0174634",
+      "to_account": "81C5B2AB0",
+      "amount_received": 863427.21,
+      "receiving_currency": "Ruble",
+      "amount_paid": 863427.21,
+      "payment_currency": "Ruble",
+      "payment_format": "ACH"
+    }
+  ],
+  "transaction_count": 1
+}

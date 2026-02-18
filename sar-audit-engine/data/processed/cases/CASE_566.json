@@ -1,0 +1,78 @@
+{
+    "case_id": "CASE_566",
+    "typology": "BIPARTITE",
+    "transactions": [
+        {
+            "timestamp": "2022/09/06 13:30",
+            "from_bank": "0061411",
+            "from_account": "816CC3F80",
+            "to_bank": "0234525",
+            "to_account": "80D02C180",
+            "amount_received": 123222.27,
+            "receiving_currency": "Yuan",
+            "amount_paid": 123222.27,
+            "payment_currency": "Yuan",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/04 18:50",
+            "from_bank": "011848",
+            "from_account": "8090D32A0",
+            "to_bank": "0012351",
+            "to_account": "808AE4340",
+            "amount_received": 12956.77,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 12956.77,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/05 06:00",
+            "from_bank": "0295953",
+            "from_account": "82326E360",
+            "to_bank": "016327",
+            "to_account": "807FFB730",
+            "amount_received": 4793.87,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 4793.87,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/06 22:02",
+            "from_bank": "001",
+            "from_account": "80013CE90",
+            "to_bank": "0110912",
+            "to_account": "814FAC210",
+            "amount_received": 955.46,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 955.46,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/04 12:34",
+            "from_bank": "0020451",
+            "from_account": "8090DF020",
+            "to_bank": "0161749",
+            "to_account": "8179ADD20",
+            "amount_received": 47667.7,
+            "receiving_currency": "Rupee",
+            "amount_paid": 47667.7,
+            "payment_currency": "Rupee",
+            "payment_format": "ACH"
+        },
+        {
+            "timestamp": "2022/09/06 11:30",
+            "from_bank": "01924",
+            "from_account": "800BA7390",
+            "to_bank": "0266773",
+            "to_account": "8228AB1E0",
+            "amount_received": 3605.47,
+            "receiving_currency": "US Dollar",
+            "amount_paid": 3605.47,
+            "payment_currency": "US Dollar",
+            "payment_format": "ACH"
+        }
+    ]
+}
