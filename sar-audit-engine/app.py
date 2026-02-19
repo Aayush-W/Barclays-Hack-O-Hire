@@ -41,6 +41,7 @@ def _default_paths() -> Dict[str, str]:
         "narrative_backend": "ollama",
         "narrative_model_name": "mistral:latest",
         "ollama_base_url": "http://127.0.0.1:11434",
+        "speed_profile": "fast",
         "adapter_path": adapter_path,
     }
 
@@ -55,6 +56,7 @@ def _load_narrator(
     narrative_model_name: str,
     narrative_backend: str,
     ollama_base_url: str,
+    speed_profile: str,
     adapter_path: str,
     max_new_tokens: int,
     temperature: float,
@@ -63,6 +65,7 @@ def _load_narrator(
         model_name=narrative_model_name,
         provider=narrative_backend,
         ollama_base_url=ollama_base_url,
+        speed_profile=speed_profile,
         adapter_path=adapter_path or None,
         max_new_tokens=max_new_tokens,
         temperature=temperature,
@@ -179,8 +182,13 @@ def main() -> None:
         )
         ollama_base_url = defaults["ollama_base_url"]
         adapter_path = st.sidebar.text_input("LoRA Adapter Path (optional)", value=defaults["adapter_path"])
-    style = st.sidebar.selectbox("Narrative Style", options=["standard", "condensed"], index=0)
-    max_new_tokens = st.sidebar.slider("Narrative Max Tokens", min_value=128, max_value=1024, value=384, step=32)
+    speed_profile = st.sidebar.selectbox(
+        "Response Speed",
+        options=["fast", "balanced", "detailed"],
+        index=["fast", "balanced", "detailed"].index(defaults["speed_profile"]),
+    )
+    style = st.sidebar.selectbox("Narrative Style", options=["standard", "condensed"], index=1)
+    max_new_tokens = st.sidebar.slider("Narrative Max Tokens", min_value=64, max_value=1024, value=192, step=32)
     temperature = st.sidebar.slider("Narrative Temperature", min_value=0.0, max_value=1.0, value=0.2, step=0.05)
 
     if st.sidebar.button("Load Sample Audit Trail"):
@@ -210,6 +218,7 @@ def main() -> None:
                 narrative_model_name=narrative_model_name,
                 narrative_backend=narrative_backend,
                 ollama_base_url=ollama_base_url,
+                speed_profile=speed_profile,
                 adapter_path=adapter_path,
                 max_new_tokens=max_new_tokens,
                 temperature=temperature,

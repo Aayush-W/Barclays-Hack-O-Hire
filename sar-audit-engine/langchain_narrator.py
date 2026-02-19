@@ -45,6 +45,9 @@ class SARNarrativeGenerator:
         model_name: str = "mistral:latest",
         provider: str = "ollama",
         ollama_base_url: str = "http://127.0.0.1:11434",
+        speed_profile: str = "fast",
+        reason_limit: int | None = None,
+        ollama_keep_alive: str = "30m",
         adapter_path: str | Path | None = None,
         max_new_tokens: int = 384,
         temperature: float = 0.2,
@@ -52,6 +55,9 @@ class SARNarrativeGenerator:
         self.model_name = model_name
         self.provider = str(provider or "ollama").strip().lower()
         self.ollama_base_url = str(ollama_base_url or "http://127.0.0.1:11434").rstrip("/")
+        self.speed_profile = str(speed_profile or "fast").strip().lower()
+        self.reason_limit = int(reason_limit) if reason_limit is not None else None
+        self.ollama_keep_alive = str(ollama_keep_alive or "30m")
         self.adapter_path = str(adapter_path) if adapter_path else None
         self.max_new_tokens = int(max_new_tokens)
         self.temperature = float(temperature)
@@ -59,6 +65,38 @@ class SARNarrativeGenerator:
 
         self.tokenizer = None
         self.model = None
+
+    def _effective_reason_limit(self) -> Optional[int]:
+        if self.reason_limit is not None:
+            return max(1, int(self.reason_limit))
+        if self.speed_profile == "fast":
+            return 4
+        if self.speed_profile == "balanced":
+            return 7
+        return None
+
+    def _effective_max_new_tokens(self) -> int:
+        if self.speed_profile == "fast":
+            return min(int(self.max_new_tokens), 160)
+        if self.speed_profile == "balanced":
+            return min(int(self.max_new_tokens), 256)
+        return int(self.max_new_tokens)
+
+    def _effective_num_ctx(self) -> int:
+        if self.speed_profile == "fast":
+            return 2048
+        if self.speed_profile == "balanced":
+            return 4096
+        return 8192
+
+    def _compact_evidence_map(self, evidence_map: Dict[str, Any]) -> Dict[str, Any]:
+        reason_limit = self._effective_reason_limit()
+        if reason_limit is None:
+            return evidence_map
+        compact = dict(evidence_map)
+        reasons = list(evidence_map.get("reasons", []) or [])
+        compact["reasons"] = reasons[:reason_limit]
+        return compact
 
     def _ensure_model_loaded(self) -> None:
         if self.model is not None and self.tokenizer is not None:
@@ -99,25 +137,29 @@ class SARNarrativeGenerator:
         self.callback.log("llm_load_complete", {"device": model_device})
 
     def _generate_with_ollama(self, system_text: str, user_text: str) -> str:
+        num_predict = self._effective_max_new_tokens()
         self.callback.log(
             "ollama_generate_start",
             {
                 "model_name": self.model_name,
                 "base_url": self.ollama_base_url,
-                "max_new_tokens": self.max_new_tokens,
+                "max_new_tokens": num_predict,
                 "temperature": self.temperature,
+                "speed_profile": self.speed_profile,
             },
         )
         payload = {
             "model": self.model_name,
             "stream": False,
+            "keep_alive": self.ollama_keep_alive,
             "messages": [
                 {"role": "system", "content": system_text},
                 {"role": "user", "content": user_text},
             ],
             "options": {
                 "temperature": self.temperature,
-                "num_predict": self.max_new_tokens,
+                "num_predict": num_predict,
+                "num_ctx": self._effective_num_ctx(),
             },
         }
         req = urlrequest.Request(
@@ -170,9 +212,14 @@ class SARNarrativeGenerator:
         assert self.model is not None and self.tokenizer is not None
         self.model.eval()
 
+        effective_max_new_tokens = self._effective_max_new_tokens()
         self.callback.log(
             "llm_generate_start",
-            {"max_new_tokens": self.max_new_tokens, "temperature": self.temperature},
+            {
+                "max_new_tokens": effective_max_new_tokens,
+                "temperature": self.temperature,
+                "speed_profile": self.speed_profile,
+            },
         )
         inputs = self.tokenizer(prompt, return_tensors="pt", add_special_tokens=False)
         model_device = next(self.model.parameters()).device
@@ -183,7 +230,7 @@ class SARNarrativeGenerator:
         generate_kwargs = {
             "input_ids": input_ids,
             "attention_mask": attention_mask,
-            "max_new_tokens": self.max_new_tokens,
+            "max_new_tokens": effective_max_new_tokens,
             "do_sample": do_sample,
             "pad_token_id": self.tokenizer.pad_token_id,
             "eos_token_id": self.tokenizer.eos_token_id,
@@ -201,7 +248,8 @@ class SARNarrativeGenerator:
 
     def generate_narrative(self, evidence_map: Dict[str, Any], style: str = "standard") -> Dict[str, Any]:
         try:
-            prompt_payload = build_prompt_payload(evidence_map=evidence_map, style=style)
+            compact_evidence_map = self._compact_evidence_map(evidence_map)
+            prompt_payload = build_prompt_payload(evidence_map=compact_evidence_map, style=style)
             system_text = prompt_payload.get("system", "")
             user_text = prompt_payload.get("user", "")
 
@@ -210,7 +258,7 @@ class SARNarrativeGenerator:
                 backend_name = "ollama"
             else:
                 self._ensure_model_loaded()
-                prompt = self._render_chat_prompt(evidence_map=evidence_map, style=style)
+                prompt = self._render_chat_prompt(evidence_map=compact_evidence_map, style=style)
                 narrative = self._generate_with_model(prompt)
                 backend_name = "huggingface_llm"
 
