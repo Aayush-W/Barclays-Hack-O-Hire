@@ -42,6 +42,8 @@ Dashboard workflow:
 - Compute feature contributions.
 - Generate SAR narrative using local Ollama by default (`mistral:latest`).
 - Apply escalation gating: low-risk/benign patterns return "No SAR filing recommended" instead of SAR generation.
+- Use `Response Speed = fast` in sidebar for lower-latency narrative generation (shorter prompt + fewer output tokens).
+- Display legal-style SAR report JSON structure alongside narrative and include it in downloaded result payload.
 
 If you already pulled Mistral via Ollama, no Hugging Face download is needed:
 

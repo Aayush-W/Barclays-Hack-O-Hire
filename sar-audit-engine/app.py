@@ -13,6 +13,7 @@ from core.audit_input_parser import parse_audit_trail_text
 from core.evidence_mapper import map_case_evidence
 from core.feature_extractor import extract_signals
 from core.reasoning_engine import build_reasoning
+from core.sar_report_formatter import build_sar_report_json
 from core.typology_classifier import predict_typology_for_case
 from langchain_narrator import SARNarrativeGenerator
 from shap_explainer import TransactionExplainer
@@ -104,6 +105,8 @@ def _pipeline_from_text(
     model_path: str,
     narrator: SARNarrativeGenerator,
     style: str,
+    filing_institution_id: str,
+    associated_sar_refs: List[str],
 ) -> Dict[str, Any]:
     transactions = parse_audit_trail_text(audit_text)
     case = _build_case(transactions)
@@ -142,6 +145,13 @@ def _pipeline_from_text(
                 }
             ],
         }
+    sar_report = build_sar_report_json(
+        case=case,
+        evidence_map=evidence_map,
+        narrative_text=str(narrative_result.get("narrative") or ""),
+        filing_institution_id=filing_institution_id,
+        associated_sar_references=associated_sar_refs,
+    )
     return {
         "case": case,
         "prediction": prediction,
@@ -149,6 +159,7 @@ def _pipeline_from_text(
         "reasoning": reasoning_payload,
         "evidence_map": evidence_map,
         "narrative_result": narrative_result,
+        "sar_report": sar_report,
     }
 
 
@@ -190,6 +201,9 @@ def main() -> None:
     style = st.sidebar.selectbox("Narrative Style", options=["standard", "condensed"], index=1)
     max_new_tokens = st.sidebar.slider("Narrative Max Tokens", min_value=64, max_value=1024, value=192, step=32)
     temperature = st.sidebar.slider("Narrative Temperature", min_value=0.0, max_value=1.0, value=0.2, step=0.05)
+    filing_institution_id = st.sidebar.text_input("Filing Institution ID", value="INSTITUTION_UNKNOWN")
+    refs_text = st.sidebar.text_input("Associated SAR References (comma-separated)", value="")
+    associated_sar_refs = [item.strip() for item in refs_text.split(",") if item.strip()]
 
     if st.sidebar.button("Load Sample Audit Trail"):
         st.session_state["audit_text"] = SAMPLE_AUDIT_TRAIL
@@ -230,12 +244,15 @@ def main() -> None:
                 model_path=model_path,
                 narrator=narrator,
                 style=style,
+                filing_institution_id=filing_institution_id,
+                associated_sar_refs=associated_sar_refs,
             )
 
         explanation = explainer.explain_case(result["case"])
         prediction = result["prediction"]
         evidence_map = result["evidence_map"]
         narrative_result = result["narrative_result"]
+        sar_report = result["sar_report"]
         risk = evidence_map.get("risk_assessment", {})
         escalation_recommended = bool(risk.get("escalation_recommended"))
         display_typology = (
@@ -261,6 +278,9 @@ def main() -> None:
             st.success(narrative_result["narrative"])
         st.caption(f"Narrative backend: {narrative_result.get('backend')}")
 
+        st.subheader("Structured SAR Report JSON")
+        st.json(sar_report)
+
         with st.expander("Reasoning Steps"):
             st.json(result["reasoning"])
 
@@ -275,6 +295,7 @@ def main() -> None:
             "risk_assessment": risk,
             "narrative_backend": narrative_result.get("backend"),
             "narrative": narrative_result.get("narrative"),
+            "sar_report": sar_report,
             "audit_trail": narrative_result.get("audit_trail"),
             "reasoning": result["reasoning"],
             "signals": result["signals"],
