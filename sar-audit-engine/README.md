@@ -28,6 +28,31 @@ Useful flags:
 - `--source-boost-weight 0.45` to control how strongly the trained model influences retrieval ranking.
 - `--export-llm-sft-data` to export chat-format SFT files from generated evidence maps + SAR drafts.
 
+## Audit Typology Classification
+
+Train a lightweight multiclass classifier that predicts laundering typology directly from transaction features:
+
+```bash
+python -m core.typology_classifier train \
+  --cases-dir data/processed/cases \
+  --patterns-path data/raw/HI-Medium_Patterns.txt \
+  --model-output data/processed/models/audit_typology_classifier.joblib \
+  --expected-types 10
+```
+
+Predict on a single audit case JSON:
+
+```bash
+python -m core.typology_classifier predict \
+  --case-json data/processed/cases/CASE_001.json \
+  --model-path data/processed/models/audit_typology_classifier.joblib \
+  --top-k 3
+```
+
+Notes:
+- `core/pattern_parser.py` now preserves hyphenated typology names (for example `FAN-IN`, `GATHER-SCATTER`).
+- If `--expected-types` is larger than the number of classes present in the dataset, training still runs and reports a warning in model metadata.
+
 ## LLM Fine-Tuning (LoRA)
 
 1) Export SFT dataset from your generated SAR artifacts:
@@ -53,9 +78,26 @@ python -m llm.train_lora \
   --max-length 1024
 ```
 
+Functional evaluation runs after training (unless `--skip-functional-eval`) and compares:
+- `fine_tuned` adapter output
+- `base_model` output
+- `template_baseline` deterministic output from prompt facts
+
+Metrics include ROUGE-1/2/L, optional BERTScore, and AML adherence checks (section coverage, reason/fact grounding).  
+Optional judge mode:
+
+```bash
+python -m llm.train_lora \
+  ... \
+  --judge-model TinyLlama/TinyLlama-1.1B-Chat-v1.0 \
+  --judge-max-samples 8
+```
+
 Output artifacts:
 - LoRA adapter weights and tokenizer in `--output-dir`.
 - Training summary in `training_metrics.json`.
+- Functional evaluation summary in `functional_eval.json`.
+- Per-sample generations in `functional_eval_samples.jsonl`.
 
 Accuracy improvement notes:
 - Training now uses one primary source label per reason row to avoid contradictory labels.

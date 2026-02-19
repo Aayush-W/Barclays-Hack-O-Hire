@@ -1,6 +1,16 @@
 import json
 import os
-from datetime import datetime
+import re
+
+
+_BEGIN_PATTERN = re.compile(r"^BEGIN LAUNDERING ATTEMPT\s*-\s*(.*?)(?::\s|$)")
+
+
+def _extract_typology(begin_line: str) -> str:
+    match = _BEGIN_PATTERN.match((begin_line or "").strip())
+    if not match:
+        return ""
+    return match.group(1).strip()
 
 def parse_patterns_file(file_path, output_folder="data/processed/cases"):
     cases = []
@@ -13,8 +23,7 @@ def parse_patterns_file(file_path, output_folder="data/processed/cases"):
 
             # Detect beginning of laundering block
             if line.startswith("BEGIN LAUNDERING ATTEMPT"):
-                typology = line.split("-")[-1].strip()
-                typology = typology.split(":")[0].strip()
+                typology = _extract_typology(line) or "UNKNOWN"
 
                 current_case = {
                     "case_id": f"CASE_{case_counter:03}",

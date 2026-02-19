@@ -1,0 +1,59 @@
+{
+  "accuracy": 0.788043,
+  "macro_f1": 0.792916,
+  "top3_accuracy": 0.96558,
+  "train_samples": 2204,
+  "test_samples": 552,
+  "classes": [
+    "BIPARTITE",
+    "CYCLE",
+    "FAN-IN",
+    "FAN-OUT",
+    "GATHER-SCATTER",
+    "RANDOM",
+    "SCATTER-GATHER",
+    "STACK"
+  ],
+  "class_count": 8,
+  "label_distribution": {
+    "BIPARTITE": 369,
+    "CYCLE": 367,
+    "FAN-IN": 355,
+    "FAN-OUT": 345,
+    "GATHER-SCATTER": 322,
+    "RANDOM": 331,
+    "SCATTER-GATHER": 331,
+    "STACK": 336
+  },
+  "skipped_rows": {
+    "unknown_label": 0,
+    "too_few_transactions": 0
+  },
+  "expected_types": 10,
+  "feature_names": [
+    "tx_count",
+    "total_inflow",
+    "total_outflow",
+    "abs_net_flow_ratio",
+    "unique_senders",
+    "unique_receivers",
+    "hop_count",
+    "cross_bank_ratio",
+    "multi_currency_flag",
+    "rapid_pass_through_flag",
+    "rapid_pass_through_min_hours",
+    "duration_hours",
+    "tx_per_day",
+    "avg_interarrival_minutes",
+    "median_interarrival_minutes",
+    "max_tx_in_1h",
+    "payment_format_count",
+    "currency_count",
+    "avg_amount_received",
+    "max_amount_received"
+  ],
+  "model_path": "data\\processed\\models\\audit_typology_classifier.joblib",
+  "warnings": [
+    "Observed 8 typology classes in training data; expected 10."
+  ]
+}

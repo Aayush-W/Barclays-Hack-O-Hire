@@ -6,6 +6,8 @@ import math
 from pathlib import Path
 from typing import Dict, List, Tuple
 
+from .functional_eval import evaluate_model_variants, write_functional_eval_artifacts
+
 
 def _load_jsonl(path: Path) -> List[Dict]:
     rows: List[Dict] = []
@@ -176,6 +178,14 @@ def train_lora(
     lora_rank: int = 16,
     lora_alpha: int = 32,
     lora_dropout: float = 0.05,
+    run_functional_eval: bool = True,
+    functional_eval_max_samples: int = 64,
+    functional_eval_max_new_tokens: int = 384,
+    run_bertscore: bool = True,
+    bertscore_model: str = "distilbert-base-uncased",
+    judge_model: str | None = None,
+    judge_max_samples: int = 8,
+    judge_max_new_tokens: int = 192,
 ) -> Dict:
     try:
         import inspect
@@ -263,6 +273,46 @@ def train_lora(
     model.save_pretrained(output_dir)
     tokenizer.save_pretrained(output_dir)
 
+    functional_eval_summary: Dict[str, object] = {
+        "available": False,
+        "reason": "Functional evaluation disabled.",
+    }
+    if run_functional_eval:
+        if not val_rows:
+            functional_eval_summary = {
+                "available": False,
+                "reason": "Validation rows are required for functional evaluation.",
+            }
+        else:
+            try:
+                functional_eval = evaluate_model_variants(
+                    eval_rows=val_rows,
+                    tokenizer=tokenizer,
+                    fine_tuned_model=model,
+                    base_model_name=base_model,
+                    max_samples=int(functional_eval_max_samples),
+                    generation_max_new_tokens=int(functional_eval_max_new_tokens),
+                    run_bertscore=bool(run_bertscore),
+                    bertscore_model=bertscore_model,
+                    judge_model_name=judge_model,
+                    judge_max_samples=int(judge_max_samples),
+                    judge_max_new_tokens=int(judge_max_new_tokens),
+                )
+                artifacts = write_functional_eval_artifacts(output_dir=output_dir, functional_eval=functional_eval)
+                functional_eval_summary = {
+                    "available": bool(functional_eval.get("available")),
+                    "sample_count": functional_eval.get("sample_count"),
+                    "metrics": functional_eval.get("metrics"),
+                    "comparison": functional_eval.get("comparison"),
+                    "judge": functional_eval.get("judge"),
+                    "artifacts": artifacts,
+                }
+            except Exception as exc:
+                functional_eval_summary = {
+                    "available": False,
+                    "reason": f"Functional evaluation failed: {exc}",
+                }
+
     summary = {
         "base_model": base_model,
         "output_dir": str(output_dir),
@@ -283,6 +333,7 @@ def train_lora(
         "val_perplexity": (
             float(math.exp(eval_metrics["eval_loss"])) if eval_metrics.get("eval_loss") is not None else None
         ),
+        "functional_eval": functional_eval_summary,
     }
     metrics_path = output_dir / "training_metrics.json"
     metrics_path.write_text(json.dumps(summary, indent=2), encoding="utf-8")
@@ -304,6 +355,14 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--lora-rank", type=int, default=16)
     parser.add_argument("--lora-alpha", type=int, default=32)
     parser.add_argument("--lora-dropout", type=float, default=0.05)
+    parser.add_argument("--skip-functional-eval", action="store_true")
+    parser.add_argument("--functional-eval-max-samples", type=int, default=64)
+    parser.add_argument("--functional-eval-max-new-tokens", type=int, default=384)
+    parser.add_argument("--disable-bertscore", action="store_true")
+    parser.add_argument("--bertscore-model", type=str, default="distilbert-base-uncased")
+    parser.add_argument("--judge-model", type=str, default=None)
+    parser.add_argument("--judge-max-samples", type=int, default=8)
+    parser.add_argument("--judge-max-new-tokens", type=int, default=192)
     return parser.parse_args()
 
 
@@ -323,6 +382,14 @@ def main() -> None:
         lora_rank=args.lora_rank,
         lora_alpha=args.lora_alpha,
         lora_dropout=args.lora_dropout,
+        run_functional_eval=not args.skip_functional_eval,
+        functional_eval_max_samples=args.functional_eval_max_samples,
+        functional_eval_max_new_tokens=args.functional_eval_max_new_tokens,
+        run_bertscore=not args.disable_bertscore,
+        bertscore_model=args.bertscore_model,
+        judge_model=args.judge_model,
+        judge_max_samples=args.judge_max_samples,
+        judge_max_new_tokens=args.judge_max_new_tokens,
     )
     print(json.dumps(metrics, indent=2))
 
