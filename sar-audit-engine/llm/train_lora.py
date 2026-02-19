@@ -191,11 +191,12 @@ def train_lora(
         import inspect
         import torch
         from peft import LoraConfig, TaskType, get_peft_model
-        from transformers import AutoModelForCausalLM, AutoTokenizer, Trainer, TrainingArguments
+        from transformers import AutoModelForCausalLM, AutoTokenizer, Trainer, TrainingArguments, EarlyStoppingCallback
+        import wandb
     except ImportError as exc:
         raise RuntimeError(
             "Fine-tuning dependencies are missing. Install with: "
-            "pip install transformers peft accelerate"
+            "pip install transformers peft accelerate wandb"
         ) from exc
 
     train_rows = _load_jsonl(Path(train_jsonl))
@@ -235,6 +236,26 @@ def train_lora(
     fp16 = bool(torch.cuda.is_available())
     bf16 = False
 
+    # Initialize W&B tracking
+    use_wandb = eval_dataset is not None
+    if use_wandb:
+        wandb.init(
+            project="sar-lora-training",
+            name=f"lora-{base_model.split('/')[-1]}-{epochs}ep-lr{learning_rate}",
+            config={
+                "base_model": base_model,
+                "epochs": epochs,
+                "learning_rate": learning_rate,
+                "lora_rank": lora_rank,
+                "lora_alpha": lora_alpha,
+                "lora_dropout": lora_dropout,
+                "train_samples": len(train_features),
+                "val_samples": len(val_features),
+                "max_length": max_length,
+            },
+            tags=["lora", "sar", "fine-tuning"]
+        )
+
     training_args_kwargs = {
         "output_dir": str(output_dir),
         "num_train_epochs": float(epochs),
@@ -243,13 +264,20 @@ def train_lora(
         "per_device_eval_batch_size": int(eval_batch_size),
         "gradient_accumulation_steps": int(grad_accum_steps),
         "weight_decay": 0.0,
+        "report_to": "wandb" if use_wandb else "none",
+        "logging_strategy": "steps",
         "logging_steps": 20,
-        "save_strategy": "epoch",
-        "report_to": "none",
+        "save_strategy": "steps",
+        "save_steps": 100,
+        "eval_steps": 100,
+        "load_best_model_at_end": True if eval_dataset else False,
+        "metric_for_best_model": "eval_loss",
+        "greater_is_better": False,
+        "save_total_limit": 3,
         "fp16": fp16,
         "bf16": bf16,
     }
-    eval_value = "epoch" if eval_dataset is not None else "no"
+    eval_value = "steps" if eval_dataset is not None else "no"
     signature = inspect.signature(TrainingArguments.__init__)
     if "evaluation_strategy" in signature.parameters:
         training_args_kwargs["evaluation_strategy"] = eval_value
@@ -258,14 +286,25 @@ def train_lora(
 
     args = TrainingArguments(**training_args_kwargs)
 
+    callbacks = []
+    if eval_dataset is not None:
+        early_stopping = EarlyStoppingCallback(
+            early_stopping_patience=3
+        )
+        callbacks.append(early_stopping)
+
     trainer = Trainer(
         model=model,
         args=args,
         train_dataset=train_dataset,
         eval_dataset=eval_dataset,
         data_collator=_PadCollator(tokenizer.pad_token_id),
+        callbacks=callbacks,
     )
     trainer.train()
+
+    if use_wandb:
+        wandb.finish()
 
     train_metrics = trainer.evaluate(eval_dataset=train_dataset)
     eval_metrics = trainer.evaluate(eval_dataset=eval_dataset) if eval_dataset is not None else {}
