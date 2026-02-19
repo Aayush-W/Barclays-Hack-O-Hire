@@ -137,6 +137,11 @@ def _feature_vector(case: Dict[str, Any]) -> Dict[str, float]:
     return feature_map
 
 
+def build_typology_features(case: Dict[str, Any]) -> Dict[str, float]:
+    """Public helper for generating typology feature vectors for a single case payload."""
+    return _feature_vector(case)
+
+
 def _matrix_rows(feature_rows: Sequence[Dict[str, float]]) -> List[List[float]]:
     return [[float(row.get(name, 0.0)) for name in FEATURE_NAMES] for row in feature_rows]
 

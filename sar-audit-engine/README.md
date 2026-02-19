@@ -28,6 +28,28 @@ Useful flags:
 - `--source-boost-weight 0.45` to control how strongly the trained model influences retrieval ranking.
 - `--export-llm-sft-data` to export chat-format SFT files from generated evidence maps + SAR drafts.
 
+## Streamlit SAR Dashboard
+
+Run an interactive dashboard where you can paste transaction audit trails, classify laundering typology, and generate SAR narrative with Mistral:
+
+```bash
+streamlit run app.py
+```
+
+Dashboard workflow:
+- Paste audit trail text (CSV lines or JSON transactions).
+- Classify typology using `data/processed/models/audit_typology_classifier.joblib`.
+- Compute feature contributions.
+- Generate SAR narrative using local Ollama by default (`mistral:latest`).
+- Apply escalation gating: low-risk/benign patterns return "No SAR filing recommended" instead of SAR generation.
+
+If you already pulled Mistral via Ollama, no Hugging Face download is needed:
+
+```bash
+ollama list
+# should show: mistral:latest
+```
+
 ## Audit Typology Classification
 
 Train a lightweight multiclass classifier that predicts laundering typology directly from transaction features:

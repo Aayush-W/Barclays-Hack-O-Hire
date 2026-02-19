@@ -1,6 +1,8 @@
 from __future__ import annotations
 
+from collections import Counter
 from datetime import datetime
+import re
 from statistics import mean
 from typing import Any, Dict, List, Optional, Protocol
 
@@ -135,31 +137,121 @@ def _transaction_snapshot(tx: Dict[str, Any]) -> Dict[str, Any]:
     }
 
 
-def _risk_score(signals: Dict[str, Any], reasons: List[Dict[str, Any]]) -> Dict[str, Any]:
-    score = min(len(reasons) * 8, 56)
+def _contains_any(text: str, patterns: List[str]) -> bool:
+    normalized = (text or "").upper()
+    return any(pattern in normalized for pattern in patterns)
 
-    if signals.get("rapid_pass_through_flag"):
-        score += 18
-    if (signals.get("cross_bank_ratio") or 0.0) >= 0.6:
-        score += 10
-    if (signals.get("hop_count") or 0) >= 3:
-        score += 10
-    if (signals.get("multi_currency_flag") or False):
-        score += 6
+
+def _benign_pattern_score(transactions: List[Dict[str, Any]], signals: Dict[str, Any]) -> float:
+    if not transactions:
+        return 0.0
+
+    from_accounts = [str(tx.get("from_account") or "") for tx in transactions]
+    to_accounts = [str(tx.get("to_account") or "") for tx in transactions]
+    from_counter = Counter(from_accounts)
+    dominant_from_ratio = max(from_counter.values()) / max(len(transactions), 1)
+
+    employer_like = any(_contains_any(account, ["EMPLOYER", "PAYROLL", "SALARY"]) for account in from_accounts)
+    employee_like_targets = sum(1 for account in to_accounts if re.match(r"^EMP\d+$", account.upper()))
+
+    consumer_keywords = [
+        "GROCERY",
+        "UTILITY",
+        "AMAZON",
+        "RETAIL",
+        "INSURANCE",
+        "LANDLORD",
+        "RENT",
+        "LOAN",
+        "TAX",
+    ]
+    consumer_counterparties = sum(1 for account in to_accounts if _contains_any(account, consumer_keywords))
+
+    velocity = signals.get("transaction_velocity_metrics", {}) or {}
+    tx_per_day = float(velocity.get("tx_per_day") or 0.0)
+    max_tx_in_1h = int(velocity.get("max_tx_in_1h") or 0)
+
+    benign_score = 0.0
+    if employer_like and employee_like_targets >= 3:
+        benign_score += 18.0
+    elif dominant_from_ratio >= 0.55 and employee_like_targets >= 3:
+        benign_score += 10.0
+
+    if consumer_counterparties >= 3:
+        benign_score += 8.0
+    if (
+        not bool(signals.get("rapid_pass_through_flag"))
+        and int(signals.get("hop_count") or 0) <= 2
+        and not bool(signals.get("multi_currency_flag"))
+    ):
+        benign_score += 10.0
+    if tx_per_day <= 3.0 and max_tx_in_1h <= 2:
+        benign_score += 6.0
+
+    return benign_score
+
+
+def _risk_score(signals: Dict[str, Any], reasons: List[Dict[str, Any]], transactions: List[Dict[str, Any]]) -> Dict[str, Any]:
+    reason_weights = {
+        "rapid_pass_through": 16.0,
+        "multi_hop_layering": 16.0,
+        "high_velocity": 10.0,
+        "multi_currency_activity": 10.0,
+        "cross_bank_movement": 6.0,
+        "multi_party_network": 5.0,
+        "high_value_activity": 4.0,
+        "general_suspicion": 4.0,
+        "typology_classification": 0.0,
+    }
+    score = sum(reason_weights.get(reason.get("category", ""), 3.0) for reason in reasons)
+
+    rapid_flag = bool(signals.get("rapid_pass_through_flag"))
+    hop_count = int(signals.get("hop_count") or 0)
+    cross_bank_ratio = float(signals.get("cross_bank_ratio") or 0.0)
+    multi_currency_flag = bool(signals.get("multi_currency_flag"))
+
+    if rapid_flag:
+        score += 20.0
+    if hop_count >= 4:
+        score += 14.0
+    elif hop_count >= 3:
+        score += 8.0
+    if multi_currency_flag:
+        score += 8.0
 
     velocity = signals.get("transaction_velocity_metrics", {})
-    if (velocity.get("max_tx_in_1h") or 0) >= 3:
-        score += 5
+    tx_per_day = float(velocity.get("tx_per_day") or 0.0)
+    max_tx_in_1h = int(velocity.get("max_tx_in_1h") or 0)
+    velocity_flag = tx_per_day >= 8.0 or max_tx_in_1h >= 4
+    if velocity_flag:
+        score += 8.0
 
-    score = min(score, 100)
-    if score >= 75:
+    if cross_bank_ratio >= 0.8 and (rapid_flag or hop_count >= 3 or multi_currency_flag):
+        score += 7.0
+
+    strong_signal_present = rapid_flag or hop_count >= 3 or multi_currency_flag or velocity_flag
+    if not strong_signal_present:
+        score = min(score, 35.0)
+
+    benign_adjustment = _benign_pattern_score(transactions=transactions, signals=signals)
+    score -= benign_adjustment
+    score = min(max(score, 0.0), 100.0)
+
+    if score >= 70:
         band = "high"
-    elif score >= 45:
+    elif score >= 40:
         band = "medium"
     else:
         band = "low"
 
-    return {"score": score, "band": band}
+    escalation_recommended = bool(score >= 70 or (score >= 55 and strong_signal_present))
+    return {
+        "score": int(round(score)),
+        "band": band,
+        "escalation_recommended": escalation_recommended,
+        "strong_signal_present": strong_signal_present,
+        "benign_adjustment": round(float(benign_adjustment), 3),
+    }
 
 
 def map_case_evidence(
@@ -234,7 +326,7 @@ def map_case_evidence(
             }
         )
 
-    risk = _risk_score(signals=signals, reasons=mapped_reasons)
+    risk = _risk_score(signals=signals, reasons=mapped_reasons, transactions=normalized_transactions)
 
     return {
         "case_id": case.get("case_id"),

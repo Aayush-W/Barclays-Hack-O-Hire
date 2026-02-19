@@ -95,8 +95,10 @@ def _rapid_pass_through_accounts(
 def build_reasoning(
     case: Dict[str, Any],
     signals_payload: Dict[str, Any],
-    settings: PipelineSettings,
+    settings: Optional[PipelineSettings] = None,
 ) -> Dict[str, Any]:
+    if settings is None:
+        settings = PipelineSettings()
     transactions = normalize_transactions(case)
     tx_ids_all = _tx_ids(transactions)
 
@@ -128,21 +130,31 @@ def build_reasoning(
     total_inflow = signals.get("total_inflow") or 0.0
     total_outflow = signals.get("total_outflow") or 0.0
     net_flow = signals.get("net_flow") or 0.0
+    hop_count = signals.get("hop_count") or 0
+    cross_bank_ratio = signals.get("cross_bank_ratio") or 0.0
+    multi_currency_flag = bool(signals.get("multi_currency_flag"))
 
-    if total_inflow >= settings.high_value_threshold or total_outflow >= settings.high_value_threshold:
+    pt_hours = settings.pass_through_hours_default
+    rapid_flag, min_hours, rapid_tx_ids = _rapid_pass_through_accounts(transactions, pt_hours)
+
+    elevated_value_threshold = settings.high_value_threshold * 25
+    if total_inflow >= elevated_value_threshold or total_outflow >= elevated_value_threshold:
         add_step(
-            "Aggregate transaction value exceeds high-value threshold.",
+            "Aggregate transaction value is materially elevated.",
             {
                 "total_inflow": total_inflow,
                 "total_outflow": total_outflow,
-                "threshold": settings.high_value_threshold,
+                "threshold": elevated_value_threshold,
             },
             tx_ids_all,
         )
 
     if total_inflow:
         net_ratio = abs(net_flow) / total_inflow
-        if net_ratio <= settings.net_flow_ratio_threshold:
+        # Near-zero net flow is suspicious mainly when combined with rapid pass-through or deep layering.
+        if net_ratio <= settings.net_flow_ratio_threshold and (
+            rapid_flag or hop_count >= settings.multi_hop_threshold
+        ):
             add_step(
                 "Net flow is near zero relative to total inflow, indicating potential pass-through.",
                 {
@@ -154,7 +166,6 @@ def build_reasoning(
                 tx_ids_all,
             )
 
-    hop_count = signals.get("hop_count") or 0
     if hop_count >= settings.multi_hop_threshold:
         add_step(
             f"Funds traversed {hop_count} hops across accounts.",
@@ -162,8 +173,10 @@ def build_reasoning(
             tx_ids_all,
         )
 
-    cross_bank_ratio = signals.get("cross_bank_ratio") or 0.0
-    if cross_bank_ratio >= settings.cross_bank_ratio_threshold:
+    # Cross-bank movement alone is often benign; require additional supporting indicators.
+    if cross_bank_ratio >= settings.cross_bank_ratio_threshold and (
+        hop_count >= settings.multi_hop_threshold or rapid_flag or multi_currency_flag
+    ):
         add_step(
             "Majority of transfers are cross-bank.",
             {"cross_bank_ratio": cross_bank_ratio, "threshold": settings.cross_bank_ratio_threshold},
@@ -172,7 +185,13 @@ def build_reasoning(
 
     unique_senders = signals.get("unique_senders") or 0
     unique_receivers = signals.get("unique_receivers") or 0
-    if unique_senders >= settings.multi_party_threshold or unique_receivers >= settings.multi_party_threshold:
+    if (
+        unique_senders >= settings.multi_party_threshold
+        and unique_receivers >= settings.multi_party_threshold
+    ) or (
+        (unique_senders >= settings.multi_party_threshold * 2 or unique_receivers >= settings.multi_party_threshold * 2)
+        and (rapid_flag or hop_count >= settings.multi_hop_threshold)
+    ):
         add_step(
             "Multiple originators or beneficiaries are involved.",
             {
@@ -183,15 +202,13 @@ def build_reasoning(
             tx_ids_all,
         )
 
-    if signals.get("multi_currency_flag"):
+    if multi_currency_flag:
         add_step(
             "Multiple currencies appear within the transaction set.",
             {"multi_currency_flag": True},
             _tx_ids_multi_currency(transactions) or tx_ids_all,
         )
 
-    pt_hours = settings.pass_through_hours_default
-    rapid_flag, min_hours, rapid_tx_ids = _rapid_pass_through_accounts(transactions, pt_hours)
     if rapid_flag:
         add_step(
             "Rapid pass-through activity observed.",

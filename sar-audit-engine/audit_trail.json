@@ -1,0 +1,13 @@
+[
+  {
+    "step": 1,
+    "timestamp": "2026-02-14T14:10:30.565414",
+    "event": "LLM_START",
+    "prompt_preview": "Human: You are a financial compliance officer writing a Suspicious Activity Report (SAR) narrative.\n..."
+  },
+  {
+    "step": 1,
+    "timestamp": "2026-02-14T14:10:35.449029",
+    "event": "LLM_END"
+  }
+]
