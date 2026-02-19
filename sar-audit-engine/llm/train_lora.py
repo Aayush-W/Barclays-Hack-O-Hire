@@ -192,11 +192,10 @@ def train_lora(
         import torch
         from peft import LoraConfig, TaskType, get_peft_model
         from transformers import AutoModelForCausalLM, AutoTokenizer, Trainer, TrainingArguments, EarlyStoppingCallback
-        import wandb
     except ImportError as exc:
         raise RuntimeError(
             "Fine-tuning dependencies are missing. Install with: "
-            "pip install transformers peft accelerate wandb"
+            "pip install transformers peft accelerate tensorboard"
         ) from exc
 
     train_rows = _load_jsonl(Path(train_jsonl))
@@ -236,26 +235,6 @@ def train_lora(
     fp16 = bool(torch.cuda.is_available())
     bf16 = False
 
-    # Initialize W&B tracking
-    use_wandb = eval_dataset is not None
-    if use_wandb:
-        wandb.init(
-            project="sar-lora-training",
-            name=f"lora-{base_model.split('/')[-1]}-{epochs}ep-lr{learning_rate}",
-            config={
-                "base_model": base_model,
-                "epochs": epochs,
-                "learning_rate": learning_rate,
-                "lora_rank": lora_rank,
-                "lora_alpha": lora_alpha,
-                "lora_dropout": lora_dropout,
-                "train_samples": len(train_features),
-                "val_samples": len(val_features),
-                "max_length": max_length,
-            },
-            tags=["lora", "sar", "fine-tuning"]
-        )
-
     training_args_kwargs = {
         "output_dir": str(output_dir),
         "num_train_epochs": float(epochs),
@@ -264,7 +243,8 @@ def train_lora(
         "per_device_eval_batch_size": int(eval_batch_size),
         "gradient_accumulation_steps": int(grad_accum_steps),
         "weight_decay": 0.0,
-        "report_to": "wandb" if use_wandb else "none",
+        "report_to": "tensorboard",
+        "logging_dir": str(output_dir / "tensorboard_logs"),
         "logging_strategy": "steps",
         "logging_steps": 20,
         "save_strategy": "steps",
@@ -301,10 +281,17 @@ def train_lora(
         data_collator=_PadCollator(tokenizer.pad_token_id),
         callbacks=callbacks,
     )
-    trainer.train()
 
-    if use_wandb:
-        wandb.finish()
+    print("\n" + "="*60)
+    print("📊 TensorBoard Logging Enabled")
+    print("="*60)
+    print(f"Logs directory: {output_dir / 'tensorboard_logs'}")
+    print("\nTo view real-time training:")
+    print(f"  tensorboard --logdir {output_dir / 'tensorboard_logs'}")
+    print("  Then open: http://localhost:6006")
+    print("="*60 + "\n")
+
+    trainer.train()
 
     train_metrics = trainer.evaluate(eval_dataset=train_dataset)
     eval_metrics = trainer.evaluate(eval_dataset=eval_dataset) if eval_dataset is not None else {}
@@ -376,6 +363,16 @@ def train_lora(
     }
     metrics_path = output_dir / "training_metrics.json"
     metrics_path.write_text(json.dumps(summary, indent=2), encoding="utf-8")
+
+    print("\n" + "="*60)
+    print("✅ Training Complete!")
+    print("="*60)
+    print(f"Best model saved to: {output_dir}")
+    print(f"TensorBoard logs: {output_dir / 'tensorboard_logs'}")
+    print("\nView results:")
+    print(f"  tensorboard --logdir {output_dir / 'tensorboard_logs'}")
+    print("="*60 + "\n")
+
     return summary
 
 
