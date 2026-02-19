@@ -6,7 +6,7 @@ import random
 from pathlib import Path
 from typing import Dict, List, Optional, Sequence, Tuple
 
-from config.settings import PROCESSED_DIR
+from config.settings import PROCESSED_DIR, PipelineSettings
 
 from .prompt_templates import build_prompt_payload
 
@@ -196,12 +196,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--evidence-dir",
         type=Path,
-        default=pipeline_settings.evidence_map_dir,
+        default=PipelineSettings.evidence_map_dir,
     )
     parser.add_argument(
         "--sar-dir",
         type=Path,
-        default=pipeline_settings.sar_drafts_dir,
+        default=PipelineSettings.sar_drafts_dir,
     )
     parser.add_argument(
         "--output-dir",
